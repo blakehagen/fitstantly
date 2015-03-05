@@ -1,4 +1,4 @@
-html, body {
+body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -10,8 +10,18 @@ html, body {
 }
 
 .sub-main {
-	margin-top: -30px;
+	margin-top: -45px;
+}
 
+.go-button {
+	width: 100px;
+	height: 25px;
+}
+
+.go-button:hover {
+	width: 110px;
+	height: 35px;
+	font-size: 17px;
 }
 
 h1 {
@@ -22,10 +32,21 @@ h1 {
 
 h3 {
 	font-family: "Myriad Set Pro", sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 }
 
-.button {
+h6 {
+	font-family: "Myriad Set Pro", sans-serif;
+	font-size: 18px;
+
+}
+
+.button-container {
 	text-align: center;
+
+
+
+
+
 }
