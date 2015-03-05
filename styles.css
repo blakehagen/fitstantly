@@ -1,0 +1,31 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.main {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.sub-main {
+	margin-top: -30px;
+
+}
+
+h1 {
+	font-family: "Myriad Set Pro", sans-serif;
+	font-size: 80px;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Myriad Set Pro", sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.button {
+	text-align: center;
+}
