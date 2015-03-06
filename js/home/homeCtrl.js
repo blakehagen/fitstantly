@@ -1,6 +1,6 @@
 var app = angular.module('fitstantly');
 
-app.controller('MainCtrl', function($scope) {
+app.controller('HomeCtrl', function($scope) {
 
 	OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw')
 
@@ -14,7 +14,6 @@ app.controller('MainCtrl', function($scope) {
 		})
 	}
 
-// ROUTES ??
 
 
 

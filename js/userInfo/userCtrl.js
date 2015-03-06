@@ -1,6 +1,6 @@
 var app = angular.module('fitstantly');
 
-app.service('fitService', function() {
+app.controller('UserCtrl', function($scope) {
 
 
 
