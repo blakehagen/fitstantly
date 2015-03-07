@@ -1,20 +1,21 @@
-var app = angular.module('fitstantly', [/*'ngRoute'*/]);
+var app = angular.module('fitstantly', ['ngRoute']);
 
-app.config(function(/*$routeProvider, $location*/) {
-	// $routeProvider
-	// 	.when('/', {
-	// 		templateUrl: '/',
-	// 		controller: 'HomeCtrl'
-	// 	})
+app.config(function($routeProvider) {
 
-	// 	.when('/userId', {
-	// 		templateUrl: '/js/userInfo/userInfoTemplate.html',
-	// 		controller: 'UserCtrl'
-	// 	})
+	$routeProvider
+		.when('/', {
+			templateUrl: '/js/home/homeTemplate.html',
+			controller: 'HomeCtrl'
+		})
 
-	// 	.otherwise({
-	// 		redirectTo: '/'
-	// 	})
+		.when('/userId', {
+			templateUrl: '/js/userInfo/userInfoTemplate.html',
+			controller: 'UserCtrl'
+		})
+
+		.otherwise({
+			redirectTo: '/'
+		})
 
 
 
