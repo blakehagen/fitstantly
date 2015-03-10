@@ -1,6 +1,6 @@
-* {
-	border: 1px solid pink;
-}
+/** {
+	border: 1px solid green;
+}*/
 
 body {
 	width: 100%;
@@ -9,10 +9,9 @@ body {
 }
 
 .main {
-	margin-top: 80px;
-	margin-bottom: 0;
-	display: inline-block;
-	margin-left: 30%; 
+
+	
+	margin: 0, auto; 
 }
 
 .sub-main {
@@ -53,14 +52,14 @@ h6 {
 	text-align: center;
 }
 
-.left-sidebar {
+/*.left-sidebar {
 	margin-top: 200px;
 	height: 400px;
 	width: 80px;
 	border: 1px solid red;	
 	display: inline-block;
 	float: left;
-}
+}*/
 
 
 

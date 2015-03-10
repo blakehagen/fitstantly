@@ -25,5 +25,19 @@ app.service('homeService', function($q) {
 		return deferred.promise;
 	}
 
+	var currentSteps;
+
+	this.setSteps = function(data) {
+		currentSteps = data;
+	}
+
+	this.getSteps = function() {
+		return currentSteps;
+	}
+
+
+
+
+
 
 });
