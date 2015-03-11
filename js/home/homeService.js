@@ -2,8 +2,19 @@ var app = angular.module('fitstantly');
 
 app.service('homeService', function($q) {
 
+	var currentDate = '';
+	var dateArr = [];
 	var date = Date();
+
 	console.log(date);
+	dateArr = date.split(' ');
+	console.log(dateArr);
+
+	
+
+
+
+
 
 
 
