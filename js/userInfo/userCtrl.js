@@ -2,9 +2,11 @@ var app = angular.module('fitstantly');
 
 app.controller('UserCtrl', function($scope, homeService) {
 
-	$scope.test =homeService.getSteps();
+	$scope.todaySteps = homeService.getSteps();
 
-	
+	$scope.todayActive = homeService.getActive();
+
+
 
 
 

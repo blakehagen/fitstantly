@@ -26,13 +26,21 @@ app.service('homeService', function($q) {
 	}
 
 	var currentSteps;
-
 	this.setSteps = function(data) {
 		currentSteps = data;
 	}
 
 	this.getSteps = function() {
 		return currentSteps;
+	}
+
+	var currentActiveMinutes;
+	this.setActive = function(data) {
+		currentActiveMinutes = data;
+	}
+
+	this.getActive = function() {
+		return currentActiveMinutes;
 	}
 
 
