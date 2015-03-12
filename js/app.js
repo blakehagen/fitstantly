@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
 			controller: 'HomeCtrl'
 		})
 
-		.when('/userId', {
+		.when('/user', {
 			templateUrl: '/js/userInfo/userInfoTemplate.html',
 			controller: 'UserCtrl'
 		})

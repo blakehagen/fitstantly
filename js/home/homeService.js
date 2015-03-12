@@ -51,7 +51,7 @@ app.service('homeService', function($q, $http) {
 		
 		var deferred = $q.defer();
 
-		OAuth.popup('fitbit', {cache: false}).done(function(fitbit) {
+		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
 			fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json').done(function(data) {
