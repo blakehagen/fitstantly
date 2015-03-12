@@ -1,13 +1,12 @@
 var app = angular.module('fitstantly');
 
-app.service('homeService', function($q) {
+app.service('homeService', function($q, $http) {
 
 	var currentDate = '';
 	var dateArr = [];
 	var newDateArr = [];
 	var date = Date();
 	var monthNum = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-
 	// console.log(date);
 	dateArr = date.split(' ');
 	// console.log(dateArr);
@@ -52,12 +51,11 @@ app.service('homeService', function($q) {
 		
 		var deferred = $q.defer();
 
-		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
+		OAuth.popup('fitbit', {cache: false}).done(function(fitbit) {
 			// console.log(fitbit)
 
 			fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json').done(function(data) {
 				deferred.resolve(data);
-
 
 				// console.log(data);
 			}).fail(function(err) {
@@ -91,7 +89,7 @@ app.service('homeService', function($q) {
 
 
 
-
+// url: 'https://api.fitbit.com/1/user/-/activities/steps/date/2015-02-01/2015-02-28.json'
 
 
 });

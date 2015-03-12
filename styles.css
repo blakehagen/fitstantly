@@ -1,4 +1,4 @@
-/** {
+/* * {
 	border: 1px solid green;
 }*/
 
@@ -9,8 +9,6 @@ body {
 }
 
 .main {
-
-	
 	margin: 0, auto; 
 }
 
@@ -60,6 +58,23 @@ h6 {
 	display: inline-block;
 	float: left;
 }*/
+
+.display {
+	display: inline-block;
+	padding-right: 6px;
+}
+
+.display-main {
+	margin: 0, auto;
+	display: inline-block;
+	padding-right: 200px;
+	text-align: center;
+	
+}
+
+.top-user-view {
+	margin: 0, auto;
+}
 
 
 

@@ -15,6 +15,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location) {
 	}
 
 
+
 		
 
 
