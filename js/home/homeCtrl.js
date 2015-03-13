@@ -7,9 +7,9 @@ app.controller('HomeCtrl', function($scope, homeService, $location) {
 	$scope.authorize = function() {
 		homeService.authenticate().then(function(data){
 			$location.path('/user');
-			// console.log(data);
-			homeService.setSteps(data.summary.steps);
-			homeService.setActive(data.summary.veryActiveMinutes);
+			console.log(data);
+			homeService.setSteps(data[0].summary.steps);
+			homeService.setActive(data[0].summary.veryActiveMinutes);
 
 		})
 	}

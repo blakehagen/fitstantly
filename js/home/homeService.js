@@ -48,23 +48,37 @@ app.service('homeService', function($q, $http) {
 	
 	
 	this.authenticate = function() {
-		
+		var promisesArray = [];
 		var deferred = $q.defer();
 
 		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
-			console.log(fitbit)
+			// console.log(fitbit)
 
-			fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json').done(function(data) {
-				deferred.resolve(data);
+			// fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json').done(function(data) {
+			// 	deferred.resolve(data);
 
-				console.log(data);
-			}).fail(function(err) {
-				deferred.reject();
-			});
+			// 	console.log(data);
+			// }).fail(function(err) {
+			// 	deferred.reject();
+			// });
 
-				}).fail(function(err) {
-					deferred.reject();
-			  		alert("Authentication failed. Please try again.");
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json'))
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/2015-03-01/2015-03-07.json'))
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/2015-03-01/2015-03-07.json'))
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/2015-03-01/2015-03-31.json'))
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/2015-03-01/2015-03-31.json'))
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json'))
+
+			$q.all(promisesArray).then(function(res){
+				deferred.resolve(res)
+			}, function(err){
+				console.log(err)
+				deferred.reject(err)
+			})
+
+		}).fail(function(err) {
+			deferred.reject();
+	  		alert("Authentication failed. Please try again.");
 		})
 		return deferred.promise;
 	}
