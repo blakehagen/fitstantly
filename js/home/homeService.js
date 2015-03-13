@@ -52,22 +52,25 @@ app.service('homeService', function($q, $http) {
 		var deferred = $q.defer();
 
 		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
-			// console.log(fitbit)
+			console.log(fitbit)
 
 			fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json').done(function(data) {
 				deferred.resolve(data);
 
-				// console.log(data);
+				console.log(data);
 			}).fail(function(err) {
 				deferred.reject();
 			});
 
-		}).fail(function(err) {
-			deferred.reject();
-	  		alert("Authentication failed. Please try again.")
+				}).fail(function(err) {
+					deferred.reject();
+			  		alert("Authentication failed. Please try again.");
 		})
 		return deferred.promise;
 	}
+
+
+
 
 	var currentSteps;
 	this.setSteps = function(data) {
@@ -88,8 +91,37 @@ app.service('homeService', function($q, $http) {
 	}
 
 
+	// Week Steps:
+	// 		'https://api.fitbit.com/1/user/-/activities/steps/date/2015-03-01/2015-03-07.json'
 
-// url: 'https://api.fitbit.com/1/user/-/activities/steps/date/2015-02-01/2015-02-28.json'
+	// Week Active Minutes:
+	// 		'https://api.fitbit.com/1/user/-/activities//minutesVeryActive/date/2015-03-01/2015-03-07.json'
+
+	// Month Steps:
+	// 		'https://api.fitbit.com/1/user/-/activities/steps/date/2015-03-01/2015-03-31.json'
+
+	// Month Active Minutes:
+	// 		'https://api.fitbit.com/1/user/-/activities//minutesVeryActive/date/2015-03-01/2015-03-31.json'
+
+	// Best Day All-Time Steps:
+	// 		'https://api.fitbit.com/1/user/-/activities.json'
+
+	// Best Day All-Time Active Minutes:
+	//		Not available ---> maybe just have the all-time best steps in the upper right corner for reference?
+
+
+
+
+
+
+
+
+
+
 
 
 });
+
+
+
+

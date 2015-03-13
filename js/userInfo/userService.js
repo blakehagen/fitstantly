@@ -1,8 +1,8 @@
 var app = angular.module('fitstantly');
 
-app.service('userService', function(/*$http, $q*/) {
+app.service('userService', function(/*$http, $q */) {
 
-	// this.getWeekSteps = function() {
+	// this.getMonthSteps = function() {
 	// 	var deferred = $q.defer();
 	// 	$http({
 	// 		method: 'GET',

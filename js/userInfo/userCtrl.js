@@ -6,6 +6,8 @@ app.controller('UserCtrl', function($scope, homeService) {
 
 	$scope.todayActive = homeService.getActive();
 
+	// $scope.test = homeService.getMonthSteps();
+
 
 
 
