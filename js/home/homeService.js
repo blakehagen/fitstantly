@@ -103,7 +103,7 @@ app.service('homeService', function($q, $http) {
 		return deferred.promise;
 	}
 
-// STEPS ---> CURRENT DAY
+// STEPS ---> TODAY
 	var currentSteps;
 	this.setSteps = function(data) {
 		currentSteps = data;
@@ -113,7 +113,7 @@ app.service('homeService', function($q, $http) {
 		return currentSteps;
 	}
 
-// ACTIVE MINUTES ---> CURRENT DAY
+// ACTIVE MINUTES ---> TODAY
 	var currentActiveMinutes;
 	this.setActive = function(data) {
 		currentActiveMinutes = data;
@@ -167,10 +167,37 @@ app.service('homeService', function($q, $http) {
 		return bestMinutesWeek;
 	}
 
+// BEST STEPS ---> CURRENT MONTH
+	var bestStepsMonth;
+	this.setMostStepsMonth = function(data) {
+		var highest = 0;
+		for (var i = 0; i < data.length; i++) {
+			if (parseInt(data[i].value) > highest) {
+				highest = parseInt(data[i].value);
+			}
+		};
+		bestStepsMonth = highest;
+	}
 
+	this.getMostStepsMonth = function() {
+			return bestStepsMonth;
+		}
 
+// BEST ACTIVE MINUTES ---> CUURENT MONTH
+	var bestMinutesMonth;
+	this.setMostMinutesMonth = function(data) {
+		var highest = 0;
+		for (var i = 0; i < data.length; i++) {
+			if (parseInt(data[i].value) > highest) {
+				highest = parseInt(data[i].value);
+			}
+		};
+		bestMinutesMonth = highest;
+	}
 
-
+	this.getMostMinutesMonth = function() {
+		return bestMinutesMonth;
+	}
 
 
 
