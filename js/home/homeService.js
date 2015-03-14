@@ -1,7 +1,7 @@
 var app = angular.module('fitstantly');
 
 app.service('homeService', function($q, $http) {
-
+	var weekSteps;
 	var currentDate = '';
 	var dateArr = [];
 	var newDateArr = [];
@@ -74,11 +74,6 @@ app.service('homeService', function($q, $http) {
 	}
 
 	console.log(currentMonthRange);
-
-
-
-
-	
 	
 	this.authenticate = function() {
 		var promisesArray = [];
@@ -108,6 +103,7 @@ app.service('homeService', function($q, $http) {
 		return deferred.promise;
 	}
 
+// STEPS ---> CURRENT DAY
 	var currentSteps;
 	this.setSteps = function(data) {
 		currentSteps = data;
@@ -117,6 +113,7 @@ app.service('homeService', function($q, $http) {
 		return currentSteps;
 	}
 
+// ACTIVE MINUTES ---> CURRENT DAY
 	var currentActiveMinutes;
 	this.setActive = function(data) {
 		currentActiveMinutes = data;
@@ -125,6 +122,51 @@ app.service('homeService', function($q, $http) {
 	this.getActive = function() {
 		return currentActiveMinutes;
 	}
+
+// BEST STEPS ---> ALL-TIME
+	var bestSteps;
+	this.setBestSteps = function(data) {
+		bestSteps = data;
+	}
+
+	this.getBestSteps = function() {
+		return bestSteps;
+	}
+
+// BEST STEPS ---> LAST 7 DAYS
+	var bestStepsWeek;
+	this.setMostStepsWeek = function(data) {
+		// console.log('service: ',data);
+		var highest = 0;
+		for (var i = 0; i < data.length; i++) {
+			if (parseInt(data[i].value) > highest) {
+				highest = parseInt(data[i].value);
+			}
+		};
+		bestStepsWeek = highest;
+		// console.log('should be highest of week: ',bestStepsWeek);
+	}
+
+	this.getMostStepsWeek = function() {
+		return bestStepsWeek;
+	}
+
+// BEST ACTIVE MINUTES ---> LAST 7 DAYS
+	var bestMinutesWeek;
+	this.setMostMinutesWeek = function(data) {
+		var highest = 0;
+		for (var i = 0; i < data.length; i++) {
+			if (parseInt(data[i].value) > highest) {
+				highest = parseInt(data[i].value);
+			}
+		};
+		bestMinutesWeek = highest;
+	}
+
+	this.getMostMinutesWeek = function() {
+		return bestMinutesWeek;
+	}
+
 
 
 

@@ -6,6 +6,12 @@ app.controller('UserCtrl', function($scope, homeService) {
 
 	$scope.todayActive = homeService.getActive();
 
+	$scope.bestStepsAllTime = homeService.getBestSteps();
+
+	$scope.bestWeekSteps = homeService.getMostStepsWeek();
+
+	$scope.bestWeekMinutes = homeService.getMostMinutesWeek();
+
 
 
 
