@@ -46,6 +46,7 @@ app.service('homeService', function($q, $http) {
 	console.log(currentDate);
 
 	var currentMonthRange = [];
+
 	if (newDateArr[1] === "01") {
 		currentMonthRange.push(newDateArr[0] + "-01-01/" + newDateArr[0] + "-01-31");
 	} else if (newDateArr[1] === "02") {
@@ -86,12 +87,12 @@ app.service('homeService', function($q, $http) {
 		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json'))
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/2015-03-01/2015-03-07.json'))
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/2015-03-01/2015-03-07.json'))
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json'))
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json'))
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json'))
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for last 7 days
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
@@ -124,9 +125,6 @@ app.service('homeService', function($q, $http) {
 	this.getActive = function() {
 		return currentActiveMinutes;
 	}
-
-
-
 
 
 
