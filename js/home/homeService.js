@@ -126,26 +126,6 @@ app.service('homeService', function($q, $http) {
 	}
 
 
-	// Week Steps:
-	// 		'https://api.fitbit.com/1/user/-/activities/steps/date/2015-03-01/2015-03-07.json'
-
-	// Week Active Minutes:
-	// 		'https://api.fitbit.com/1/user/-/activities//minutesVeryActive/date/2015-03-01/2015-03-07.json'
-
-	// Month Steps:
-	// 		'https://api.fitbit.com/1/user/-/activities/steps/date/2015-03-01/2015-03-31.json'
-
-	// Month Active Minutes:
-	// 		'https://api.fitbit.com/1/user/-/activities//minutesVeryActive/date/2015-03-01/2015-03-31.json'
-
-	// Best Day All-Time Steps:
-	// 		'https://api.fitbit.com/1/user/-/activities.json'
-
-	// Best Day All-Time Active Minutes:
-	//		Not available ---> maybe just have the all-time best steps in the upper right corner for reference?
-
-
-
 
 
 
