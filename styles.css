@@ -6,7 +6,7 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	background: #DEDDD8;
+	background: #E3E2E3;
 }
 
 .container {
@@ -19,8 +19,8 @@ body {
 	width: 45%;
 	height: 40%;
 	margin: auto; 
-	background: #D3F0FF;
-	border: 12px solid #FFF;
+	background: #FFF;
+	border: 12px solid #81B0E2;
 	border-radius: 30px;
 }
 
@@ -35,8 +35,8 @@ body {
 }
 
 .go-button:hover {
-	width: 114px;
-	height: 38px;
+	width: 120px;
+	height: 40px;
 	font-size: 17px;
 }
 
