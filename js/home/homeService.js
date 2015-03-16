@@ -151,6 +151,29 @@ app.service('homeService', function($q, $http) {
 		return bestStepsWeek;
 	}
 
+// AVERAGE STEPS/DAY ---> LAST 7 DAYS
+	var avgStepsWeek;
+	this.setAvgStepsWeek = function(data) {
+		var sum = 0;
+		for (var i = 0; i < data.length; i++) {
+			var sum = parseInt(data[i].value) + sum;
+		}
+			console.log('steps sum: ', sum);
+
+		var avg = sum / 7;
+
+			console.log('steps/day avg: ', avg);
+	
+		avgStepsWeek = avg;
+	}
+
+	this.getAvgStepsWeek = function() {
+		return avgStepsWeek;
+	}
+
+
+
+
 // BEST ACTIVE MINUTES ---> LAST 7 DAYS
 	var bestMinutesWeek;
 	this.setMostMinutesWeek = function(data) {
@@ -183,7 +206,28 @@ app.service('homeService', function($q, $http) {
 			return bestStepsMonth;
 		}
 
-// BEST ACTIVE MINUTES ---> CUURENT MONTH
+// AVERAGE ACTIVE MINS/DAY ---> LAST 7 DAYS
+	var avgActiveWeek;
+	this.setAvgActiveWeek = function(data) {
+		var sum = 0;
+		for (var i = 0; i < data.length; i++) {
+			var sum = parseInt(data[i].value) + sum;
+		}
+			console.log('active mins sum: ', sum);
+
+		var avg = sum / 7;
+
+			console.log('active mins/day avg: ', avg);
+	
+		avgActiveWeek = avg;
+	}
+
+	this.getAvgActiveWeek = function() {
+		return avgActiveWeek;
+	}
+
+
+// BEST ACTIVE MINUTES ---> CURRENT MONTH
 	var bestMinutesMonth;
 	this.setMostMinutesMonth = function(data) {
 		var highest = 0;
