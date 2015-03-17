@@ -1,30 +1,59 @@
-<div>
-	<div class="top-user-view">
-		<div class="display-main">
+<div class="container-user-1">
+	<div class="flex-1">
+		<div>
 			<h3>Today's Step Count:</h3>
 			<h1>{{todaySteps}}</h1>
-		</div>
-		<div class="display-main">
-			<h3>Today's Active Minutes:</h3>
-			<h1>{{todayActive}}</h1>
-		</div>
-		
+		</div>	
 	</div>
-	Best Steps Ever: {{bestStepsAllTime}}<br>
-	<br>
-	Best Steps of Last 7 days: {{bestWeekSteps}}<br>
-	Average Steps/Day Last 7 days: {{avgWeek}}<br>
-	<br>
-	Best Active Minutes of Last 7 days: {{bestWeekMinutes}}<br>
-	Average Active Minutes/Day Last 7 days: {{avgActiveWeek}}
-	<br>
-	<br>
-	Best Steps this Month: {{bestMonthSteps}}<br>
-	Best Active Minutes this Month: {{bestMonthMinutes}}<br>
-	<div class="display">
-		<a href="#/"><h6>Home</h6>
-	</div>		
-	<div class="display">
-		<a href="#/user"><h6>User View</h6>
+	<div class="flex-2">
+		<h3>Today's Active Minutes:</h3>
+		<h1>{{todayActive}}</h1>
 	</div>
+	<div class="flex-3">
+		<h3>Daily Steps Record:</h3>
+		<h1>{{bestStepsAllTime}}</h1>
+	</div>
+</div>
+
+<div class="container-user-2">
+	<div class="flex-4">
+		<div>
+			<h3>Today's Step Count:</h3>
+			<h1>{{todaySteps}}</h1>
+			<h3>Last 7 Days</h3>
+			<br>
+			<h3>Best Steps:</h3>
+			<h1>{{bestWeekSteps}}</h1>
+			<br>
+			<h3>Average Steps/Day:</h3>
+			<h1>{{avgWeek}}</h1>
+			<br>
+			<h3>Best Active Minutes:</h3>
+			<h1>{{bestWeekMinutes}}</h1><br>
+			<br>
+			<h3>Average Active Minutes/Day:</h3>
+			<h1>{{avgActiveWeek}}</h1><br>
+	</div>
+	<div class="flex-5">
+<!-- 		<h3>Daily Steps Record:</h3>
+		<h1>{{bestStepsAllTime}}</h1> -->
+	</div>
+</div>
+
+
+
+Best Steps of Last 7 days: {{bestWeekSteps}}<br>
+Average Steps/Day Last 7 days: {{avgWeek}}<br>
+<br>
+Best Active Minutes of Last 7 days: {{bestWeekMinutes}}<br>
+Average Active Minutes/Day Last 7 days: {{avgActiveWeek}}
+<br>
+<br>
+Best Steps this Month: {{bestMonthSteps}}<br>
+Best Active Minutes this Month: {{bestMonthMinutes}}<br>
+<div>
+	<a href="#/"><h6>Home</h6>
+</div>		
+<div>
+	<a href="#/user"><h6>User View</h6>
 </div>

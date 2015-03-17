@@ -73,7 +73,7 @@ app.service('homeService', function($q, $http) {
 		currentMonthRange.push(newDateArr[0] + "-12-01/" + newDateArr[0] + "-12-31");
 	}
 
-	console.log(currentMonthRange);
+	// console.log(currentMonthRange);
 	
 	this.authenticate = function() {
 		var promisesArray = [];
@@ -158,11 +158,11 @@ app.service('homeService', function($q, $http) {
 		for (var i = 0; i < data.length; i++) {
 			var sum = parseInt(data[i].value) + sum;
 		}
-			console.log('steps sum: ', sum);
+			// console.log('steps sum: ', sum);
 
 		var avg = sum / 7;
 
-			console.log('steps/day avg: ', avg);
+			// console.log('steps/day avg: ', avg);
 	
 		avgStepsWeek = avg;
 	}
