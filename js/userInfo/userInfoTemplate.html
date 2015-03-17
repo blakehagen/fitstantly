@@ -10,12 +10,12 @@
 		<h1>{{todayActive}}</h1>
 	</div>
 	<div class="flex-3">
-		<h3>Daily Steps Record:</h3>
+		<h3>All-Time 1-Day Steps Record:</h3>
 		<h1>{{bestStepsAllTime}}</h1>
 	</div>
 </div>
 
-<div class="container-user-2">
+<div class="container-user-1">
 	<div class="flex-4">
 		<div>
 			<h1>Last 7 Days</h1>
@@ -30,16 +30,22 @@
 			<br>
 			<h3>Average Active Minutes/Day:</h3>
 			<h1>{{avgActiveWeek}}</h1><br>
-	</div>
+		</div>
 	<div class="flex-5">
-<!-- 		<h3>Daily Steps Record:</h3>
-		<h1>{{bestStepsAllTime}}</h1> -->
+		<div>
+			<h1>Current Month</h1>
+			<h3>Best Steps:</h3>
+			<h1>{{bestMonthSteps}}</h1>
+			<br>
+			<h3>Best Active Minutes:</h3>
+			<h1>{{bestMonthMinutes}}</h1>
+		</div>
 	</div>
 </div>
 
 
 
-Best Steps of Last 7 days: {{bestWeekSteps}}<br>
+<!-- Best Steps of Last 7 days: {{bestWeekSteps}}<br>
 Average Steps/Day Last 7 days: {{avgWeek}}<br>
 <br>
 Best Active Minutes of Last 7 days: {{bestWeekMinutes}}<br>
@@ -47,10 +53,4 @@ Average Active Minutes/Day Last 7 days: {{avgActiveWeek}}
 <br>
 <br>
 Best Steps this Month: {{bestMonthSteps}}<br>
-Best Active Minutes this Month: {{bestMonthMinutes}}<br>
-<div>
-	<a href="#/"><h6>Home</h6>
-</div>		
-<div>
-	<a href="#/user"><h6>User View</h6>
-</div>
+Best Active Minutes this Month: {{bestMonthMinutes}}<br> -->
