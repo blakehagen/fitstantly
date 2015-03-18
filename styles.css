@@ -18,11 +18,12 @@ body {
 
 .main {
 	width: 45%;
-	height: 40%;
 	margin: auto; 
+	padding-bottom: 15px;
 	background: #FFF;
 	border: 8px solid #81B0E2;
 	border-radius: 30px;
+
 }
 
 .sub-main {
@@ -45,6 +46,11 @@ h1 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
 	font-size: 80px;
 	text-align: center;
+}
+
+
+#main-text {
+	margin: 20px 0 50px 0;
 }
 
 h3 {
@@ -120,6 +126,13 @@ h6 {
 	background: #FFF;
 	border: 8px solid #F7F89F;
 	border-radius: 30px;
+}
+
+
+@media (max-width: 780px) {
+	.main {
+		width: 100%;
+	}
 }
 
 

@@ -107,6 +107,7 @@ app.service('homeService', function($q, $http) {
 	var currentSteps;
 	this.setSteps = function(data) {
 		currentSteps = data;
+		currentSteps = numeral(currentSteps).format('0,0');
 	}
 
 	this.getSteps = function() {
@@ -117,6 +118,7 @@ app.service('homeService', function($q, $http) {
 	var currentActiveMinutes;
 	this.setActive = function(data) {
 		currentActiveMinutes = data;
+		currentActiveMinutes = numeral(currentActiveMinutes).format('0,0');
 	}
 
 	this.getActive = function() {
@@ -127,6 +129,7 @@ app.service('homeService', function($q, $http) {
 	var bestSteps;
 	this.setBestSteps = function(data) {
 		bestSteps = data;
+		bestSteps = numeral(bestSteps).format('0,0');
 	}
 
 	this.getBestSteps = function() {
@@ -144,6 +147,8 @@ app.service('homeService', function($q, $http) {
 			}
 		};
 		bestStepsWeek = highest;
+		bestStepsWeek = numeral(bestStepsWeek).format('0,0');
+
 		// console.log('should be highest of week: ',bestStepsWeek);
 	}
 
@@ -163,7 +168,7 @@ app.service('homeService', function($q, $http) {
 		var avg = sum / 7;
 
 			// console.log('steps/day avg: ', avg);
-	
+		avg = Math.round(avg);
 		avgStepsWeek = avg;
 	}
 
@@ -218,7 +223,7 @@ app.service('homeService', function($q, $http) {
 		var avg = sum / 7;
 
 			console.log('active mins/day avg: ', avg);
-	
+		avg = Math.round(avg);
 		avgActiveWeek = avg;
 	}
 
