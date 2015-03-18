@@ -1,7 +1,6 @@
 var app = angular.module('fitstantly');
 
 app.service('homeService', function($q, $http) {
-	var weekSteps;
 	var currentDate = '';
 	var dateArr = [];
 	var newDateArr = [];
@@ -43,7 +42,7 @@ app.service('homeService', function($q, $http) {
 	// console.log(newDateArr);
 
 	var currentDate = newDateArr[0] + "-" + newDateArr[1] + "-" + newDateArr[2];
-	console.log(currentDate);
+	console.log("Hello. Today is:", currentDate);
 
 	var currentMonthRange = [];
 
@@ -148,8 +147,6 @@ app.service('homeService', function($q, $http) {
 		};
 		bestStepsWeek = highest;
 		bestStepsWeek = numeral(bestStepsWeek).format('0,0');
-
-		// console.log('should be highest of week: ',bestStepsWeek);
 	}
 
 	this.getMostStepsWeek = function() {
@@ -163,21 +160,17 @@ app.service('homeService', function($q, $http) {
 		for (var i = 0; i < data.length; i++) {
 			var sum = parseInt(data[i].value) + sum;
 		}
-			// console.log('steps sum: ', sum);
 
 		var avg = sum / 7;
 
-			// console.log('steps/day avg: ', avg);
 		avg = Math.round(avg);
 		avgStepsWeek = avg;
+		avgStepsWeek = numeral(avgStepsWeek).format('0,0');
 	}
 
 	this.getAvgStepsWeek = function() {
 		return avgStepsWeek;
 	}
-
-
-
 
 // BEST ACTIVE MINUTES ---> LAST 7 DAYS
 	var bestMinutesWeek;
@@ -204,7 +197,9 @@ app.service('homeService', function($q, $http) {
 				highest = parseInt(data[i].value);
 			}
 		};
+
 		bestStepsMonth = highest;
+		bestStepsMonth = numeral(bestStepsMonth).format('0,0');
 	}
 
 	this.getMostStepsMonth = function() {
@@ -218,11 +213,9 @@ app.service('homeService', function($q, $http) {
 		for (var i = 0; i < data.length; i++) {
 			var sum = parseInt(data[i].value) + sum;
 		}
-			console.log('active mins sum: ', sum);
 
 		var avg = sum / 7;
 
-			console.log('active mins/day avg: ', avg);
 		avg = Math.round(avg);
 		avgActiveWeek = avg;
 	}
@@ -247,9 +240,6 @@ app.service('homeService', function($q, $http) {
 	this.getMostMinutesMonth = function() {
 		return bestMinutesMonth;
 	}
-
-
-
 
 });
 

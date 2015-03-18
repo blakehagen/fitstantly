@@ -26,9 +26,6 @@ app.controller('HomeCtrl', function($scope, homeService, $location) {
 			
 			homeService.setMostMinutesMonth(data[4]["activities-minutesVeryActive"]); // ---> best active minutes current month
 
-
-
-
 		})
 	}
 
