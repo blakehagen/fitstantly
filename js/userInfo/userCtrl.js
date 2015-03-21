@@ -18,7 +18,16 @@ app.controller('UserCtrl', function($scope, homeService) {
 	$scope.bestMonthSteps = homeService.getMostStepsMonth();
 	$scope.bestMonthMinutes = homeService.getMostMinutesMonth();
 
-	$scope.expand = function() {
+	$scope.expandWeek = function() {
+		if($scope.active == false) {
+			$scope.active = true;
+		}
+		else {
+			$scope.active = false;
+		}
+	}
+
+	$scope.expandMonth = function() {
 		if($scope.active == false) {
 			$scope.active = true;
 		}

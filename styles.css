@@ -11,19 +11,20 @@ body {
 
 .top-nav {
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
+	background: #DEDDDE;
 }
 
 .container {
 	display: flex;
 	flex-flow: row;
 	width: 100%;
-	height: calc(100% - 60px);
+	height: calc(100% - 50px);
 }
 
 .main {
@@ -89,8 +90,8 @@ h6 {
 }
 
 .container-user-1 {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 10px;
 	display: flex;
 	flex-flow: wrap;
 	width: 100%;
@@ -104,18 +105,27 @@ h6 {
 	border-radius: 30px;
 }
 
+.container-test {
+	margin-top: 40px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-flow: wrap;
+	width: 100%;
+	justify-content: space-around;
+}
+
 .container-user-2 {
 	display: flex;
-	flex-flow: row;
+	flex-flow: wrap;
 	width: 100%;
-	align-items: center;
+	justify-content: space-around;
 }
 
 .lg-widget {
-	width: 50%;
+	width: 30%;
 	background: #FFF;
-	border: 8px solid #C6ACF7;
 	border-radius: 30px;
+	justify-content: center;
 	will-change: background, height, width;
 	transition: all 0.2s ease-in-out;
 }
@@ -124,12 +134,15 @@ h6 {
 	border: 8px solid #F7F89F;
 }
 
+.lg-widget--month {
+	border: 8px solid #C6ACF7;
+}
+
 .active {
   position: fixed;
   width: 100%;
-  height: calc(100% - 60px);
-  top: 170px;
-  justify-content: center;
+  height: calc(100% - 50px;);
+  top: 180px;
 
 }
 
