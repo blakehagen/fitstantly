@@ -1,12 +1,12 @@
 <div class="container-user-1">
 	<div class="sm-widget">
 		<div>
-			<h3>Current Step Count:</h3>
+			<h3>Step Count Today:</h3>
 			<h2 id="user-view-main-text">{{todaySteps}}</h2>
 		</div>	
 	</div>
 	<div class="sm-widget">
-		<h3>Current Active Minutes:</h3>
+		<h3>Active Minutes Today:</h3>
 		<h2 id="user-view-main-text">{{todayActive}}</h2>
 	</div>
 	<div class="sm-widget">
@@ -15,59 +15,46 @@
 	</div>
 </div>
 
-
 <div class="container-test">
-	<div class="lg-widget lg-widget--week" ng-click="expandWeek()" ng-class="{'active': active == true}">
+	<div class="lg-widget lg-widget--week">
 		<div>
 			<h3>Last 7 Days</h3>
 		</div>
 	</div>
-	<div class="lg-widget lg-widget--month" ng-click="expandMonth()" ng-class="{'active': active == true}">
+	<div class="lg-widget lg-widget--month">
 		<div>
 			<h3>Current Month</h3>
 		</div>
 	</div>
 </div>
 
-
-
-
-
 <div class="container-user-2">
 	<div class="lg-widget lg-widget--week" ng-click="expandWeek()" ng-class="{'active': active == true }">
 		<div>
 			<div>
-				<h3>Best Day:</h3>
-				<h2>Test Text</h2>
-				<!-- <h1>{{bestWeekSteps}}</h1> -->
+				<h3>Best Day: <span id="h2-text">{{bestWeekSteps}}</span></h3>
+				<!-- <h2>{{bestWeekSteps}}</h2> -->
 			</div>
 			<div>
-				<h3>Average Steps/Day:</h3>
-				<h2>Test Text</h2>
-				<!-- <h1>{{avgWeek}}</h1> -->
+				<h3>Average Steps/Day: <span id="h2-text">{{avgWeek}}</span></h3>
+				<!-- <h2>{{avgWeek}}</h2> -->
 			</div>
 			<div>
-				<h3>Best Active Minutes:</h3>
-				<h2>Test Text</h2>
-				<!-- <h1>{{bestWeekMinutes}}</h1> -->
+				<h3>Best Active Minutes: <span id="h2-text">{{bestWeekMinutes}}</span></h3>
+				<!-- <h2>{{bestWeekMinutes}}</h2> -->
 			</div>
 			<div>
-				<h3>Average Active Minutes/Day:</h3>
-				<h2>Test Text</h2>
-				<!-- <h1>{{avgActiveWeek}}</h1> -->
+				<h3>Average Active Minutes/Day: <span id="h2-text">{{avgActiveWeek}}</span></h3>
+				<!-- <h2>{{avgActiveWeek}}</h2> -->
 			</div>
 		</div>
 	</div>
 	<div class="lg-widget lg-widget--month">
 		<div>
-			<h1>Current Month</h1>
-			<h3>Best Day:</h3>
-			<h2>Test Text</h2>
-			<!-- <h1>{{bestMonthSteps}}</h1> -->
-			<br>
-			<h3>Best Active Minutes:</h3>
-			<h2>Test Text</h2>
-			<!-- <h1>{{bestMonthMinutes}}</h1> -->
+			<h3>Best Day: <span id="h2-text">{{bestMonthSteps}}</span></h3>
+			<!-- <h2>{{bestMonthSteps}}</h2> -->
+			<h3>Best Active Minutes: <span id="h2-text">{{bestMonthMinutes}}</span></h3>
+			<!-- <h2>{{bestMonthMinutes}}</h2> -->
 		</div>
 	</div>
 </div>
