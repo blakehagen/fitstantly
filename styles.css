@@ -107,7 +107,7 @@ h6 {
 .sm-widget {
 	width: 25%;
 	background: #FFF;
-	border: 8px solid #A3EBA3;
+	border: 8px solid #81B0E2;
 	border-radius: 30px;
 }
 
@@ -137,7 +137,7 @@ h6 {
 }
 
 .lg-widget--week {
-	border: 8px solid #F7F89F;
+	border: 8px solid #A3EBA3;
 }
 
 .lg-widget--month {
