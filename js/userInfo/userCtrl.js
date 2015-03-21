@@ -2,7 +2,7 @@ var app = angular.module('fitstantly');
 
 app.controller('UserCtrl', function($scope, homeService) {
 
-	
+
 
 	$scope.todaySteps = homeService.getSteps();
 	$scope.todayActive = homeService.getActive();
@@ -18,5 +18,12 @@ app.controller('UserCtrl', function($scope, homeService) {
 	$scope.bestMonthSteps = homeService.getMostStepsMonth();
 	$scope.bestMonthMinutes = homeService.getMostMinutesMonth();
 
-
+	$scope.expand = function() {
+		if($scope.active == false) {
+			$scope.active = true;
+		}
+		else {
+			$scope.active = false;
+		}
+	}
 });
