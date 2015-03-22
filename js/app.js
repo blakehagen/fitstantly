@@ -13,6 +13,16 @@ app.config(function($routeProvider) {
 			controller: 'UserCtrl'
 		})
 
+		.when('/info', {
+			templateUrl: '/js/home/infoTemplate.html',
+			controller: 'HomeCtrl'
+		})
+
+		.when('/help', {
+			templateUrl: '/js/home/helpTemplate.html',
+			controller: 'HomeCtrl'
+		})
+
 		.otherwise({
 			redirectTo: '/'
 		})

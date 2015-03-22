@@ -30,10 +30,9 @@ app.controller('HomeCtrl', function($scope, homeService, $location) {
 	}
 
 	$scope.logout = function() {
+		$location.path('#/');
 		OAuth.clearCache('fitbit');
-		$location.path('/');
-
-
+		alert("You have signed out.");
 	}
 
 

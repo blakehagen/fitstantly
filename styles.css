@@ -24,12 +24,21 @@ body {
 	margin-right: 45px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 a:visited {
-	color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 a:hover {
+    text-decoration: underline;
+}
 
+a:active {
+    text-decoration: underline;
 }
 
 .container {
