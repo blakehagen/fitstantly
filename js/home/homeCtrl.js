@@ -29,6 +29,13 @@ app.controller('HomeCtrl', function($scope, homeService, $location) {
 		})
 	}
 
+	$scope.logout = function() {
+		OAuth.clearCache('fitbit');
+		$location.path('/');
+
+
+	}
+
 
 
 		
