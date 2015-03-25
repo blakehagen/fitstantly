@@ -19,9 +19,10 @@
 	<body ng-controller="HomeCtrl">
 		<nav class="top-nav">
 			<a href="#/" title="Home"><i class="fa fa-home fa-2x" id="nav-items"></i></a>
+			<a href="" title="My Stats"><i class="fa fa-user fa-2x" id="nav-items" ng-click="authorize()"></i></a>
 			<a href="#/info" title="Info"><i class="fa fa-info fa-2x" id="nav-items"></i></a>
 			<a href="#/help" title="Help"><i class="fa fa-question fa-2x" id="nav-items"></i></a>
-			<a href="" title="Logout"><i class="fa fa-sign-out fa-2x" id="nav-items" ng-click="logout()"></i></a>
+			<a href="" title="Sign Out"><i class="fa fa-sign-out fa-2x" id="nav-items" ng-click="logout()"></i></a>
 		</nav>
 
 	<ng-view>
