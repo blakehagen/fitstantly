@@ -1,13 +1,13 @@
 var app = angular.module('fitstantly');
 
-app.controller('HomeCtrl', function($scope, homeService, $location) {
+app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) {
 
 	OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 	
 	$scope.authorize = function() {
 		homeService.authenticate().then(function(data){
 			$location.path('/user');
-				console.log(data);
+				// console.log(data);
 			homeService.setSteps(data[0].summary.steps); // ---> current day steps
 
 			homeService.setActive(data[0].summary.veryActiveMinutes); // ---> current day active minutes
@@ -15,6 +15,9 @@ app.controller('HomeCtrl', function($scope, homeService, $location) {
 			homeService.setBestSteps(data[5].best.total.steps.value); // ---> best steps all-time
 			
 			homeService.setMostStepsWeek(data[1]["activities-steps"]); // ---> best steps last 7 days
+			
+			$rootScope.chartData = data[1]["activities-steps"] // ---> to get data into chart on user view
+			// console.log(data[1]["activities-steps"]);
 			
 			homeService.setAvgStepsWeek(data[1]["activities-steps"]); // ---> average steps/day last 7 days
 			
@@ -36,11 +39,12 @@ app.controller('HomeCtrl', function($scope, homeService, $location) {
 	}
 
 
-
 		
 
 
-
-
-
 });
+
+
+
+
+

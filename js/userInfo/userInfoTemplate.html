@@ -21,15 +21,16 @@
 			<h3>Last 7 Days</h3>
 		</div>
 	</div>
-	<div class="lg-widget lg-widget--month">
+<!-- 	<div class="lg-widget lg-widget--month">
 		<div>
 			<h3>Current Month</h3>
 		</div>
-	</div>
+	</div> -->
 </div>
 
 <div class="container-user-2">
-	<div class="lg-widget lg-widget--week" ng-click="expandWeek()" ng-class="{'active': active == true }">
+	<div class="lg-widget lg-widget--week">
+	<!-- ng-click="expandWeek()" ng-class="{'active': active == true }" -->
 		<div>
 			<div>
 				<h3>Best Day: <span id="h2-text">{{bestWeekSteps}}</span></h3>
@@ -49,14 +50,23 @@
 			</div>
 		</div>
 	</div>
-	<div class="lg-widget lg-widget--month">
-		<div>
-			<h3>Best Day: <span id="h2-text">{{bestMonthSteps}}</span></h3>
-			<!-- <h2>{{bestMonthSteps}}</h2> -->
+<!--  	<div class="lg-widget lg-widget--month">
+		<div> -->
+<!-- 			<h3>Best Day: <span id="h2-text">{{bestMonthSteps}}</span></h3>
+			<h2>{{bestMonthSteps}}</h2>
 			<h3>Best Active Minutes: <span id="h2-text">{{bestMonthMinutes}}</span></h3>
-			<!-- <h2>{{bestMonthMinutes}}</h2> -->
-		</div>
-	</div>
+			<h2>{{bestMonthMinutes}}</h2> -->
+<!-- 		</div>
+	</div> -->
+
+
+<canvas id="line" class="chart chart-line" data="data"
+  labels="labels" style="width: 600px; height: 300px;"
+  click="onClick"> 
+</canvas> 
+
+
 </div>
+
 
 

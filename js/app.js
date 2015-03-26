@@ -1,4 +1,4 @@
-var app = angular.module('fitstantly', ['ngRoute']);
+var app = angular.module('fitstantly', ['ngRoute', 'chart.js']);
 
 app.config(function($routeProvider) {
 

@@ -241,6 +241,8 @@ app.service('homeService', function($q, $http) {
 		return bestMinutesMonth;
 	}
 
+
+
 });
 
 
