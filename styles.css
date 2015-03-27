@@ -177,21 +177,26 @@ h6 {
 }
 
 .lg-widget {
-	width: 35%;
+	width: 40%;
 	background: #FFF;
+	border: 8px solid #A3EBA3;
 	border-radius: 30px;
 	justify-content: center;
-	will-change: background, height, width;
-	transition: all 0.2s ease-in-out;
+/*	will-change: background, height, width;
+	transition: all 0.2s ease-in-out;*/
 }
 
-.lg-widget--week {
+#lg-widget-header {
+	width: 20%;
+}
+
+/*.lg-widget-week {
 	border: 8px solid #A3EBA3;
 }
 
-.lg-widget--month {
+.lg-widget-chart {
 	border: 8px solid #C6ACF7;
-}
+}*/
 
 .active {
   position: fixed;
@@ -220,8 +225,12 @@ h6 {
 	}
 
 	.lg-widget {
-		width: 70%;
+		width: 85%;
 		margin-bottom: 15px;
+	}
+
+	#lg-widget-header{
+		width: 80%;
 	}
 }
 
