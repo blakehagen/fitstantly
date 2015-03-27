@@ -161,7 +161,7 @@ h6 {
 }
 
 .container-test {
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	display: flex;
 	flex-flow: wrap;
@@ -204,11 +204,6 @@ h6 {
 
 }
 
-@media (max-width: 780px) {
-	.main {
-		width: 90%;
-	}
-}
 
 @media (max-width: 880px) {
 	.lg-widget {
@@ -221,17 +216,26 @@ h6 {
 		margin-bottom: 15px;
 	}
 
-/*	.container-test {
-		margin-top: 35px;
-		margin-bottom: 15px;
-	}*/
+	.container-test {
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
 }
 
 
 @media (max-width: 800px) {
 
-	.lg-widget {
+	.main {
 		width: 90%;
+	}
+
+	.sm-widget {
+		width: 70%;
+		margin-bottom: 15px;
+	}
+
+	.lg-widget {
+		width: 95%;
 		margin-bottom: 15px;
 	}
 
@@ -240,17 +244,6 @@ h6 {
 		margin-bottom: 15px;
 	}
 
-/*	.container-test {
-		margin-top: 20px;
-	}*/
-
-}
-
-@media (max-width: 800px) {
-	.sm-widget {
-		width: 70%;
-		margin-bottom: 15px;
-	}
 }
 
 
