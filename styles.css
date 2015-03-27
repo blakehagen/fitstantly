@@ -161,8 +161,8 @@ h6 {
 }
 
 .container-test {
-	margin-top: 40px;
-	margin-bottom: 25px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 	display: flex;
 	flex-flow: wrap;
 	width: 100%;
@@ -170,9 +170,10 @@ h6 {
 }
 
 .container-user-2 {
+	margin: auto;
 	display: flex;
 	flex-flow: wrap;
-	width: 100%;
+	width: 90%;
 	justify-content: space-around;
 }
 
@@ -190,13 +191,10 @@ h6 {
 	width: 20%;
 }
 
-/*.lg-widget-week {
-	border: 8px solid #A3EBA3;
+.spacer {
+	margin: 10px;
+	justify-content: center;
 }
-
-.lg-widget-chart {
-	border: 8px solid #C6ACF7;
-}*/
 
 .active {
   position: fixed;
@@ -208,29 +206,50 @@ h6 {
 
 @media (max-width: 780px) {
 	.main {
-		width: 85%;
+		width: 90%;
 	}
 }
 
 @media (max-width: 880px) {
 	.lg-widget {
-		width: 80%;
+		margin-bottom: 15px;
+		width: 85%;
 	}
+
+	#lg-widget-header{
+		width: 70%;
+		margin-bottom: 15px;
+	}
+
+/*	.container-test {
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}*/
+}
+
+
+@media (max-width: 800px) {
+
+	.lg-widget {
+		width: 90%;
+		margin-bottom: 15px;
+	}
+
+	#lg-widget-header {
+		width: 50%;
+		margin-bottom: 15px;
+	}
+
+/*	.container-test {
+		margin-top: 20px;
+	}*/
+
 }
 
 @media (max-width: 800px) {
 	.sm-widget {
 		width: 70%;
 		margin-bottom: 15px;
-	}
-
-	.lg-widget {
-		width: 85%;
-		margin-bottom: 15px;
-	}
-
-	#lg-widget-header{
-		width: 80%;
 	}
 }
 

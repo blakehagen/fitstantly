@@ -16,7 +16,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.bestMonthSteps = homeService.getMostStepsMonth();
 	$scope.bestMonthMinutes = homeService.getMostMinutesMonth();
 
-// Chart Data ------------------------------------------------------------------
+// Chart Set Up ------------------------------------------------------------------
 
 	var chartData;
 	chartData = $rootScope.chartData;
@@ -46,12 +46,10 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	};
 
 //This is the chart on the User View-------------------
+	
 	$scope.labels;
 	$scope.series = ["Steps", "7-Day Average"];
   	$scope.data;
-	// $scope.onClick = function (points, evt) {
-	//     console.log(points, evt);
-	//  };
 
 //-----------------------------------------------------
 
