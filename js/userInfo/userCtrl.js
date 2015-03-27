@@ -16,8 +16,8 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.bestMonthSteps = homeService.getMostStepsMonth();
 	$scope.bestMonthMinutes = homeService.getMostMinutesMonth();
 
+// Chart Data ------------------------------------------------------------------
 
-	console.log("This is the chart data: ", $rootScope.chartData);
 	var chartData;
 	chartData = $rootScope.chartData;
 	// console.log(chartData);
@@ -39,21 +39,21 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	avg = Math.round(avg);
 	avgStepsWeek = avg;
 	// avgStepsWeek = numeral(avgStepsWeek).format('0,0');
-	console.log('Avg steps last 7 days: ', avgStepsWeek);
+	// console.log('Avg steps last 7 days: ', avgStepsWeek);
 
 	for (var i = 0; i < 7; i++) {
 		$scope.data[1].push(parseInt(avgStepsWeek));
 	};
 
-	// console.log($scope.data[1]);
-	// // console.log($scope.labels);
-	// // console.log($scope.data);
-
+//This is the chart on the User View-------------------
 	$scope.labels;
+	$scope.series = ["Steps", "7-Day Average"];
   	$scope.data;
 	// $scope.onClick = function (points, evt) {
 	//     console.log(points, evt);
 	//  };
+
+//-----------------------------------------------------
 
 
 	
