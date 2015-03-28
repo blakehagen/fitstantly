@@ -25,7 +25,6 @@
 
 <div class="container-user-2">
 	<div class="lg-widget">
-	<!-- ng-click="expandWeek()" ng-class="{'active': active == true }" -->
 		<div>
 			<div>
 				<h3>Best Day: <span id="h2-text">{{bestWeekSteps}}</span></h3>
@@ -42,26 +41,16 @@
 		</div>
 	</div>
 
-  	<div class="lg-widget">
+  	<div class="lg-widget"> <!-- ng-click="expandChart()" ng-class="{'active': active === true }" -->
   		<div class="spacer">
 			<canvas id="line" class="chart chart-line" data="data"
-			labels="labels" series="series" style="width: 1000; height: auto;"
+			labels="labels" series="series" style="width: 1000px; height: auto;"
 			click="onClick"> 
 			</canvas> 
 		</div>
-
 	<div>
 
 </div>
-
-<!-- 		
-			<h3>Best Day: <span id="h2-text">{{bestMonthSteps}}</span></h3>
-			<h2>{{bestMonthSteps}}</h2>
-			<h3>Best Active Minutes: <span id="h2-text">{{bestMonthMinutes}}</span></h3>
-			<h2>{{bestMonthMinutes}}</h2>		
--->
-
-
 
 
 

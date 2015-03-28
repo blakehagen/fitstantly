@@ -99,7 +99,7 @@ a:active {
 .go-button:hover {
 	width: 120px;
 	height: 40px;
-	font-size: 17px;
+	font-size: 21px;
 }
 
 h1 {
@@ -196,14 +196,12 @@ h6 {
 	justify-content: center;
 }
 
-.active {
+/*.active {
   position: fixed;
-  width: 100%;
-  height: calc(100% - 50px;);
-  top: 180px;
+  width: 2000px;
+  height: calc(100% - 60px;);
 
-}
-
+}*/
 
 @media (max-width: 880px) {
 	.lg-widget {
@@ -221,7 +219,6 @@ h6 {
 		margin-bottom: 0;
 	}
 }
-
 
 @media (max-width: 800px) {
 
@@ -248,6 +245,7 @@ h6 {
 
 
 @media (max-width: 1100px) {
+
 	.info-help-box {
 		width: 90%;
 		margin-top: 30px;
@@ -256,6 +254,7 @@ h6 {
 		width: 85%;
 		margin-bottom: 15px;
 	}
+
 }
 
 

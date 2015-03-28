@@ -53,23 +53,15 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 //-----------------------------------------------------
 
-
+//Expand Chart ----------------------------------------
 	
-	// $scope.expandWeek = function() {
-	// 	if($scope.active == false) {
-	// 		$scope.active = true;
-	// 	}
-	// 	else {
-	// 		$scope.active = false;
-	// 	}
-	// }
+	$scope.expandChart = function() {
+		if($scope.active === false) {
+			$scope.active = true;
+		}
+		else {
+			$scope.active = false;
+		}
+	}
 
-	// $scope.expandMonth = function() {
-	// 	if($scope.active == false) {
-	// 		$scope.active = true;
-	// 	}
-	// 	else {
-	// 		$scope.active = false;
-	// 	}
-	// }
 });
