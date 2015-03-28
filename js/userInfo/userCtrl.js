@@ -52,16 +52,29 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
   	$scope.data;
 
 //-----------------------------------------------------
-
-//Expand Chart ----------------------------------------
 	
-	$scope.expandChart = function() {
-		if($scope.active === false) {
-			$scope.active = true;
-		}
-		else {
-			$scope.active = false;
-		}
-	}
+
+//Chart modal -----------------------------------------
+
+	$scope.modalShown = false;
+  	$scope.toggleModal = function() {
+    	$scope.modalShown = !$scope.modalShown;
+
+  	};
+
+ //----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });

@@ -2,16 +2,16 @@
 	<div class="sm-widget">
 		<div>
 			<h3>Step Count Today:</h3>
-			<h2 id="user-view-main-text">{{todaySteps}}</h2>
+			<h2 id="user-view-main-text">{{::todaySteps}}</h2>
 		</div>	
 	</div>
 	<div class="sm-widget">
 		<h3>Active Minutes Today:</h3>
-		<h2 id="user-view-main-text">{{todayActive}}</h2>
+		<h2 id="user-view-main-text">{{::todayActive}}</h2>
 	</div>
 	<div class="sm-widget">
 		<h3>Personal Best (Steps):</h3>
-		<h2 id="user-view-main-text">{{bestStepsAllTime}}</h2>
+		<h2 id="user-view-main-text">{{::bestStepsAllTime}}</h2>
 	</div>
 </div>
 
@@ -27,29 +27,35 @@
 	<div class="lg-widget">
 		<div>
 			<div>
-				<h3>Best Day: <span id="h2-text">{{bestWeekSteps}}</span></h3>
+				<h3>Best Day: <span id="h2-text">{{::bestWeekSteps}}</span></h3>
 			</div>
 			<div>
-				<h3>Average Steps/Day: <span id="h2-text">{{avgWeek}}</span></h3>
+				<h3>Average Steps/Day: <span id="h2-text">{{::avgWeek}}</span></h3>
 			</div>
 			<div>
-				<h3>Best Active Minutes: <span id="h2-text">{{bestWeekMinutes}}</span></h3>
+				<h3>Best Active Minutes: <span id="h2-text">{{::bestWeekMinutes}}</span></h3>
 			</div>
 			<div>
-				<h3>Average Active Minutes/Day: <span id="h2-text">{{avgActiveWeek}}</span></h3>
+				<h3>Average Active Minutes/Day: <span id="h2-text">{{::avgActiveWeek}}</span></h3>
 			</div>
 		</div>
 	</div>
 
-  	<div class="lg-widget"> <!-- ng-click="expandChart()" ng-class="{'active': active === true }" -->
+  	<div class="lg-widget" ng-click="toggleModal()">
   		<div class="spacer">
 			<canvas id="line" class="chart chart-line" data="data"
-			labels="labels" series="series" style="width: 1000px; height: auto;"
-			click="onClick"> 
+			labels="labels" series="series"> 
 			</canvas> 
 		</div>
 	<div>
+</div>
 
+<div>
+	<modal-dialog show='modalShown' width='80%' height='auto'>
+		<canvas id="line" class="chart chart-line" data="data"
+		labels="labels" series="series"> 
+		</canvas> 
+	</modal-dialog>
 </div>
 
 
