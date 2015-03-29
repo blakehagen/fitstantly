@@ -59,7 +59,6 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.modalShown = false;
   	$scope.toggleModal = function() {
     	$scope.modalShown = !$scope.modalShown;
-
   	};
 
  //----------------------------------------------------
