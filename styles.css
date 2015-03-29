@@ -286,6 +286,17 @@ h6 {
 		margin-bottom: 15px;
 	}
 
+	.lg-widget {
+		width: 95%;
+		margin-bottom: 15px;
+	}
+
+	#lg-widget-header {
+		width: 50%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
 }
 
 
