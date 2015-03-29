@@ -58,7 +58,6 @@ a:active {
 	background: #FFF;
 	border: 8px solid #81B0E2;
 	border-radius: 30px;
-
 }
 
 .sub-main {
@@ -71,22 +70,25 @@ a:active {
 	background: #FFF;
 	border: 8px solid #81B0E2;
 	border-radius: 30px;
-
 }
 
 .sub-container {
 	display: flex;
 	flex-flow: wrap;
-	margin-top: 20px;
+	margin-top: 0px;
 	width: 100%;
 	justify-content: space-around;
-	/*border: 1px solid red;*/
-}
+/*	border: 1px solid red;
+*/}
 
 .info-help-widget {
 	width: 30%;
 	background: #FFF;
 	/*border: 1px solid red;*/
+}
+
+#info-text-header {
+	font-size: 22px;
 }
 
 #info-help-text {
