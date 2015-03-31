@@ -248,13 +248,13 @@ h6 {
 	}
 
 	#lg-widget-header{
-		width: 70%;
+		width: 75%;
 		margin-bottom: 15px;
 	}
 
 	.container-test {
 		margin-top: 20px;
-		margin-bottom: 0;
+		margin-bottom: 15px;
 	}
 }
 
@@ -275,7 +275,7 @@ h6 {
 	}
 
 	#lg-widget-header {
-		width: 50%;
+		width: 75%;
 		margin-bottom: 15px;
 	}
 
@@ -299,9 +299,9 @@ h6 {
 	}
 
 	#lg-widget-header {
-		width: 50%;
-		margin-top: 15px;
-		margin-bottom: 15px;
+		width: 75%;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 
 	
