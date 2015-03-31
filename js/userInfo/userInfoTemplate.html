@@ -18,7 +18,7 @@
 <div class="container-test">
 	<div class="lg-widget" id="lg-widget-header">
 		<div>
-			<h3>Last 7 Days</h3>
+			<h3 id="h3-text">Last 7 Days</h3>
 		</div>
 	</div>
 </div>
@@ -44,10 +44,11 @@
   	<div class="lg-widget" ng-click="toggleModal()">
   		<div class="spacer">
 			<canvas id="line" class="chart chart-line" data="data"
-			labels="labels" series="series"> 
+			labels="labels" series="series" width="920" height="460" style="width: 460px; height: 260px;"> 
 			</canvas> 
 		</div>
 	<div>
+
 </div>
 
 <div>
@@ -57,8 +58,6 @@
 		</canvas>
 	</modal-dialog>
 </div>
-
-
 
 
 
