@@ -16,6 +16,16 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.bestMonthSteps = homeService.getMostStepsMonth();
 	$scope.bestMonthMinutes = homeService.getMostMinutesMonth();
 
+// Date formatting ---------------------------------------------------------------
+
+	var stepsDate;
+	stepsDate = $rootScope.bestStepsDate;
+	$scope.dateBest = [];
+	$scope.dateBest.push(stepsDate.slice(5).replace("-", "/"));
+	$scope.dateBest.push(stepsDate.slice(0,4));
+	$scope.dateBest.splice(1, 0, "/");
+	$scope.dateBest = $scope.dateBest.join('');
+
 // Chart Set Up ------------------------------------------------------------------
 
 	var chartData;

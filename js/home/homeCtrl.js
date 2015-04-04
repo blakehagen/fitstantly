@@ -13,10 +13,12 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			homeService.setActive(data[0].summary.veryActiveMinutes); // ---> current day active minutes
 
 			homeService.setBestSteps(data[5].best.total.steps.value); // ---> best steps all-time
+			$rootScope.bestStepsDate = (data[5].best.total.steps.date); // ---> date acheive personal best (steps)
 			
 			homeService.setMostStepsWeek(data[1]["activities-steps"]); // ---> best steps last 7 days
 			
 			$rootScope.chartData = data[1]["activities-steps"] // ---> to get data into chart on user view
+
 			// console.log(data[1]["activities-steps"]);
 			
 			homeService.setAvgStepsWeek(data[1]["activities-steps"]); // ---> average steps/day last 7 days

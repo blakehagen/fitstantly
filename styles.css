@@ -148,6 +148,12 @@ h3 {
 h6 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
 	font-size: 12px;
+	text-align: center;
+}
+
+#h6-text {
+	margin-top: -8px;
+	margin-bottom: 4px;
 }
 
 .button-container {
