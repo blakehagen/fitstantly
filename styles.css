@@ -123,7 +123,7 @@ h2 {
 }
 
 #user-view-main-text {
-	margin: 0 0 10px 0;
+	margin: 7px;
 }
 
 #h2-text {
@@ -152,8 +152,8 @@ h6 {
 }
 
 #h6-text {
-	margin-top: -8px;
-	margin-bottom: 4px;
+	margin-top: 0px;
+	margin-bottom: 8px;
 }
 
 .button-container {
@@ -167,13 +167,26 @@ h6 {
 	flex-flow: wrap;
 	width: 100%;
 	justify-content: space-around;
+	/*border: 1px solid blue;*/
+}
+
+.sidebar-container {
+	display: flex;
+	height: 460px;
+	/*width: 280px;*/
+	justify-content: space-around;
+	float: left;
+	align-items: center;
+	/*border: 1px solid green;*/
 }
 
 .sm-widget {
-	width: 25%;
+	width: 100%;
 	background: #FFF;
 	border: 8px solid #81B0E2;
 	border-radius: 30px;
+	margin-top: 20px;
+	margin-right: 70px;
 }
 
 .container-test {
@@ -185,6 +198,22 @@ h6 {
 	justify-content: space-around;
 }
 
+.container-test-55 {
+/*	flex-flow: wrap;*/
+	width: 100%;
+
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+#stat-items {
+	/*border: 1px solid orange;*/
+	margin-left: 50px;
+}
+
 .container-user-2 {
 	margin: auto;
 	display: flex;
@@ -194,10 +223,11 @@ h6 {
 }
 
 .lg-widget {
-	width: 40%;
+	width: 60%;
 	background: #FFF;
 	border: 8px solid #A3EBA3;
 	border-radius: 30px;
+	margin-left: -70px;
 }
 
 #lg-widget-header {
@@ -206,8 +236,8 @@ h6 {
 
 .spacer {
 	margin: 15px;
-	cursor: pointer;
-	/*border: 1px solid red;*/
+	/*cursor: pointer;*/
+	/*border: 1px solid red;
 }
 
 /*.ng-modal-overlay {

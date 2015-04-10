@@ -30,7 +30,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 	var chartData;
 	chartData = $rootScope.chartData;
-	// console.log(chartData);
+	console.log(chartData);
 
 	$scope.labels = [];
 	$scope.data = [[], []];
@@ -60,6 +60,8 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.labels;
 	$scope.series = ["Steps", "7-Day Average"];
   	$scope.data;
+
+  	console.log("chart steps data: " + $scope.data);
 
 //-----------------------------------------------------
 	
