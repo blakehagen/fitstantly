@@ -1,112 +1,115 @@
-<div class="container-user-1">
-	<div class="sidebar-container">
-		<aside class="right-info">
-	<!-- 		<div class="container-user-1"> -->
-					<div class="sm-widget">
-						<div>
-							<h3 id="h3-text">Step Count Today:</h3>
-							<h2 id="user-view-main-text">{{::todaySteps}}</h2>
-						</div>	
-					</div>
-					<div class="sm-widget">
-						<h3 id="h3-text">Active Minutes Today:</h3>
-						<h2 id="user-view-main-text">{{::todayActive}}</h2>
-					</div>
-					<div class="sm-widget">
-						<h3 id="h3-text">Personal Best (Steps):</h3>
-						<h2 id="user-view-main-text">{{::bestStepsAllTime}}</h2>
-						<h6 id="h6-text">Achieved on: {{::dateBest}}</h6>
-					</div>
-				<!-- </div> -->
-		</aside>
-	</div>
-<!-- ng-click="toggleModal()" -->
-	<div class="lg-widget" >
-  		<div class="spacer">
-			<canvas id="line" class="chart chart-line" data="data"
-			labels="labels" series="series"> 
-			</canvas> 
+<div class="user-main-container">
+	<div class="user-dashboard-container">
+		<div class="sm-widget">
+			<h3 id="h3-text">Step Count Today:</h3>
+			<h2 id="user-view-main-text">{{::todaySteps}}</h2>
+		</div>
+		<div class="sm-widget">
+			<h3 id="h3-text">Active Minutes Today:</h3>
+			<h2 id="user-view-main-text">{{::todayActive}}</h2>
+		</div>
+		<div class="sm-widget">
+			<h3 id="h3-text">Personal Best (Steps):</h3>
+			<h2 id="user-view-main-text">{{::bestStepsAllTime}}</h2>
+			<h6 id="h6-text">Achieved on: {{::dateBest}}</h6>
 		</div>
 	</div>
-</div>
 
+	<div class="container-user-1">
 
-<!-- <div class="container-user-2">
-	 <div class="lg-widget" ng-click="toggleModal()">
-  		<div class="spacer">
-			<canvas id="line" class="chart chart-line" data="data"
-			labels="labels" series="series" width="920" height="460" style="width: 460px; height: 260px;"> 
-			</canvas> 
+	<!-- ng-click="toggleModal()" -->
+		<div class="lg-widget" >
+	  		<div class="spacer">
+				<canvas id="line" class="chart chart-line" data="data"
+				labels="labels" series="series"> 
+				</canvas> 
+			</div>
 		</div>
-	<div>
+	</div>
 
 
-</div> -->
-
-
-<!-- <div class="container-test">
-	<div class="lg-widget" id="lg-widget-header">
+	<!-- <div class="container-user-2">
+		 <div class="lg-widget" ng-click="toggleModal()">
+	  		<div class="spacer">
+				<canvas id="line" class="chart chart-line" data="data"
+				labels="labels" series="series" width="920" height="460" style="width: 460px; height: 260px;"> 
+				</canvas> 
+			</div>
 		<div>
-			<h3 id="h3-text">Last 7 Days</h3>
-		</div>
-	</div>
-</div> -->
 
-<!-- <div class="container-user-2"> -->
-<!-- 	<div class="lg-widget">
-		<div>
+
+	</div> -->
+
+
+	<!-- <div class="container-test">
+		<div class="lg-widget" id="lg-widget-header">
 			<div>
-				<h3>Best Day: <span id="h2-text">{{::bestWeekSteps}}</span></h3>
-			</div>
-			<div>
-				<h3>Average Steps/Day: <span id="h2-text">{{::avgWeek}}</span></h3>
-			</div>
-			<div>
-				<h3>Best Active Minutes: <span id="h2-text">{{::bestWeekMinutes}}</span></h3>
-			</div>
-			<div>
-				<h3>Average Active Minutes/Day: <span id="h2-text">{{::avgActiveWeek}}</span></h3>
+				<h3 id="h3-text">Last 7 Days</h3>
 			</div>
 		</div>
 	</div> -->
 
-<!--   	<div class="lg-widget" ng-click="toggleModal()">
-  		<div class="spacer">
-			<canvas id="line" class="chart chart-line" data="data"
-			labels="labels" series="series" width="920" height="460" style="width: 460px; height: 260px;"> 
-			</canvas> 
+	<!-- <div class="container-user-2"> -->
+	<!-- 	<div class="lg-widget">
+			<div>
+				<div>
+					<h3>Best Day: <span id="h2-text">{{::bestWeekSteps}}</span></h3>
+				</div>
+				<div>
+					<h3>Average Steps/Day: <span id="h2-text">{{::avgWeek}}</span></h3>
+				</div>
+				<div>
+					<h3>Best Active Minutes: <span id="h2-text">{{::bestWeekMinutes}}</span></h3>
+				</div>
+				<div>
+					<h3>Average Active Minutes/Day: <span id="h2-text">{{::avgActiveWeek}}</span></h3>
+				</div>
+			</div>
+		</div> -->
+
+	<!--   	<div class="lg-widget" ng-click="toggleModal()">
+	  		<div class="spacer">
+				<canvas id="line" class="chart chart-line" data="data"
+				labels="labels" series="series" width="920" height="460" style="width: 460px; height: 260px;"> 
+				</canvas> 
+			</div>
+		<div> -->
+
+	<!-- </div> -->
+
+	<div class="user-dashboard-container">
+		<div class="sm-widget">
+			<h3 id="h3-text">Best Day:</h3>
+			<h2 id="user-view-main-text">{{::bestWeekSteps}}</h2>
 		</div>
-	<div> -->
+		<div class="sm-widget">
+			<div>
+				<h3 id="h3-text">Average Steps/Day:</h3>
+				<h2 id="user-view-main-text">{{::avgWeek}}</h2>
+			</div>
+		</div>
+		<div class="sm-widget">
+			<h3 id="h3-text">Best Active Minutes:</h3>
+			<h2 id="user-view-main-text">{{::bestWeekMinutes}}</h2>
+		</div>
+		<div class="sm-widget">
+			<h3 id="h3-text">Average Active Minutes/Day:</h3>
+			<h2 id="user-view-main-text">{{::avgActiveWeek}}</h2>
+		</div>
+	</div>
 
-<!-- </div> -->
 
-<div class="container-test-55">
-	<div id="stat-items">
-		<h3>Best Day: <p><span id="h2-text">{{::bestWeekSteps}}</span></h3>
+
+
+
+
+	<div>
+		<modal-dialog show='modalShown' width='80%' height='auto'>
+			<canvas id="line" class="chart chart-line" data="data"
+			labels="labels" series="series"> 
+			</canvas>
+		</modal-dialog>
 	</div>
-	<div id="stat-items">
-		<h3>Average Steps/Day: <p><span id="h2-text">{{::avgWeek}}</span></h3>
-	</div>
-	<div id="stat-items">
-		<h3>Best Active Minutes: <p><span id="h2-text">{{::bestWeekMinutes}}</span></h3>
-	</div>
-	<div id="stat-items">
-		<h3>Average Active Minutes/Day: <p><span id="h2-text">{{::avgActiveWeek}}</span></h3>
-	</div>
+
 </div>
-
-
-
-
-
-
-<div>
-	<modal-dialog show='modalShown' width='80%' height='auto'>
-		<canvas id="line" class="chart chart-line" data="data"
-		labels="labels" series="series"> 
-		</canvas>
-	</modal-dialog>
-</div>
-
-
 

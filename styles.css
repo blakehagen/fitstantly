@@ -17,7 +17,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	background: #DEDDDE;
+	background: #E3E0E0;
 }
 
 #nav-items {
@@ -43,6 +43,22 @@ a:active {
     text-decoration: none;
     color: #000;
 }
+
+.user-main-container {
+	width: 75%;
+	margin: auto;
+	border: 1px solid red;
+
+}
+
+.user-dashboard-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	width: 100%;
+	border: 1px solid green;
+}
+
 
 .container {
 	display: flex;
@@ -167,26 +183,16 @@ h6 {
 	flex-flow: wrap;
 	width: 100%;
 	justify-content: space-around;
-	/*border: 1px solid blue;*/
-}
-
-.sidebar-container {
-	display: flex;
-	height: 460px;
-	/*width: 280px;*/
-	justify-content: space-around;
-	float: left;
-	align-items: center;
-	/*border: 1px solid green;*/
+	border: 1px solid blue;
 }
 
 .sm-widget {
-	width: 100%;
+	width: 20%;
+
 	background: #FFF;
 	border: 8px solid #81B0E2;
 	border-radius: 30px;
 	margin-top: 20px;
-	margin-right: 70px;
 }
 
 .container-test {
@@ -202,7 +208,7 @@ h6 {
 /*	flex-flow: wrap;*/
 	width: 100%;
 
-	/*border: 1px solid red;*/
+	border: 1px solid red;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -210,7 +216,7 @@ h6 {
 }
 
 #stat-items {
-	/*border: 1px solid orange;*/
+	border: 1px solid orange;
 	margin-left: 50px;
 }
 
@@ -227,7 +233,6 @@ h6 {
 	background: #FFF;
 	border: 8px solid #A3EBA3;
 	border-radius: 30px;
-	margin-left: -70px;
 }
 
 #lg-widget-header {
@@ -278,7 +283,12 @@ h6 {
 
 
 @media (max-width: 880px) {
-	.lg-widget {
+
+	.main {
+		width: 95%;
+	}
+
+/*	.lg-widget {
 		margin-bottom: 15px;
 		width: 85%;
 	}
@@ -291,13 +301,13 @@ h6 {
 	.container-test {
 		margin-top: 20px;
 		margin-bottom: 15px;
-	}
+	}*/
 }
 
 @media (max-width: 800px) {
 
 	.main {
-		width: 90%;
+		width: 95%;
 	}
 
 	.sm-widget {
@@ -340,7 +350,6 @@ h6 {
 		margin-bottom: 0px;
 	}
 
-	
 	.spacer {
 		cursor: default;
 	}
