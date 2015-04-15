@@ -47,18 +47,27 @@ a:active {
 .user-main-container {
 	width: 75%;
 	margin: auto;
-	border: 1px solid red;
-
+	border: 1px solid green;
 }
 
 .user-dashboard-container {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
-	width: 100%;
-	border: 1px solid green;
+	width: 80%;
+	margin: auto;
+	vertical-align: center;
+	border: 1px solid red;
 }
 
+.user-dashboard-container-bigger {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	width: 90%;
+	margin: auto;
+	border: 1px solid red;
+}
 
 .container {
 	display: flex;
@@ -72,8 +81,8 @@ a:active {
 	margin: auto; 
 	padding-bottom: 15px;
 	background: #FFF;
-	border: 8px solid #81B0E2;
-	border-radius: 30px;
+	border: 3px solid #81B0E2;
+	border-radius: 15px;
 }
 
 .sub-main {
@@ -94,8 +103,7 @@ a:active {
 	margin-top: 0px;
 	width: 100%;
 	justify-content: space-around;
-/*	border: 1px solid red;
-*/}
+}
 
 .info-help-widget {
 	width: 30%;
@@ -160,6 +168,12 @@ h3 {
 	margin: 8px;
 }
 
+h5 {
+	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
 
 h6 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
@@ -177,22 +191,23 @@ h6 {
 }
 
 .container-user-1 {
-	margin-top: 40px;
-	margin-bottom: 10px;
+	margin-top: 20px;
 	display: flex;
 	flex-flow: wrap;
 	width: 100%;
 	justify-content: space-around;
-	border: 1px solid blue;
 }
 
 .sm-widget {
-	width: 20%;
-
+	width: 25%;
 	background: #FFF;
-	border: 8px solid #81B0E2;
-	border-radius: 30px;
+	border: 2px solid #81B0E2;
+	border-radius: 15px;
 	margin-top: 20px;
+}
+
+#sm-widget-smaller {
+	width: 19%;
 }
 
 .container-test {
@@ -207,8 +222,6 @@ h6 {
 .container-test-55 {
 /*	flex-flow: wrap;*/
 	width: 100%;
-
-	border: 1px solid red;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -216,7 +229,6 @@ h6 {
 }
 
 #stat-items {
-	border: 1px solid orange;
 	margin-left: 50px;
 }
 
@@ -231,8 +243,8 @@ h6 {
 .lg-widget {
 	width: 60%;
 	background: #FFF;
-	border: 8px solid #A3EBA3;
-	border-radius: 30px;
+	border: 7px solid #A3EBA3;
+	border-radius: 15px;
 }
 
 #lg-widget-header {

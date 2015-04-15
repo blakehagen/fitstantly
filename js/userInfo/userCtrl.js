@@ -55,6 +55,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 		$scope.data[1].push(parseInt(avgStepsWeek));
 	};
 
+
 //This is the chart on the User View-------------------
 	
 	$scope.labels;
