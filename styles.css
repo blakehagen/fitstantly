@@ -47,8 +47,8 @@ a:active {
 .user-main-container {
 	width: 75%;
 	margin: auto;
-	border: 1px solid green;
-}
+/*	border: 1px solid green;
+*/}
 
 .user-dashboard-container {
 	display: flex;
@@ -57,8 +57,8 @@ a:active {
 	width: 80%;
 	margin: auto;
 	vertical-align: center;
-	border: 1px solid red;
-}
+/*	border: 1px solid red;
+*/}
 
 .user-dashboard-container-bigger {
 	display: flex;
@@ -66,8 +66,8 @@ a:active {
 	justify-content: space-around;
 	width: 90%;
 	margin: auto;
-	border: 1px solid red;
-}
+/*	border: 1px solid red;
+*/}
 
 .container {
 	display: flex;
@@ -208,6 +208,7 @@ h6 {
 
 #sm-widget-smaller {
 	width: 19%;
+	border: 2px solid #A3EBA3;
 }
 
 .container-test {
@@ -241,9 +242,9 @@ h6 {
 }
 
 .lg-widget {
-	width: 60%;
+	width: 70%;
 	background: #FFF;
-	border: 7px solid #A3EBA3;
+	border: 3px solid #A3EBA3;
 	border-radius: 15px;
 }
 
