@@ -52,13 +52,12 @@ a:active {
 
 .user-dashboard-container {
 	display: flex;
-	flex-flow: row;
+	flex-flow: wrap;
 	justify-content: space-around;
 	width: 80%;
 	margin: auto;
 	vertical-align: center;
-/*	border: 1px solid red;
-*/}
+}
 
 .user-dashboard-container-bigger {
 	display: flex;
@@ -204,6 +203,11 @@ h6 {
 	border: 2px solid #81B0E2;
 	border-radius: 15px;
 	margin-top: 20px;
+}
+
+#sm-widget-header {
+	width: 90%;
+	margin-bottom: -10px;
 }
 
 #sm-widget-smaller {
