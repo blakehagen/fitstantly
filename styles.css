@@ -6,7 +6,7 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	background: #F7F7F7;
+	background: #FAFAFA;
 }
 
 .top-nav {
@@ -190,7 +190,7 @@ h6 {
 	text-align: center;
 }
 
-.container-user-1 {
+.chart-wrapper {
 	margin-top: 20px;
 	display: flex;
 	flex-flow: wrap;
@@ -249,7 +249,7 @@ h6 {
 }
 
 #lg-widget-header {
-	width: 75%;
+	margin-bottom: 10px;
 }
 
 .spacer {
