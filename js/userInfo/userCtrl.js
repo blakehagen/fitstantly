@@ -30,7 +30,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 	var chartData;
 	chartData = $rootScope.chartData;
-	console.log(chartData);
+	// console.log(chartData);
 
 	$scope.labels = [];
 	$scope.data = [[], []];
@@ -62,7 +62,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.series = ["Steps", "7-Day Average"];
   	$scope.data;
 
-  	console.log("chart steps data: " + $scope.data);
+  	// console.log("chart steps data: " + $scope.data);
 
 //-----------------------------------------------------
 	
@@ -76,11 +76,31 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
  //----------------------------------------------------
 
+// Comments in Dashboard ------------------------------
+	// Steps
 
+	var today = $rootScope.todaysData;
+	$scope.stepsComment = "";
+	today = today.steps;
+	// console.log(today);
+	if (today > avgStepsWeek) {
+		$scope.stepsComment = "Nice! You're above your 7-day average!";
+	} else {
+		$scope.stepsComment = "You're below your 7-day average."
+	}
 
+	// Active Minutes
+	var todayActiveMins = $rootScope.todaysData;
+	$scope.activeComment = "";
+	todayActive = todayActiveMins.veryActiveMinutes;
+	// console.log(today);
+	if (todayActive > $scope.avgActiveWeek) {
+		$scope.activeComment = "Nice! You're above your 7-day average!";
+	} else {
+		$scope.activeComment = "You're below your 7-day average."
+	}
 
-
-
+// -------------------------------------------------------
 
 
 

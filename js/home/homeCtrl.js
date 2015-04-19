@@ -7,10 +7,11 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 	$scope.authorize = function() {
 		homeService.authenticate().then(function(data){
 			$location.path('/user');
-				console.log(data);
+				// console.log(data);
 			homeService.setSteps(data[0].summary.steps); // ---> current day steps
 
 			homeService.setActive(data[0].summary.veryActiveMinutes); // ---> current day active minutes
+			$rootScope.todaysData = (data[0].summary); // ---> current day data for commentary in dashboard
 
 			homeService.setBestSteps(data[5].best.total.steps.value); // ---> best steps all-time
 			$rootScope.bestStepsDate = (data[5].best.total.steps.date); // ---> date acheive personal best (steps)
