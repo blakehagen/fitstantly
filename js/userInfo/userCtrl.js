@@ -13,8 +13,8 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.bestWeekMinutes = homeService.getMostMinutesWeek();
 	$scope.avgActiveWeek = homeService.getAvgActiveWeek();
 
-	$scope.bestMonthSteps = homeService.getMostStepsMonth();
-	$scope.bestMonthMinutes = homeService.getMostMinutesMonth();
+	// $scope.bestMonthSteps = homeService.getMostStepsMonth();
+	// $scope.bestMonthMinutes = homeService.getMostMinutesMonth();
 
 // Date formatting ---------------------------------------------------------------
 

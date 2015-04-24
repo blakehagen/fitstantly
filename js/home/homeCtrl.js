@@ -28,9 +28,9 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			
 			homeService.setAvgActiveWeek(data[2]["activities-minutesVeryActive"]); // ---> average active mins/day last 7 days
 
-			homeService.setMostStepsMonth(data[3]["activities-steps"]); // ---> best steps current month
+			// homeService.setMostStepsMonth(data[3]["activities-steps"]); // ---> best steps current month
 			
-			homeService.setMostMinutesMonth(data[4]["activities-minutesVeryActive"]); // ---> best active minutes current month
+			// homeService.setMostMinutesMonth(data[4]["activities-minutesVeryActive"]); // ---> best active minutes current month
 
 		})
 	}

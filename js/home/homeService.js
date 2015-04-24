@@ -190,17 +190,17 @@ app.service('homeService', function($q, $http) {
 
 // BEST STEPS ---> CURRENT MONTH
 	var bestStepsMonth;
-	this.setMostStepsMonth = function(data) {
-		var highest = 0;
-		for (var i = 0; i < data.length; i++) {
-			if (parseInt(data[i].value) > highest) {
-				highest = parseInt(data[i].value);
-			}
-		};
+	// this.setMostStepsMonth = function(data) {
+	// 	var highest = 0;
+	// 	for (var i = 0; i < data.length; i++) {
+	// 		if (parseInt(data[i].value) > highest) {
+	// 			highest = parseInt(data[i].value);
+	// 		}
+	// 	};
 
-		bestStepsMonth = highest;
-		bestStepsMonth = numeral(bestStepsMonth).format('0,0');
-	}
+	// 	bestStepsMonth = highest;
+	// 	bestStepsMonth = numeral(bestStepsMonth).format('0,0');
+	// }
 
 	this.getMostStepsMonth = function() {
 			return bestStepsMonth;
@@ -227,15 +227,15 @@ app.service('homeService', function($q, $http) {
 
 // BEST ACTIVE MINUTES ---> CURRENT MONTH
 	var bestMinutesMonth;
-	this.setMostMinutesMonth = function(data) {
-		var highest = 0;
-		for (var i = 0; i < data.length; i++) {
-			if (parseInt(data[i].value) > highest) {
-				highest = parseInt(data[i].value);
-			}
-		};
-		bestMinutesMonth = highest;
-	}
+	// this.setMostMinutesMonth = function(data) {
+	// 	var highest = 0;
+	// 	for (var i = 0; i < data.length; i++) {
+	// 		if (parseInt(data[i].value) > highest) {
+	// 			highest = parseInt(data[i].value);
+	// 		}
+	// 	};
+	// 	bestMinutesMonth = highest;
+	// }
 
 	this.getMostMinutesMonth = function() {
 		return bestMinutesMonth;
