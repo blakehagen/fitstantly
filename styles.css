@@ -69,7 +69,14 @@ a:active {
 	justify-content: space-around;
 	width: 90%;
 	margin: auto;
-	border: 1px solid red;
+/*	border: 1px solid red;
+*/}
+
+.user-90-percent-container {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	width: 90%;
 }
 
 .container {
@@ -170,6 +177,13 @@ h3 {
 	margin: 8px;
 }
 
+h4 {
+	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
+	font-size: 28px;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
 h5 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
 	font-size: 14px;
@@ -203,11 +217,11 @@ h6 {
 	flex-flow: wrap;
 	width: 90%;
 	justify-content: space-around;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .sm-widget {
-	width: 24%;
+	width: 30%;
 	background: #FFF;
 	border: 2px solid #81B0E2;
 	border-radius: 15px;
@@ -221,7 +235,7 @@ h6 {
 }
 
 #sm-widget-smaller {
-	width: 19%;
+	width: 45%;
 	border: 2px solid #A3EBA3;
 }
 

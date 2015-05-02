@@ -6,20 +6,23 @@
 					<h3 id="h3-text">Fitstantly Dashboard</h3>
 				</div>
 			</div>
-			<div class="sm-widget">
-				<h3 id="h3-text">Step Count Today:</h3>
-				<h2 id="user-view-main-text">{{::todaySteps}}</h2>
-				<h6 id="h6-text">{{::stepsComment}}</h6>
-			</div>
-			<div class="sm-widget">
-				<h3 id="h3-text">Active Minutes Today:</h3>
-				<h2 id="user-view-main-text">{{::todayActive}}</h2>
-				<h6 id="h6-text">{{::activeComment}}</h6>
-			</div>
-			<div class="sm-widget">
-				<h3 id="h3-text">Steps Record:</h3>
-				<h2 id="user-view-main-text">{{::bestStepsAllTime}}</h2>
-				<h6 id="h6-text">Achieved on: {{::dateBest}}</h6>
+
+			<div class="user-90-percent-container">
+				<div class="sm-widget">
+					<h3 id="h3-text">Step Count Today:</h3>
+					<h2 id="user-view-main-text">{{::todaySteps}}</h2>
+					<h6 id="h6-text">{{::stepsComment}}</h6>
+				</div>
+				<div class="sm-widget">
+					<h3 id="h3-text">Active Minutes Today:</h3>
+					<h2 id="user-view-main-text">{{::todayActive}}</h2>
+					<h6 id="h6-text">{{::activeComment}}</h6>
+				</div>
+				<div class="sm-widget">
+					<h3 id="h3-text">All-Time Steps Record:</h3>
+					<h2 id="user-view-main-text">{{::bestStepsAllTime}}</h2>
+					<h6 id="h6-text">Achieved on: {{::dateBest}}</h6>
+				</div>
 			</div>
 		</div>
 
@@ -42,23 +45,25 @@
 
 
 		<div class="user-dashboard-container">
-			<div class="sm-widget" id="sm-widget-smaller">
-				<h3 id="h3-text">7-Day Best:</h3>
-				<h3 id="user-view-main-text">{{::bestWeekSteps}}</h3>
-			</div>
-			<div class="sm-widget" id="sm-widget-smaller">
-				<div>
-					<h3 id="h3-text">Avg Steps/Day:</h3>
-					<h3 id="user-view-main-text">{{::avgWeek}}</h3>
+			<div class="user-90-percent-container">
+				<div class="sm-widget" id="sm-widget-smaller">
+					<h3 id="h3-text">Steps Record (Last 7 Days):</h3>
+					<h4 id="user-view-main-text">{{::bestWeekSteps}}</h4>
 				</div>
-			</div>
-			<div class="sm-widget" id="sm-widget-smaller">
-				<h3 id="h3-text">Active Minute Best:</h3>
-				<h3 id="user-view-main-text">{{::bestWeekMinutes}}</h3>
-			</div>
-			<div class="sm-widget" id="sm-widget-smaller">
-				<h3 id="h3-text">Avg Active Min:</h3>
-				<h3 id="user-view-main-text">{{::avgActiveWeek}}</h3>
+				<div class="sm-widget" id="sm-widget-smaller">
+					<div>
+						<h3 id="h3-text">Average Steps/Day (Last 7 Days):</h3>
+						<h4 id="user-view-main-text">{{::avgWeek}}</h4>
+					</div>
+				</div>
+				<div class="sm-widget" id="sm-widget-smaller">
+					<h3 id="h3-text">Active Mins Record (Last 7 Days):</h3>
+					<h4 id="user-view-main-text">{{::bestWeekMinutes}}</h4>
+				</div>
+				<div class="sm-widget" id="sm-widget-smaller">
+					<h3 id="h3-text">Average Active Mins/Day (Last 7 Days):</h3>
+					<h4 id="user-view-main-text">{{::avgActiveWeek}}</h4>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -66,7 +71,7 @@
 
 <footer>
 	<div class="footer">
-		<div><h5 id="h5-text">Fitstantly &copy 2015</h5>
+		<div><h5 id="h5-text">Fitstantly &copy 2015 | All Rights Reserved</h5>
 		</div>
 	</div>
 </footer>
