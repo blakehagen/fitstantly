@@ -85,7 +85,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	if (today > avgStepsWeek) {
 		$scope.stepsComment = "Nice! Above 7-day average!";
 	} else {
-		$scope.stepsComment = "Get moving to beat your average!"
+		$scope.stepsComment = "Get moving!"
 	}
 
 	// Active Minutes
@@ -94,9 +94,9 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	todayActive = todayActiveMins.veryActiveMinutes;
 	// console.log(today);
 	if (todayActive > $scope.avgActiveWeek) {
-		$scope.activeComment = "Nice! You beat your 7-day average!";
+		$scope.activeComment = "Awesome! Above 7-day average!";
 	} else {
-		$scope.activeComment = "Get active to beat your average!"
+		$scope.activeComment = "Pick up the pace!"
 	}
 
 // -------------------------------------------------------
