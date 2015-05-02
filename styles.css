@@ -1,7 +1,3 @@
-/* * {
-	border: 1px solid green;
-}*/
-
 body {
 	width: 100%;
 	height: 100%;
@@ -73,14 +69,7 @@ a:active {
 	justify-content: space-around;
 	width: 90%;
 	margin: auto;
-}
-
-.user-dashboard-container-bigger {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-around;
-	width: 87%;
-	margin: auto;
+	border: 1px solid red;
 }
 
 .container {
@@ -214,6 +203,7 @@ h6 {
 	flex-flow: wrap;
 	width: 90%;
 	justify-content: space-around;
+	border: 1px solid red;
 }
 
 .sm-widget {
@@ -233,36 +223,6 @@ h6 {
 #sm-widget-smaller {
 	width: 19%;
 	border: 2px solid #A3EBA3;
-}
-
-.container-test {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	width: 100%;
-	justify-content: space-around;
-}
-
-.container-test-55 {
-/*	flex-flow: wrap;*/
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
-}
-
-#stat-items {
-	margin-left: 50px;
-}
-
-.container-user-2 {
-	margin: auto;
-	display: flex;
-	flex-flow: wrap;
-	width: 85%;
-	justify-content: space-around;
 }
 
 .lg-widget {
