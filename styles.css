@@ -79,13 +79,20 @@ a:active {
 	width: 90%;
 }
 
-.container {
+.home-container {
 	display: flex;
 	width: 100%;
-	height: calc(100% - 80px);
+	height: calc(100% - 60px);
+	border: 1px solid red;
 }
 
-.main {
+.home-section-1 {
+	width: 100%;
+	height: 55%;
+	background: #7A7979;
+}
+
+.home-main-box {
 	width: 45%;
 	margin: auto; 
 	padding-bottom: 15px;
@@ -141,12 +148,21 @@ a:active {
 
 h1 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
-	font-size: 80px;
+	font-size: 95px;
 	text-align: center;
 }
 
 #main-text {
 	margin: 20px 0 50px 0;
+}
+
+#home-text-white {
+	margin: 20px 0 50px 0;
+	color: #fff;
+}
+
+#home-small-text-white {
+	color: #fff;
 }
 
 h2 {
