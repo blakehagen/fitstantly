@@ -316,20 +316,6 @@ h6 {
 	}
 }
 
-@media (max-width: 950px) {
-	.main-image-container {
-		width: 100%;
-	}
-}
-
-@media (max-width: 750px) {
-	#home-top-image {
-		width: 100%;
-		border: none;
-		margin: 0px;
-	}
-}
-
 
 
 
