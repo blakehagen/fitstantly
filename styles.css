@@ -13,6 +13,10 @@ body {
 
 #home-top-image {
 	margin: auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: 7px solid #A3EBA3;
 	border-radius: 15px;
 }
@@ -109,6 +113,11 @@ a:active {
 	margin-bottom: 20px;
 	width: 100%;
 	border: 1px solid red;
+}
+
+.main-image-container {
+	width: 75%;
+	border: 1px solid black	;
 }
 
 .home-section-2 {
