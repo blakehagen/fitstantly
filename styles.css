@@ -14,6 +14,7 @@ body {
 	align-items: center;
 	box-sizing: border-box;
 	background: #D6D6D4;
+	position: fixed;
 }
 
 #nav-items {
@@ -87,10 +88,15 @@ a:active {
 
 .home-section-1 {
 	display: flex;
-	justify-content: center;
-	width: 100%;
-/*	border: 1px solid red;
-*/}
+	height: 80%;
+    border-bottom: 2px solid #A3EBA3;
+
+    background: url("Assets/fitstantly-home-background.jpg") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 .main-image-container {
 	width: 100%;
@@ -256,7 +262,7 @@ h6 {
 
 #sm-widget-header {
 	width: 90%;
-	margin-top: 20px;
+	margin-top: 80px;
 }
 
 #sm-widget-smaller {
@@ -292,6 +298,10 @@ h6 {
 	.user-main-container {
 		width: 100%;
 	}
+
+	.home-section-1 {
+		height: 70%;
+	}
 }
 
 @media (max-width: 950px) {
@@ -304,6 +314,10 @@ h6 {
 	.sm-widget {
 		width: 90%;
 	}
+
+	.home-section-1 {
+		height: 50%;
+	}
 }
 
 @media (max-width: 550px) {
@@ -314,8 +328,11 @@ h6 {
 	#sm-widget-smaller {
 		width: 99%;
 	}
-}
 
+	.home-section-1 {
+		height: 40%;
+	}
+}
 
 
 
