@@ -90,7 +90,6 @@ a:active {
 	display: flex;
 	height: 80%;
     border-bottom: 2px solid #A3EBA3;
-
     background: url("Assets/fitstantly-home-background.jpg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -103,12 +102,13 @@ a:active {
 	border-bottom: 3px solid #A3EBA3;
 }
 
-#home-top-image {
+.home-top-title-container {
 	margin: auto;
 	width: 100%;
-	display: flex;
+	flex-flow: wrap;
 	justify-content: center;
 	align-items: center;
+	border: 1px dotted red;
 }
 
 .home-section-2 {
@@ -170,15 +170,6 @@ h1 {
 
 #main-text {
 	margin: 20px 0 50px 0;
-}
-
-#home-text-white {
-	margin: 10px 0 50px 0;
-	color: #fff;
-}
-
-#home-small-text-white {
-	color: #fff;
 }
 
 h2 {
@@ -316,7 +307,7 @@ h6 {
 	}
 
 	.home-section-1 {
-		height: 50%;
+		height: 60%;
 	}
 }
 
