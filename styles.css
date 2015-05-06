@@ -88,12 +88,12 @@ a:active {
 .home-section-1 {
 	display: flex;
 	height: 70%;
-    border-bottom: 1px solid #A3EBA3;
     background: url("Assets/fitstantly-home-background.jpg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	border-bottom: 2px solid #81B0E2;
 }
 
 .home-top-title-container {
@@ -111,18 +111,19 @@ a:active {
 
 .home-section-2 {
 	display: flex;
-	width: 100%;
-	background: #D6D6D4;
-	border: 1px solid red;
-	justify-content: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
 }
 
 .home-section-container {
-	justify-content: center;
-	align-items: space-around;
-	width: 33%;
-	border: 1px solid black;
-
+	width: 98%;
+	background: #FFF;
+	border: 2px solid #81B0E2;
+	border-radius: 15px;
+	margin: auto;
+/*	border: 1px solid black;
+*/
 }
 
 .home-section-3 {
