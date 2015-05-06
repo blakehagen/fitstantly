@@ -14,7 +14,6 @@ body {
 	align-items: center;
 	box-sizing: border-box;
 	background: #D6D6D4;
-	position: fixed;
 }
 
 #nav-items {
@@ -88,7 +87,7 @@ a:active {
 
 .home-section-1 {
 	display: flex;
-	height: 80%;
+	height: 70%;
     border-bottom: 2px solid #A3EBA3;
     background: url("Assets/fitstantly-home-background.jpg") no-repeat center center; 
 	-webkit-background-size: cover;
@@ -97,18 +96,18 @@ a:active {
 	background-size: cover;
 }
 
-.main-image-container {
-	width: 100%;
-	border-bottom: 3px solid #A3EBA3;
-}
-
 .home-top-title-container {
+	display: flex;
 	margin: auto;
 	width: 100%;
-	flex-flow: wrap;
 	justify-content: center;
 	align-items: center;
-	border: 1px dotted red;
+/*	border: 1px dotted red;
+*/}
+
+.title-text {
+	flex-flow: wrap;
+	width: 100%;
 }
 
 .home-section-2 {
@@ -164,8 +163,15 @@ a:active {
 
 h1 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
-	font-size: 95px;
+	font-size: 75px;
 	text-align: center;
+}
+
+#rock-salt {
+	font-family: 'Rock Salt', cursive;	
+	font-size: 125px;
+	text-align: center;
+	margin: -50;
 }
 
 #main-text {
@@ -253,7 +259,7 @@ h6 {
 
 #sm-widget-header {
 	width: 90%;
-	margin-top: 80px;
+	margin-top: 15px;
 }
 
 #sm-widget-smaller {
@@ -282,16 +288,11 @@ h6 {
 	.user-main-container {
 		width: 95%;
 	}
-
 }
 
 @media (max-width: 1000px) {
 	.user-main-container {
 		width: 100%;
-	}
-
-	.home-section-1 {
-		height: 70%;
 	}
 }
 
@@ -305,10 +306,6 @@ h6 {
 	.sm-widget {
 		width: 90%;
 	}
-
-	.home-section-1 {
-		height: 60%;
-	}
 }
 
 @media (max-width: 550px) {
@@ -319,9 +316,43 @@ h6 {
 	#sm-widget-smaller {
 		width: 99%;
 	}
+}
+
+@media (max-width: 850px) {
+	#rock-salt {
+		font-size: 100px;
+	}
+
+	.home-section-1 {
+		height: 55%;
+	}
+}
+
+@media (max-width: 700px) {
+	#rock-salt {
+		font-size: 85px;
+	}
+
+	.home-section-1 {
+		height: 45%;
+	}
+}
+
+@media (max-width: 600px) {
 
 	.home-section-1 {
 		height: 40%;
+	}
+
+	#rock-salt {
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.home-section-1 {
+		height: 30%;
 	}
 }
 
