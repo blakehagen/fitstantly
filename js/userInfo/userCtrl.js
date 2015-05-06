@@ -63,17 +63,6 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
   	// console.log("chart steps data: " + $scope.data);
 
-//-----------------------------------------------------
-	
-
-//Chart modal -----------------------------------------
-
-	$scope.modalShown = false;
-  	$scope.toggleModal = function() {
-    	$scope.modalShown = !$scope.modalShown;
-  	};
-
- //----------------------------------------------------
 
 // Comments in Dashboard ------------------------------
 	// Steps
