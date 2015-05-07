@@ -111,6 +111,8 @@ a:active {
 
 .home-section-2 {
 	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
 	margin-top: 35px;
 	margin-bottom: 35px;
 	width: 100%;
@@ -123,19 +125,22 @@ a:active {
 	width: 100%;
 	background: #FFF;
 	margin: auto;
+	flex-flow: wrap;
+	justify-content: center;
 }
 
-#split {
-	width: 50%;
-/*	border: 1px solid green;
-*/	text-align: center;
+.home-section-container-split {
+	width: 33%;
+	background: #FFF;
+	justify-content: center;
+	text-align: center;
 }
 
 #img-50x50 {
 	height: 45px;
+	margin-bottom: 22px;
+	margin-top: 16px;
 	text-align: center;
-	margin-bottom: 29px;
-	align-items: center;
 }
 
 .home-section-sub-container {
@@ -146,7 +151,6 @@ a:active {
 .home-section-3 {
 	width: 100%;
 	justify-content: center;
-	border: 1px solid green;
 }
 
 .info-help-box {
@@ -200,7 +204,7 @@ h1 {
 }
 
 #rock-salt {
-	font-family: 'Rock Salt', cursive;	
+	font-family: "Rock Salt", "Oxygen", "Myriad Set Pro", sans-serif;	
 	font-size: 125px;
 	text-align: center;
 	margin: -50;
@@ -385,6 +389,27 @@ h6 {
 
 	.home-section-1 {
 		height: 30%;
+	}
+}
+
+@media (max-width: 1340px) {
+
+	.home-section-container-split {
+		width: 45%;
+	}
+}
+
+@media (max-width: 1000px) {
+
+	.home-section-container-split {
+		width: 50%;
+	}
+}
+
+@media (max-width: 800px) {
+
+	.home-section-container-split {
+		width: 100%;
 	}
 }
 
