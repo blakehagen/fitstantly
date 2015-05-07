@@ -205,7 +205,7 @@ h1 {
 
 #rock-salt {
 	font-family: "Rock Salt", "Oxygen", "Myriad Set Pro", sans-serif;	
-	font-size: 125px;
+	font-size: 145px;
 	text-align: center;
 	margin: -50;
 }
@@ -354,7 +354,7 @@ h6 {
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
 	#rock-salt {
 		font-size: 100px;
 	}
