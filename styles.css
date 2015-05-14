@@ -80,13 +80,16 @@ a:active {
 }
 
 .home-container {
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
 	width: 100%;
-	height: calc(100% - 60px);
-/*	border: 1px solid blue;
-*/}
+}
 
 .home-section-1 {
 	display: flex;
+	flex-flow: wrap;
+	width: 100%;
 	height: 70%;
     background: url("Assets/fitstantly-home-background.jpg") no-repeat center center; 
 	-webkit-background-size: cover;
@@ -94,6 +97,9 @@ a:active {
 	-o-background-size: cover;
 	background-size: cover;
 	border-bottom: 2px solid #81B0E2;
+	margin: auto;
+	align-items: center;
+
 }
 
 .home-top-title-container {
@@ -107,6 +113,8 @@ a:active {
 
 .title-text {
 	width: 100%;
+	align-items: center;
+
 }
 
 .home-section-2 {
@@ -206,8 +214,6 @@ h1 {
 #rock-salt {
 	font-family: "Rock Salt", "Oxygen", "Myriad Set Pro", sans-serif;	
 	font-size: 145px;
-	text-align: center;
-	margin: -50;
 }
 
 #main-text {
@@ -410,6 +416,21 @@ h6 {
 
 	.home-section-container-split {
 		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+
+	#rock-salt {
+		font-size: 54px;
+	}
+
+	.home-section-1 {
+		height: 25%;
+	}
+
+	#user-view-main-text {
+		font-size: 36px;
 	}
 }
 
