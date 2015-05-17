@@ -97,8 +97,8 @@ a:active {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	border-top: 2px solid #A3EBA3;
-	border-bottom: 2px solid #A3EBA3;
+	border-top: 2px solid #81B0E2;
+	border-bottom: 2px solid #81B0E2;
 	margin: auto;
 	align-items: center;
 
@@ -126,8 +126,8 @@ a:active {
 	margin-top: 35px;
 	width: 100%;
 	background: #FFF;
-	border-top: 2px solid #A3EBA3;
-	border-bottom: 2px solid #A3EBA3;
+	border-top: 2px solid #81B0E2;
+	border-bottom: 2px solid #81B0E2;
 }
 
 #margin-for-fixed-header-home {
