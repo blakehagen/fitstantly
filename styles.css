@@ -161,6 +161,10 @@ a:active {
 	text-align: center;
 }
 
+.big-icon {
+    font-size: 270px;
+}
+
 .home-section-sub-container {
 	width: 100%;
 	margin-top: -36px;
