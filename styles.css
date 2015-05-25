@@ -162,12 +162,20 @@ a:active {
 }
 
 .big-icon {
-    font-size: 270px;
+    font-size: 220px;
 }
 
 .home-section-sub-container {
 	width: 100%;
 	margin-top: -36px;
+}
+
+#no-margin {
+	margin: 0px 5px;
+}
+
+#left-align {
+	text-align: left;
 }
 
 .home-section-3 {
@@ -429,8 +437,14 @@ h6 {
 @media (max-width: 800px) {
 
 	.home-section-container-split {
-		width: 100%;
+		width: 98%;
+		margin: 2px;
 	}
+
+	#left-align {
+		text-align: center;
+	}
+
 }
 
 @media (max-width: 450px) {
