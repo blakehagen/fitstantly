@@ -58,7 +58,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 //This is the chart on the User View-------------------
 	
 	$scope.labels;
-	$scope.series = ["Steps"];
+	$scope.series = ["Steps", "Average"];
   	$scope.data;
 
   	// console.log("chart steps data: " + $scope.data);
