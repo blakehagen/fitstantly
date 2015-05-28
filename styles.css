@@ -15,6 +15,7 @@ body {
 	box-sizing: border-box;
 	background: #D6D6D4;
 	position: fixed;
+	z-index: 1;
 }
 
 #nav-items {
@@ -163,6 +164,7 @@ a:active {
 
 .big-icon {
     font-size: 220px;
+    z-index: -1;
 }
 
 .home-section-sub-container {
