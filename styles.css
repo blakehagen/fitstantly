@@ -134,9 +134,9 @@ a:active {
 	z-index: 3;
 	cursor: pointer;
 
-	-moz-box-shadow: inset 0 0 9px #7A7A7A;
-   	-webkit-box-shadow: inset 0 0 9px #7A7A7A;
-   	box-shadow: inset 0 0 9px #7A7A7A;
+	-moz-box-shadow: inset 0 0 6px #7A7A7A;
+   	-webkit-box-shadow: inset 0 0 6px #7A7A7A;
+   	box-shadow: inset 0 0 6px #7A7A7A;
 }
 
 .go-button:hover {
@@ -469,7 +469,7 @@ h6 {
 @media (max-width: 1000px) {
 
 	.home-section-container-split {
-		width: 50%;
+		width: 47%;
 	}
 }
 
