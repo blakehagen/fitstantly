@@ -7,7 +7,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 	$scope.authorize = function() {
 		homeService.authenticate().then(function(data){
 			$location.path('/user');
-				// console.log(data);
+				console.log(data);
 			homeService.setSteps(data[0].summary.steps); // ---> current day steps
 
 			homeService.setActive(data[0].summary.veryActiveMinutes); // ---> current day active minutes
