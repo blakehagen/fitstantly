@@ -143,9 +143,9 @@ a:active {
 	cursor: pointer;
 	border: 1px solid #000;
 
-   -moz-box-shadow:    inset 0 0 18px #81B0E2;
-   -webkit-box-shadow: inset 0 0 18px #81B0E2;
-   box-shadow:         inset 0 0 18px #81B0E2;
+   -moz-box-shadow:    inset 0 0 9px #000;
+   -webkit-box-shadow: inset 0 0 9px #000;
+   box-shadow:         inset 0 0 9px #000;
 }
 
 .title-text {
@@ -178,13 +178,13 @@ a:active {
 }
 
 .home-section-container {
+	display: flex;
 	width: 100%;
 	background: #FFF;
 	margin: auto;
 	flex-flow: wrap;
 	justify-content: center;
 	cursor: default;
-
 }
 
 .home-section-container-split {
@@ -194,6 +194,15 @@ a:active {
 	text-align: center;
 	cursor: default;
 
+}
+
+.img-container {
+	margin: 10px 0 10px 0;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid red;
 }
 
 #img-50x50 {
