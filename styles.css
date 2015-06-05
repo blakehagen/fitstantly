@@ -119,7 +119,7 @@ a:active {
 
 #button-container {
 	height: auto;
-	margin-top: -160px;
+	margin-top: -140px;
 }
 
 .go-button {
@@ -143,9 +143,9 @@ a:active {
 	cursor: pointer;
 	border: 1px solid #000;
 
-   -moz-box-shadow:    inset 0 0 9px #000;
-   -webkit-box-shadow: inset 0 0 9px #000;
-   box-shadow:         inset 0 0 9px #000;
+   -moz-box-shadow:    inset 0 0 8px #000;
+   -webkit-box-shadow: inset 0 0 8px #000;
+   box-shadow:         inset 0 0 8px #000;
 }
 
 .title-text {
@@ -196,13 +196,33 @@ a:active {
 
 }
 
+#login-info-container-title {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	cursor: default;
+	border: 1px solid red;
+}
+
+.how-it-works {
+	width: 100%;
+	flex-flow: wrap;
+	border: 1px solid green;
+}
+
+.how-it-works-sections {
+	width: 25%;
+	border: 1px dotted orange;
+}
+
 .img-container {
 	margin: 10px 0 10px 0;
 	display: flex;
 	flex-flow: wrap;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid red;
+	border: 1px solid purple;
 }
 
 #img-50x50 {
@@ -285,6 +305,11 @@ h2 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
 	font-size: 40px;
 	text-align: center;
+}
+
+#smaller-h2 {
+	font-size: 32px;
+	margin: 7px;
 }
 
 #user-view-main-text {
