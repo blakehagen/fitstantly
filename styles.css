@@ -202,18 +202,23 @@ a:active {
 	justify-content: center;
 	text-align: center;
 	cursor: default;
-	border: 1px solid red;
 }
 
 .how-it-works {
 	width: 100%;
+	display: flex;
 	flex-flow: wrap;
+	justify-content: center;
 	border: 1px solid green;
 }
 
 .how-it-works-sections {
-	width: 25%;
+	width: 23%;
 	border: 1px dotted orange;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .img-container {
