@@ -205,16 +205,20 @@ a:active {
 }
 
 .how-it-works {
-	width: 100%;
+	width: 85%;
 	display: flex;
 	flex-flow: wrap;
-	justify-content: center;
-	border: 1px solid green;
+	justify-content: space-around;
 }
 
 .how-it-works-sections {
-	width: 23%;
-	border: 1px dotted orange;
+	width: 25%;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	border: 1px solid #81B0E2;
+	margin-bottom: 40px;
+
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
@@ -314,7 +318,7 @@ h2 {
 
 #smaller-h2 {
 	font-size: 32px;
-	margin: 7px;
+	margin: 10px;
 }
 
 #user-view-main-text {
