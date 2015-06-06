@@ -187,13 +187,14 @@ a:active {
 }
 
 .home-section-container-split {
-	width: 33%;
+	width: 38%;
 	background: #FFF;
 	justify-content: center;
 	text-align: center;
 	cursor: default;
-	margin-top: 16px;
-}
+/*	border: 1px solid red;
+*/}
+
 
 #login-info-container-title {
 	width: 90%;
@@ -249,7 +250,8 @@ a:active {
 }
 
 .big-icon {
-    font-size: 200px;
+    font-size: 180px;
+    margin-top: 10px;
     z-index: -1;
 }
 
@@ -558,6 +560,18 @@ h6 {
 
 	#user-view-main-text {
 		font-size: 36px;
+	}
+}
+
+
+@media (max-width: 475px) {
+	.box {
+		width: 100%;
+	}
+
+	.how-it-works-sections {
+		height: 130px;
+		width: 130px;
 	}
 }
 
