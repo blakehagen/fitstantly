@@ -187,7 +187,7 @@ a:active {
 }
 
 .home-section-container-split {
-	width: 38%;
+	width: 33%;
 	background: #FFF;
 	justify-content: center;
 	text-align: center;
@@ -517,7 +517,7 @@ h6 {
 @media (max-width: 1340px) {
 
 	.home-section-container-split {
-		width: 45%;
+		width: 39%;
 	}
 }
 
@@ -525,6 +525,7 @@ h6 {
 
 	.home-section-container-split {
 		width: 47%;
+		margin: 10px;
 	}
 
 	.box {
@@ -535,8 +536,7 @@ h6 {
 @media (max-width: 855px) {
 	
 	.home-section-container-split {
-		width: 99%;
-		margin: 10px;
+		width: 87%;
 	}
 
 	#left-align {
