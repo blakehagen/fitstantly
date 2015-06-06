@@ -34,6 +34,10 @@ body {
 	border-top: 1px solid black;
 }
 
+#no-footer-margin {
+	margin-bottom: -20px;
+}
+
 a:link {
     text-decoration: none;
     color: #000;
@@ -71,8 +75,7 @@ a:active {
 	justify-content: space-around;
 	width: 90%;
 	margin: auto;
-/*	border: 1px solid red;
-*/}
+}
 
 .user-90-percent-container {
 	display: flex;
@@ -99,11 +102,10 @@ a:active {
 	-o-background-size: cover;
 	background-size: cover;
 	border-top: 1px solid #81B0E2;
-	border-bottom: 1px solid #81B0E2;
 	margin: auto;
 	align-items: center;
 	cursor: default;
-
+	margin-top: 35px;
 }
 
 .home-top-title-container {
@@ -113,13 +115,11 @@ a:active {
 	justify-content: center;
 	align-items: center;
 	cursor: default;
-
-/*	border: 1px dotted red;
-*/}
+}
 
 #button-container {
 	height: auto;
-	margin-top: -140px;
+	margin-top: -120px;
 }
 
 .go-button {
@@ -165,12 +165,11 @@ a:active {
 	border-top: 1px solid #81B0E2;
 	border-bottom: 1px solid #81B0E2;
 	cursor: default;
-
 }
 
 #margin-for-fixed-header-home {
-	margin-top: 95px;
-	margin-bottom: 35px;
+	margin-top: 59px;
+	border-top: none;
 }
 
 #bottom-margin {
