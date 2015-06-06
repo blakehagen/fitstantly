@@ -193,7 +193,7 @@ a:active {
 	justify-content: center;
 	text-align: center;
 	cursor: default;
-
+	margin-top: 16px;
 }
 
 #login-info-container-title {
@@ -209,6 +209,7 @@ a:active {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
+	margin-top: 20px;
 }
 
 .how-it-works-sections {
