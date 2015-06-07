@@ -210,6 +210,10 @@ a:active {
 /*	border: 1px solid red;
 */}
 
+#margin-for-split-container {
+	margin-top: 15px;
+}
+
 
 #login-info-container-title {
 	width: 90%;
