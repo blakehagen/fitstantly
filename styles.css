@@ -293,6 +293,12 @@ a:active {
 	justify-content: center;
 }
 
+#circle-widget-margin {
+	margin: 20px 10px 20px 0px;
+}
+
+
+
 .info-help-box {
 	display: flex;
 	flex-flow: wrap;
@@ -305,9 +311,7 @@ a:active {
 	justify-content: center;
 }
 
-#no-fill {
-	background: #FAFAFA;
-}
+
 
 .sub-container {
 	display: flex;
