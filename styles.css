@@ -110,6 +110,7 @@ a:active {
 	margin-top: 35px;
 }
 
+
 .home-top-title-container {
 	display: flex;
 	width: 100%;
@@ -293,11 +294,19 @@ a:active {
 }
 
 .info-help-box {
-	width: 80%;
-	margin: auto; 
+	display: flex;
+	flex-flow: wrap;
+	width: 40%;
+	margin: 20px 0; 
 	background: #FFF;
 	border: 1px solid #81B0E2;
 	border-radius: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+#no-fill {
+	background: #FAFAFA;
 }
 
 .sub-container {
