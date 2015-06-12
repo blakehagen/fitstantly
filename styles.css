@@ -306,6 +306,20 @@ a:active {
 	align-items: center;
 }
 
+#connect-widgets-container {
+	width: 60%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+
+#connect-widgets {
+	width: 100px;
+	height: 100px;
+}
+
 
 .info-help-box {
 	display: flex;
