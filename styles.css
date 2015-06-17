@@ -340,29 +340,6 @@ a:active {
 }
 
 
-
-.sub-container {
-	display: flex;
-	flex-flow: wrap;
-	margin-top: 0px;
-	width: 100%;
-	justify-content: space-around;
-}
-
-.info-help-widget {
-	width: 30%;
-	background: #FFF;
-	/*border: 1px solid red;*/
-}
-
-#info-text-header {
-	font-size: 22px;
-}
-
-#info-help-text {
-	text-align: left;
-}
-
 h1 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
 	font-size: 75px;
