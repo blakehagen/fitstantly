@@ -326,17 +326,11 @@ a:active {
  	box-shadow:         inset 0 0 5px #81B0E2;
 }
 
-
-
-.info-help-box {
+.help-page-container {
+	width: 100%;
 	display: flex;
 	flex-flow: wrap;
-	width: 41%;
-	margin: 20px 0; 
-	background: #FFF;
-	border-radius: 30px;
-	align-items: flex-start;
-	justify-content: center;
+	border: 1px solid red;
 }
 
 
