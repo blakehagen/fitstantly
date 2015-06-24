@@ -3,7 +3,7 @@ var app = angular.module('fitstantly', ['ngRoute', 'chart.js']);
 app.config(function($routeProvider) {
 
 	$routeProvider
-		.when('Fitstantly/', {
+		.when('/', {
 			templateUrl: '/js/home/homeTemplate.html',
 			controller: 'HomeCtrl'
 		})
@@ -13,18 +13,18 @@ app.config(function($routeProvider) {
 			controller: 'UserCtrl'
 		})
 
-		.when('Fitstantly/info', {
+		.when('/info', {
 			templateUrl: '/js/home/infoTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
-		.when('Fitstantly/help', {
+		.when('/help', {
 			templateUrl: '/js/home/helpTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
 		.otherwise({
-			redirectTo: 'Fitstantly/'
+			redirectTo: '/'
 		})
 
 
