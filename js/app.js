@@ -1,6 +1,6 @@
 var app = angular.module('fitstantly', ['ngRoute', 'chart.js']);
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
 
 	$routeProvider
 		.when('/', {
@@ -25,9 +25,10 @@ app.config(function($routeProvider) {
 
 		.otherwise({
 			redirectTo: '/'
-		})
+		});
 
 
+		$locationProvider.html5Mode(true);
 
 
 });
