@@ -9,17 +9,17 @@ app.config(function($routeProvider) {
 		})
 
 		.when('/user', {
-			templateUrl: 'fitstantly/js/userInfo/userInfoTemplate.html',
+			templateUrl: '/js/userInfo/userInfoTemplate.html',
 			controller: 'UserCtrl'
 		})
 
 		.when('/info', {
-			templateUrl: 'fitstantly/js/home/infoTemplate.html',
+			templateUrl: '/js/home/infoTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
 		.when('/help', {
-			templateUrl: 'fitstantly/js/home/helpTemplate.html',
+			templateUrl: '/js/home/helpTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
