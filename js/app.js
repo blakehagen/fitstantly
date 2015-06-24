@@ -3,7 +3,7 @@ var app = angular.module('fitstantly', ['ngRoute', 'chart.js']);
 app.config(function($routeProvider) {
 
 	$routeProvider
-		.when('/', {
+		.when('fitstantly/', {
 			templateUrl: '/js/home/homeTemplate.html',
 			controller: 'HomeCtrl'
 		})
