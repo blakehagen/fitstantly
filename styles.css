@@ -331,7 +331,14 @@ a:active {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
-	align-items: center;
+	align-items: left;
+}
+
+.text-container-help-page {
+	display: flex;
+	flex-flow: wrap;
+	width: 85%;
+
 }
 
 .screenshot-container {
