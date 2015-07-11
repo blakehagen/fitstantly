@@ -4,7 +4,7 @@ app.config(function($routeProvider) {
 
 	$routeProvider
 		.when('/', {
-			templateUrl: '/js/home/homeTemplate.html',
+			templateUrl: 'Fitstantly/js/home/homeTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
