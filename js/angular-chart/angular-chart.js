@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 (function (factory) {
   'use strict';
   if (typeof define === 'function' && define.amd) {
@@ -12,10 +12,8 @@
     factory(angular, Chart);
   }
 }(function (angular, Chart) {
-=======
 // 
 (function () {
->>>>>>> f0eef64546139d5500af73d1aadd353ac80d45c6
   'use strict';
 
   Chart.defaults.global.responsive = true;
@@ -32,7 +30,6 @@
   ];
 
   angular.module('chart.js', [])
-<<<<<<< HEAD
     .provider('ChartJs', ChartJsProvider)
     .factory('ChartJsFactory', ['ChartJs', ChartJsFactory])
     .directive('chartBase', ['ChartJsFactory', function (ChartJsFactory) { return new ChartJsFactory(); }])
