@@ -4,22 +4,22 @@ app.config(function($routeProvider) {
 
 	$routeProvider
 		.when('/', {
-			templateUrl: '/js/home/homeTemplate.html',
+			templateUrl: 'http://blakehagen.github.io/fitstantly/js/home/homeTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
 		.when('/user', {
-			templateUrl: '/js/userInfo/userInfoTemplate.html',
+			templateUrl: 'http://blakehagen.github.io/fitstantly/js/userInfo/userInfoTemplate.html',
 			controller: 'UserCtrl'
 		})
 
 		.when('/info', {
-			templateUrl: '/js/home/infoTemplate.html',
+			templateUrl: 'http://blakehagen.github.io/fitstantly/js/home/infoTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
 		.when('/help', {
-			templateUrl: '/js/home/helpTemplate.html',
+			templateUrl: 'http://blakehagen.github.io/fitstantly/js/home/helpTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
