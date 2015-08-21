@@ -33,7 +33,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	// console.log(chartData);
 
 	$scope.labels = [];
-	$scope.data = [[], [0,0,0,0,0,0,0]];
+	$scope.data = [[], []];
 
 	for (var i = 0; i < chartData.length; i++) {
 		$scope.labels.push(chartData[i].dateTime.slice(6).replace("-", "/"));
