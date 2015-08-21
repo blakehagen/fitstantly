@@ -154,23 +154,23 @@ app.service('homeService', function($q, $http) {
 	}
 
 // AVERAGE STEPS/DAY ---> LAST 7 DAYS
-	var avgStepsWeek;
-	this.setAvgStepsWeek = function(data) {
-		var sum = 0;
-		for (var i = 0; i < data.length; i++) {
-			var sum = parseInt(data[i].value) + sum;
-		}
+	// var avgStepsWeek;
+	// this.setAvgStepsWeek = function(data) {
+	// 	var sum = 0;
+	// 	for (var i = 0; i < data.length; i++) {
+	// 		var sum = parseInt(data[i].value) + sum;
+	// 	}
 
-		var avg = sum / 7;
+	// 	var avg = sum / 7;
 
-		avg = Math.round(avg);
-		avgStepsWeek = avg;
-		avgStepsWeek = numeral(avgStepsWeek).format('0,0');
-	}
+	// 	avg = Math.round(avg);
+	// 	avgStepsWeek = avg;
+	// 	avgStepsWeek = numeral(avgStepsWeek).format('0,0');
+	// }
 
-	this.getAvgStepsWeek = function() {
-		return avgStepsWeek;
-	}
+	// this.getAvgStepsWeek = function() {
+	// 	return avgStepsWeek;
+	// }
 
 // BEST ACTIVE MINUTES ---> LAST 7 DAYS
 	var bestMinutesWeek;
