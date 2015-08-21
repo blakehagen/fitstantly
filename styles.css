@@ -161,12 +161,12 @@ a:active {
 	justify-content: center;
 	width: 100%;
 /*	border: 1px solid red;
-*/	margin-top: 10px;
+*/	margin-top: 2px;
 }
 
 #bottom-button {
-	margin-top: 16px;
-	margin-bottom: 30px;
+	margin-top: 8px;
+	margin-bottom: 22px;
 }
 
 .title-text {
