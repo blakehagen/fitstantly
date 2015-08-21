@@ -11,7 +11,7 @@ body {
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: left;
 	box-sizing: border-box;
 	background: #E3E0E0;
 	position: fixed;
@@ -517,7 +517,7 @@ h6 {
 	}
 
 	.home-section-container-split {
-		width: 87%;
+		width: 90%;
 	}
 
 	.box {
@@ -553,10 +553,10 @@ h6 {
 		font-size: 85px;
 	}
 
-	.go-button {
+/*	.go-button {
 		width: 150px;
 		height: 50px;
-	}
+	}*/
 
 	.box-on-info-page {
 		width: 80%;
@@ -578,8 +578,8 @@ h6 {
 	}*/
 
 	.go-button {
-		width: 120px;
-		height: 45px;
+		width: 100px;
+		height: 35px;
 	}
 }
 
@@ -610,9 +610,9 @@ h6 {
 		font-size: 45px;
 	}
 
-/*	#button-container {
-		margin-top: -70px;
-	}*/
+	#button-container {
+		margin-top: -20px;
+	}
 
 	.home-section-1 {
 		height: 28%;
