@@ -132,6 +132,7 @@ a:active {
     border: 1px solid #2B2B2B;
     border-radius: 8px;
     background: #FFF;
+    opacity: 0.8;
 	justify-content: center;
 	align-items: center;
 	z-index: 3;
@@ -145,6 +146,7 @@ a:active {
 .go-button:hover {
 	cursor: pointer;
 	border: 1px solid #000;
+	opacity: 1.0;
 
    -moz-box-shadow:    inset 0 0 6px #000;
    -webkit-box-shadow: inset 0 0 6px #000;
@@ -367,6 +369,10 @@ h1 {
 }
 
 #rock-salt {
+	display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
 	font-family: "Rock Salt", "Oxygen", "Myriad Set Pro", sans-serif;	
 	font-size: 145px;
 	color: #343438;
