@@ -501,7 +501,7 @@ h6 {
 @media (max-width: 1340px) {
 
 	.home-section-container-split {
-		width: 39%;
+		width: 45%;
 	}
 }
 
@@ -519,11 +519,6 @@ h6 {
 	.home-section-container-split {
 		width: 87%;
 	}
-
-/*	.home-section-container-split {
-		width: 47%;
-		margin: 10px;
-	}*/
 
 	.box {
 		width: 49%;
@@ -557,7 +552,6 @@ h6 {
 	#rock-salt {
 		font-size: 85px;
 	}
-
 
 	.go-button {
 		width: 150px;
@@ -605,8 +599,8 @@ h6 {
 	}
 
 	.how-it-works-sections {
-		height: 130px;
-		width: 130px;
+		height: 110px;
+		width: 110px;
 	}
 }
 
