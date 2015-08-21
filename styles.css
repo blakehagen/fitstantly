@@ -127,8 +127,8 @@ a:active {
 
 .go-button {
 	display: flex;
-    width: 220px;
-    height: 70px;
+    width: 200px;
+    height: 58px;
     border: 1px solid #2B2B2B;
     border-radius: 8px;
     background: #FFF;
