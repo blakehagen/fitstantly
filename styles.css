@@ -246,8 +246,8 @@ a:active {
 
 .how-it-works-sections {
 	border-radius: 50%;
-	height: 170px;
-	width: 170px;
+	height: 140px;
+	width: 140px;
 	border: 1px solid #81B0E2;
 	display: flex;
 	flex-flow: wrap;
