@@ -121,11 +121,11 @@ a:active {
 	border: 1px solid red;
 }
 
-#button-container {
+/*#button-container {
 	height: auto;
-/*	margin-top: -120px;
-*/	border: 1px solid green;
-}
+	margin-top: -120px;
+	border: 1px solid green;
+}*/
 
 .go-button {
 	display: flex;
