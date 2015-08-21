@@ -7,7 +7,7 @@ body {
 
 .top-nav {
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: center;
@@ -88,9 +88,9 @@ a:active {
 .home-container {
 	display: flex;
 	flex-flow: wrap;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
-	border: 1px dashed black;
 }
 
 .home-section-1 {
@@ -118,8 +118,8 @@ a:active {
 	justify-content: center;
 	align-items: center;
 	cursor: default;
-	border: 1px solid red;
-}
+/*	border: 1px solid red;
+*/}
 
 /*#button-container {
 	height: auto;
@@ -189,7 +189,7 @@ a:active {
 }
 
 #margin-for-fixed-header-home {
-	margin-top: 59px;
+	margin-top: 49px;
 }
 
 #bottom-margin {
