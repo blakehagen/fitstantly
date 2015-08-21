@@ -517,9 +517,13 @@ h6 {
 	}
 
 	.home-section-container-split {
+		width: 87%;
+	}
+
+/*	.home-section-container-split {
 		width: 47%;
 		margin: 10px;
-	}
+	}*/
 
 	.box {
 		width: 49%;
@@ -540,9 +544,9 @@ h6 {
 
 @media (max-width: 855px) {
 	
-	.home-section-container-split {
+/*	.home-section-container-split {
 		width: 87%;
-	}
+	}*/
 
 	#left-align {
 		text-align: center;
