@@ -397,6 +397,7 @@ h2 {
 
 #user-view-main-text {
 	margin: 7px;
+	font-size: 28px;
 }
 
 #h2-text {
@@ -419,7 +420,7 @@ h3 {
 
 h4 {
 	font-family: "Oxygen", "Myriad Set Pro", sans-serif;
-	font-size: 28px;
+	font-size: 20px;
 	text-align: center;
 	letter-spacing: 0.5px;
 }
