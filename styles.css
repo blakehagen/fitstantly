@@ -122,14 +122,14 @@ a:active {
 */}
 
 #button-container {
-	margin-top: -20px;
-	margin-bottom: 15px
+	margin-top: -30px;
+	margin-bottom: 30px;
 }
 
 .go-button {
 	display: flex;
-    width: 140px;
-    height: 50px;
+    width: 125px;
+    height: 45px;
     border: 1px solid #2B2B2B;
     border-radius: 8px;
     background: #FFF;
