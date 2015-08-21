@@ -8,7 +8,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.bestStepsAllTime = homeService.getBestSteps();
 
 	$scope.bestWeekSteps = homeService.getMostStepsWeek();
-	$scope.avgWeek = homeService.getAvgStepsWeek();
+	// $scope.avgWeek = homeService.getAvgStepsWeek();
 
 	$scope.bestWeekMinutes = homeService.getMostMinutesWeek();
 	$scope.avgActiveWeek = homeService.getAvgActiveWeek();
