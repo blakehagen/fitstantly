@@ -126,6 +126,10 @@ a:active {
 	margin-bottom: 30px;
 }
 
+#button-text {
+	font-size: 20px;
+}
+
 .go-button {
 	display: flex;
     width: 125px;
@@ -580,6 +584,10 @@ h6 {
 	.go-button {
 		width: 85px;
 		height: 35px;
+	}
+
+	#button-text {
+		font-size: 14px;
 	}
 }
 
