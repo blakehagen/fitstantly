@@ -573,9 +573,9 @@ h6 {
 		font-size: 60px;
 	}
 
-/*	#button-container {
-		margin-top: -80px;
-	}*/
+	#button-container {
+		margin-top: -17px;
+	}
 
 	.go-button {
 		width: 100px;
@@ -611,7 +611,7 @@ h6 {
 	}
 
 	#button-container {
-		margin-top: -20px;
+		margin-top: -15px;
 	}
 
 	#user-view-main-text {
