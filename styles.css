@@ -183,6 +183,7 @@ a:active {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
+	align-items: center;
 	margin-top: 35px;
 	width: 100%;
 	background: #FFF;
@@ -427,6 +428,10 @@ h3 {
 }
 
 #quote-h3-text {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
 	width: 90%;
 	font-size: 18px;
 	margin: 8px;
