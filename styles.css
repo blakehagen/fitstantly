@@ -651,6 +651,11 @@ h6 {
 }
 
 @media (max-width: 1000px) {
+
+	#left-align {
+		text-align: center;
+	}
+
 	.user-main-container {
 		width: 100%;
 	}
@@ -673,17 +678,6 @@ h6 {
 @media (max-width: 900px) {
 	.sm-widget {
 		width: 90%;
-	}
-}
-
-@media (max-width: 855px) {
-	
-/*	.home-section-container-split {
-		width: 87%;
-	}*/
-
-	#left-align {
-		text-align: center;
 	}
 }
 
