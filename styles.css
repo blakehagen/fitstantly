@@ -427,14 +427,13 @@ h3 {
 	margin: 8px;
 }
 
-#quote-h3-text {
+.quote {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
 	align-items: center;
 	width: 90%;
 	font-size: 18px;
-	margin: 8px;
 }
 
 h4 {
