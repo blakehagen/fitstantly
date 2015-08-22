@@ -374,7 +374,7 @@ h1 {
     align-items: center;
     justify-content: center;
 	font-family: "Rock Salt", "Oxygen", "Myriad Set Pro", sans-serif;	
-	font-size: 95px;
+	font-size: 105px;
 	color: #343438;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -474,7 +474,7 @@ h6 {
 
 #sm-widget-header {
 	width: 90%;
-	margin-top: 75px;
+	margin-top: 55px;
 }
 
 #sm-widget-smaller {
