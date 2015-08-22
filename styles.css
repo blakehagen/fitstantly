@@ -402,7 +402,7 @@ a:active {
 }
 
 .help-page-container {
-	width: 100%;
+	width: 93%;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -650,7 +650,7 @@ h6 {
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
 
 	#left-align {
 		text-align: center;
