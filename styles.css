@@ -403,6 +403,10 @@ h2 {
 	margin: 7px;
 }
 
+#quote {
+	width: 90%;
+}
+
 #user-view-main-text {
 	margin: 7px;
 	font-size: 28px;
