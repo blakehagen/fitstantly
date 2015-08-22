@@ -78,7 +78,7 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.redirect('fitbit', 'https://api.fitbit.com/oauth/request_token', {cache: true}).done(function(fitbit) {
+		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
