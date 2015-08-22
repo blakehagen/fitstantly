@@ -16,7 +16,7 @@ body {
 	-webkit-align-items: center;
 	align-items: center;
 	box-sizing: border-box;
-	background: #FAFAFA;
+	background: #FFF;
 	position: fixed;
 	z-index: 9999;
 }
