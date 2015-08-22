@@ -280,8 +280,8 @@ a:active {
 .big-icon {
     font-size: 180px;
     margin-top: 10px;
-    z-index: -1;
-}
+/*    z-index: -1;
+*/}
 
 .home-section-sub-container {
 	width: 100%;
@@ -618,6 +618,7 @@ h6 {
 	.how-it-works-sections {
 		height: 110px;
 		width: 110px;
+		font-size: 10px;
 	}
 }
 
