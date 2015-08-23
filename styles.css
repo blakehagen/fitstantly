@@ -9,6 +9,9 @@ body {
 	width: 100%;
 	height: 40px;
 	border-bottom: 1px solid #ddd;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
@@ -28,6 +31,9 @@ body {
 .footer {
 	width: 100%;
 	height: 40px;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
@@ -66,6 +72,9 @@ a:active {
 }
 
 .parent-wrapper {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-items: center;
@@ -80,6 +89,9 @@ a:active {
 }
 
 .user-dashboard-container {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -91,6 +103,9 @@ a:active {
 }
 
 .user-90-percent-container {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -101,6 +116,9 @@ a:active {
 }
 
 .home-container {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -113,6 +131,9 @@ a:active {
 }
 
 .home-section-1 {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -134,6 +155,9 @@ a:active {
 }
 
 .home-top-title-container {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -157,6 +181,9 @@ a:active {
 }
 
 .go-button {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
     width: 125px;
@@ -188,6 +215,9 @@ a:active {
 }
 
 .bottom-button-container {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex:
 	-webkit-flex-flow: wrap;
@@ -213,6 +243,9 @@ a:active {
 }
 
 .home-section-2 {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;	
@@ -238,6 +271,9 @@ a:active {
 }
 
 .home-section-container {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	width: 100%;
@@ -267,6 +303,9 @@ a:active {
 
 #login-info-container-title {
 	width: 90%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
@@ -277,6 +316,9 @@ a:active {
 
 .how-it-works {
 	width: 88%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -288,6 +330,9 @@ a:active {
 
 .box {
 	width: 23%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;	
@@ -304,6 +349,9 @@ a:active {
 	height: 140px;
 	width: 140px;
 	border: 1px solid #81B0E2;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;	
@@ -316,6 +364,9 @@ a:active {
 
 .section-text {
 	width: 100%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -356,6 +407,9 @@ a:active {
 
 .home-section-3 {
 	width: 100%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;	
@@ -370,6 +424,9 @@ a:active {
 
 .box-on-info-page {
 	width: 47%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -380,6 +437,9 @@ a:active {
 
 #connect-widgets-container {
 	width: 60%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -403,6 +463,9 @@ a:active {
 
 .help-page-container {
 	width: 93%;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -413,6 +476,9 @@ a:active {
 }
 
 .text-container-help-page {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -422,6 +488,9 @@ a:active {
 }
 
 .screenshot-container {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -435,6 +504,9 @@ a:active {
 }
 
 .image {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row;
@@ -489,6 +561,9 @@ h1 {
 }
 
 #rock-salt {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;	
@@ -547,6 +622,9 @@ h3 {
 }
 
 .quote {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -593,6 +671,9 @@ h6 {
 .chart-wrapper {
 	margin-top: 20px;
 	margin: auto;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
