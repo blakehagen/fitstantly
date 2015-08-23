@@ -15,8 +15,12 @@ body {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	box-sizing: border-box;
 	background: #FFF;
@@ -37,8 +41,12 @@ body {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	box-sizing: border-box;
 	margin-top: 20px;
@@ -78,6 +86,8 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 }
 
@@ -85,6 +95,8 @@ a:active {
 	width: 85%;
 	margin: auto;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 }
 
@@ -95,8 +107,12 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: space-around;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: space-around;
 	width: 90%;
 	margin: auto;
@@ -109,8 +125,12 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
 	justify-content: space-around;
 	width: 90%;
 }
@@ -122,10 +142,16 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	width: 100%;
 }
@@ -137,6 +163,8 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	width: 100%;
 /*	height: 60%;
@@ -149,6 +177,8 @@ a:active {
 
 	/*margin: auto;*/
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	cursor: default;
 	margin-top: 35px;
@@ -161,11 +191,17 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	width: 100%;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	cursor: default;
 /*	border: 1px solid red;
@@ -193,8 +229,12 @@ a:active {
     background: #FFF;
     opacity: 0.8;
     -webkit-justify-content: center;
+    -moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	z-index: 3;
 	cursor: pointer;
@@ -221,10 +261,16 @@ a:active {
 	display: -webkit-flex;
 	display: flex:
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow; wrap;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	width: 100%;
 /*	border: 1px solid red;
@@ -248,11 +294,17 @@ a:active {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: wrap;	
+	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;	
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	margin-top: 35px;
 	width: 100%;
@@ -280,8 +332,12 @@ a:active {
 	background: #FFF;
 	margin: auto;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	cursor: default;
 }
@@ -290,6 +346,8 @@ a:active {
 	width: 33%;
 	background: #FFF;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	text-align: center;
 	cursor: default;
@@ -309,6 +367,8 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	text-align: center;
 	cursor: default;
@@ -322,8 +382,12 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
 	justify-content: space-around;
 	margin-top: 40px;
 }
@@ -335,11 +399,17 @@ a:active {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: wrap;	
+	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;	
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	margin-bottom: 26px;
 }
@@ -354,11 +424,17 @@ a:active {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: wrap;	
+	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;	
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 }
 
@@ -370,10 +446,16 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	margin-top: 18px;
 }
@@ -412,9 +494,13 @@ a:active {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: wrap;	
+	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;	
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 }
 
@@ -430,8 +516,12 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 }
 
@@ -443,8 +533,12 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
 	justify-content: space-around;
 	margin-top: 10px;
 }
@@ -469,9 +563,16 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
+	-webkit-align-items: left;
+	-moz-align-items: left;
+	-ms-align-items: left;
 	align-items: left;
 }
 
@@ -482,6 +583,8 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	width: 85%;
 
@@ -494,11 +597,17 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	width: 80%;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	margin-bottom: 30px;
 }
@@ -510,10 +619,16 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row;
+	-moz-flex-flow: row;
+	-ms-flex-flow:  row;
 	flex-flow: row;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	width: 90%;
 	border: 1px solid black;
@@ -566,11 +681,17 @@ h1 {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: wrap;	
+	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;	
     flex-flow: wrap;
     -webkit-align-items: center;
+    -moz-align-items: center;
+	-ms-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
+    -moz-justify-content: center;
+	-ms-justify-content: center;
     justify-content: center;
 	font-family: "rock_saltregular", "oxygenlight", "Myriad Set Pro", sans-serif;	
 	font-size: 105px;
@@ -628,10 +749,16 @@ h3 {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	width: 90%;
 }
@@ -677,9 +804,13 @@ h6 {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
 	width: 90%;
-	-webkit-justify-content: center;
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
 	justify-content: space-around;
 	/*border: 1px solid red;*/
 }
