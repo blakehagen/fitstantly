@@ -41,6 +41,10 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 		alert("You have signed out.");
 	}
 
+	$scope.test = function() {
+		alert("This ng-click worked!")
+	}
+
 
 		
 
