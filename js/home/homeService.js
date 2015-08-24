@@ -114,7 +114,7 @@ app.service('homeService', function($q, $http) {
 
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
-			console.log(fitbit);
+			console.log("callback", fitbit);
 
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
@@ -126,7 +126,6 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				console.log(fitbit)
 			}, function(err){
 				console.log(err)
 				deferred.reject(err)
