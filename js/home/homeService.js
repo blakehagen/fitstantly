@@ -109,11 +109,12 @@ app.service('homeService', function($q, $http) {
 		var deferred = $q.defer();
 
 		
-		// OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
-		// console.log("hello redirect test 1");
-
+		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
+
+			fitbit.get('https://api.fitbit.com/1/user/-/activities.json'))
+			console.log(fitbit);
 
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
