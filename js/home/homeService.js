@@ -113,15 +113,12 @@ app.service('homeService', function($q, $http) {
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 
-			fitbit.get('https://api.fitbit.com/1/user/-/activities.json');
-			console.log(fitbit);
-
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
 			console.log(promisesArray);
 
