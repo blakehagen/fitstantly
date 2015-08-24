@@ -113,7 +113,7 @@ app.service('homeService', function($q, $http) {
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 
-			fitbit.get('https://api.fitbit.com/1/user/-/activities.json'))
+			fitbit.get('https://api.fitbit.com/1/user/-/activities.json');
 			console.log(fitbit);
 
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
