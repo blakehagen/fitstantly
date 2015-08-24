@@ -78,15 +78,15 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.popup('fitbit', {cache: true}).done(function(result) {
+		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
-			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
-			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
-			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
-			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
-			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
-			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
@@ -122,19 +122,19 @@ app.service('homeService', function($q, $http) {
 
 			console.log(promisesArray);
 
-			$q.all(promisesArray).then(function(res){
-				deferred.resolve(res)
-			}, function(err){
-				console.log(err)
-				deferred.reject(err)
-			})
+			// $q.all(promisesArray).then(function(res){
+			// 	deferred.resolve(res)
+			// }, function(err){
+			// 	console.log(err)
+			// 	deferred.reject(err)
+			// })
 
 		}).fail(function(err) {
 			deferred.reject();
 	  		alert("Authentication failed. Please try again.");
 		})
 
-		return deferred.promise;
+		// return deferred.promise;
 	}
 
 
