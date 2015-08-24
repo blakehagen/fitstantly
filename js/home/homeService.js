@@ -124,12 +124,12 @@ app.service('homeService', function($q, $http) {
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
 
-			promisesArray.push(fitbit.get('https://api.fitbit.com//1/user/-/profile.json').done(function(data) 
+			promisesArray.push(fitbit.get('https://api.fitbit.com//1/user/-/profile.json'))
 				{
    					uID = data.user.encodedId;
 
     					// Store uID along with token and secret for future use
-				}
+				})
 
 
 			$q.all(promisesArray).then(function(res){
