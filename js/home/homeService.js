@@ -141,6 +141,18 @@ app.service('homeService', function($q, $http) {
 	  		alert("Authentication failed. Please try again.");
 		})
 		return deferred.promise;
+
+
+		OAuth.popup('fitbit').then(function(oauthResult) {
+		  return oauthResult.get('/me');
+		}).then(function(data) {
+		  // data is the result of the request to /me
+		  console.log(data);
+		}).fail(function(err) {
+		  // handle an error
+		});
+
+
 	}
 
 
