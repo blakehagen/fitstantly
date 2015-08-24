@@ -90,8 +90,6 @@ app.service('homeService', function($q, $http) {
 
 			console.log(promisesArray);
 
-
-
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
 			}, function(err){
@@ -118,7 +116,6 @@ app.service('homeService', function($q, $http) {
 
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
-			console.log("callback", fitbit);
 
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
@@ -140,28 +137,9 @@ app.service('homeService', function($q, $http) {
 			deferred.reject();
 	  		alert("Authentication failed. Please try again.");
 		})
+
 		return deferred.promise;
-
-
-		OAuth.popup('fitbit').then(function(oauthResult) {
-		  return oauthResult.get('/me');
-		}).then(function(data) {
-		  // data is the result of the request to /me
-		  console.log(data);
-		}).fail(function(err) {
-		  // handle an error
-		});
-
-
 	}
-
-
-
-
-
-
-
-
 
 
 
