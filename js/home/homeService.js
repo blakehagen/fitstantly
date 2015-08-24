@@ -111,7 +111,7 @@ app.service('homeService', function($q, $http) {
 		
 		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
 
-		OAuth.callback('fitbit', {cache: true}).done(function(result) {
+		OAuth.callback('fitbit', {cache: true}).done(function (result) {
 
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
@@ -120,7 +120,11 @@ app.service('homeService', function($q, $http) {
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
-			console.log(promisesArray);
+			
+
+			.done(function (response) {
+				console.log(promisesArray);
+			});
 
 			// $q.all(promisesArray).then(function(res){
 			// 	deferred.resolve(res)
@@ -130,9 +134,9 @@ app.service('homeService', function($q, $http) {
 			// })
 
 		}).fail(function(err) {
-			deferred.reject();
+			// deferred.reject();
 	  		alert("Authentication failed. Please try again.");
-		})
+		});
 
 		// return deferred.promise;
 	}
