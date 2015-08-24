@@ -109,7 +109,7 @@ app.service('homeService', function($q, $http) {
 		var deferred = $q.defer();
 
 		
-		OAuth.redirect('fitbit', 'http://blakehagen.github.io/#/user)';
+		OAuth.redirect('fitbit', 'http://blakehagen.github.io/#/user');
 
 
 
