@@ -126,7 +126,7 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				console.log(res)
+				console.log(fitbit)
 			}, function(err){
 				console.log(err)
 				deferred.reject(err)

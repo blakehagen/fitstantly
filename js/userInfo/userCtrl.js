@@ -61,7 +61,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.series = [" Steps", " 7-day Average"];
   	$scope.data;
 
-  	console.log("chart steps data: " + $scope.data);
+  	// console.log("chart steps data: " + $scope.data);
 
 
 // Comments in Dashboard ------------------------------
