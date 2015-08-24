@@ -87,8 +87,6 @@ app.service('homeService', function($q, $http) {
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/profile.json'))
-
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
@@ -111,7 +109,7 @@ app.service('homeService', function($q, $http) {
 		var deferred = $q.defer();
 
 		
-		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
+		OAuth.redirect('fitbit', '');
 
 
 
@@ -124,9 +122,6 @@ app.service('homeService', function($q, $http) {
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
-
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/profile.json'))
-
 
 
 			$q.all(promisesArray).then(function(res){
