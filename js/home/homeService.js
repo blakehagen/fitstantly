@@ -109,7 +109,7 @@ app.service('homeService', function($q, $http) {
 		var deferred = $q.defer();
 
 		
-		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
+		OAuth.redirect('fitbit');
 		console.log("hello redirect test 1");
 
 
@@ -126,7 +126,7 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				console.log("resolved?")
+				console.log(res)
 			}, function(err){
 				console.log(err)
 				deferred.reject(err)
