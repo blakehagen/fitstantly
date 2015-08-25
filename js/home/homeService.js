@@ -109,7 +109,7 @@ app.service('homeService', function($q, $http) {
 
 	this.authenticateTest = function() {
 
-		OAuth.redirect('fitbit', '#/user');
+		OAuth.redirect('fitbit', '');
 		console.log("hell0! on service")
 		var promisesArray = [];
 		var deferred = $q.defer();

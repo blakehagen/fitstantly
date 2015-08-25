@@ -46,7 +46,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 		console.log("hell0! on HomeCtrl.js")
 
 		homeService.authenticateTest().then(function(data){
-			$location.path('http://blakehagen.github.io/fitstantly/#/user');
+			$location.path('#/user');
 				console.log(data);
 			homeService.setSteps(data[0].summary.steps); // ---> current day steps
 
