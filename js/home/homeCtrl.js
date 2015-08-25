@@ -83,7 +83,8 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 	}
 
 	$scope.test = function() {
-		alert("This ng-click worked!")
+		window.open('http://blakehagen.github.io');
+		alert("This ng-click worked!");
 	}
 
 
