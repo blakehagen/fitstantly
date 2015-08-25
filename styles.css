@@ -737,6 +737,11 @@ h3 {
 	letter-spacing: 0.5px;
 }
 
+#subtext {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 #h3-text {
 	font-size: 18px;
 	margin: 8px;
