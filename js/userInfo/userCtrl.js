@@ -18,15 +18,15 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 // Date formatting ---------------------------------------------------------------
 
-	var stepsDate;
-	stepsDate = $rootScope.bestStepsDate;
-	// console.log("best steps date: ",stepsDate);
-	$scope.dateBest = [];
-	$scope.dateBest.push(stepsDate.slice(5).replace("-", "/"));
-	// console.log($scope.dateBest);
-	$scope.dateBest.push(stepsDate.slice(0,4));
-	$scope.dateBest.splice(1, 0, "/");
-	$scope.dateBest = $scope.dateBest.join('');
+	// var stepsDate;
+	// stepsDate = $rootScope.bestStepsDate;
+	// // console.log("best steps date: ",stepsDate);
+	// $scope.dateBest = [];
+	// $scope.dateBest.push(stepsDate.slice(5).replace("-", "/"));
+	// // console.log($scope.dateBest);
+	// $scope.dateBest.push(stepsDate.slice(0,4));
+	// $scope.dateBest.splice(1, 0, "/");
+	// $scope.dateBest = $scope.dateBest.join('');
 	// console.log($scope.dateBest);
 
 // Chart Set Up ------------------------------------------------------------------
