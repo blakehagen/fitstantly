@@ -90,8 +90,10 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
+				console.log(res);
 				
 			}, function(err){
+				debugger;
 				console.log(err)
 				deferred.reject(err)
 				
@@ -99,7 +101,8 @@ app.service('homeService', function($q, $http) {
 
 		}).fail(function(err) {
 			deferred.reject();
-	  		alert("Authentication failed. Please try again.");
+			debugger;
+	  		alert("Login failed. Please try again.");
 		})
 		return deferred.promise;
 	}
