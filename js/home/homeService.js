@@ -139,7 +139,7 @@ app.service('homeService', function($q, $http) {
 		})
 		return deferred.promise;
 
-		OAuth.redirect('fitbit', 'http://fitbit.com');
+		
 	}
 
 
