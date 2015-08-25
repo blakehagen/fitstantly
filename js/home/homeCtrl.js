@@ -88,21 +88,6 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 	}
 
 
-	$scope.anotherTest = function() {
-			// Initialize with your OAuth.io app public key
-		OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
-		// callback_url is the URL where users are redirected
-		// after being authorized
-		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
-
-		// In callback URL
-		OAuth.callback('fitbit', (error, success) {});
-
-			// console.log(error);
-			// console.log(success);
-		  // See the result below
-		// });
-	}
 
 
 
