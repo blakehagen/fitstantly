@@ -98,8 +98,8 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 		// In callback URL
 		OAuth.callback('fitbit', (error, success) { 
 
-			console.log(error);
-			console.log(success);
+			// console.log(error);
+			// console.log(success);
 		  // See the result below
 		});
 	}
