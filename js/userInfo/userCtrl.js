@@ -38,10 +38,10 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.labels = [];
 	$scope.data = [[], []];
 
-	for (var i = 0; i < chartData.length; i++) {
-		$scope.labels.push(chartData[i].dateTime.slice(6).replace("-", "/"));
-		$scope.data[0].push(parseInt(chartData[i].value));
-	};
+	// for (var i = 0; i < chartData.length; i++) {
+	// 	$scope.labels.push(chartData[i].dateTime.slice(6).replace("-", "/"));
+	// 	$scope.data[0].push(parseInt(chartData[i].value));
+	// };
 
 	var sum = 0;
 	for (var i = 0; i < chartData.length; i++) {
