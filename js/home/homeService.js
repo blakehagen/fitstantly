@@ -111,16 +111,21 @@ app.service('homeService', function($q, $http) {
 		// var promisesArray = [];
 		// var deferred = $q.defer();
 
-		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
+		// OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
+		// OAuth.callback('fitbit')
 
-		
+			OAuth.popup('fitbit').then(function(oauthResult) {
+	 		 return oauthResult.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json');
+			}).then(function(data) {
+			  // data is the result of the request to /me
+			}).fail(function(err) {
+			  // handle an error
+			});
 
-		OAuth.callback('fitbit')
+		// .done(function(result) {
+		// 	console.log("test test test", result);
 
-		.done(function(result) {
-			console.log("test test test", result);
-
-			result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')
+		// 	result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')
 
 			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
 			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
@@ -132,17 +137,17 @@ app.service('homeService', function($q, $http) {
 			// $q.all(promisesArray).then(function(res){
 			// 	deferred.resolve(res)
 			
-			.done(function (response) {
-				console.log(response);
-			})
+		// 	.done(function (response) {
+		// 		console.log(response);
+		// 	})
 
-			.fail(function (err) {
-	  			alert("Authentication failed. Please try again.");
-			});
+		// 	.fail(function (err) {
+	 //  			alert("Authentication failed. Please try again.");
+		// 	});
 
-		fail(function (err) {
-	  		alert("Authentication failed 2. Please try again.");
-		});
+		// fail(function (err) {
+	 //  		alert("Authentication failed 2. Please try again.");
+		// });
 	}
 	
 
