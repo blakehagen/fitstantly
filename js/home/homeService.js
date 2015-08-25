@@ -113,7 +113,9 @@ app.service('homeService', function($q, $http) {
 
 		// OAuth.redirect('fitbit', '');
 
-		window.open(OAuth.popup('fitbit')
+		window.open(
+
+			OAuth.popup('fitbit')
 
 		.done(function(result) {
 			console.log("test test test", result);
@@ -124,7 +126,7 @@ app.service('homeService', function($q, $http) {
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
-)
+
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
 				
@@ -140,7 +142,7 @@ app.service('homeService', function($q, $http) {
 		})
 		return deferred.promise;
 
-	}
+	)}
 
 
 
