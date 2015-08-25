@@ -114,7 +114,7 @@ app.service('homeService', function($q, $http) {
 
 		OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 
-		OAuth.callback('fitbit', 'http://blakehagen.github.io/fitstantly').done(function(fitbit) {
+		OAuth.callback('fitbit', 'http://blakehagen.github.io/fitstantly/#/user').done(function(fitbit) {
 			// console.log(fitbit)
 
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
