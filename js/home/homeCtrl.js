@@ -2,7 +2,7 @@ var app = angular.module('fitstantly');
 
 app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) {
 
-	// OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
+	OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 	
 	$scope.authorize = function() {
 		homeService.authenticate().then(function(data){
