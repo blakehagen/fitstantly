@@ -43,8 +43,6 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 
 	$scope.authorizeTest = function() {
 
-		OAuth.redirect('fitbit', '');
-
 		homeService.authenticateTest().then(function(data){
 			$location.path('#/user');
 				console.log(data);
@@ -73,6 +71,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			
 			// homeService.setMostMinutesMonth(data[4]["activities-minutesVeryActive"]); // ---> best active minutes current month
 
+			OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
 
 		})
 	}
