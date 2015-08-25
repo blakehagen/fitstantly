@@ -44,7 +44,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 	$scope.authorizeTest = function() {
 
 		homeService.authenticateTest().then(function(data){
-			// $location.path('#/user');
+			$location.path('#/user');
 				console.log(data);
 			homeService.setSteps(data[0].summary.steps); // ---> current day steps
 
@@ -73,7 +73,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 
 			alert("This logged!");
 
-			OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
+			// OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
 
 		})
 	}
