@@ -43,8 +43,6 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 
 	$scope.authorizeTest = function() {
 
-		console.log("hell0! on HomeCtrl.js")
-
 		homeService.authenticateTest().then(function(data){
 			$location.path('#/user');
 				console.log(data);
