@@ -110,8 +110,7 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.redirect('fitbit', 'https://api.fitbit.com/1/user/-/activities/date/');
-			// console.log(fitbit)
+		
 
 
 		OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
