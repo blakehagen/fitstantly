@@ -129,10 +129,10 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				
-			}, function(err){
-				console.log(err)
-				deferred.reject(err)
+				}
+			// }, function(err){
+			// 	console.log(err)
+			// 	deferred.reject(err)
 				
 			})
 
