@@ -90,12 +90,11 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				alert("success the first!");
+				
 			}, function(err){
 				console.log(err)
 				deferred.reject(err)
-				alert("success the second!");
-
+				
 			})
 
 		}).fail(function(err) {
@@ -111,7 +110,7 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/');
+		OAuth.redirect('fitbit', 'https://api.fitbit.com/1/user/-/activities/date/');
 			// console.log(fitbit)
 
 
@@ -129,11 +128,11 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				alert("success the 3rd!");
+				
 			}, function(err){
 				console.log(err)
 				deferred.reject(err)
-				alert("success the 4th!");
+				
 			})
 
 		}).fail(function(err) {
