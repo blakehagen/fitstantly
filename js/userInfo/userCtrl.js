@@ -27,7 +27,6 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.dateBest.push(stepsDate.slice(0,4));
 	$scope.dateBest.splice(1, 0, "/");
 	$scope.dateBest = $scope.dateBest.join('');
-	// console.log($scope.dateBest);
 
 // Chart Set Up ------------------------------------------------------------------
 
