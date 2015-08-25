@@ -70,26 +70,26 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 // Comments in Dashboard ------------------------------
 	// Steps
 
-	var today = $rootScope.todaysData;
-	$scope.stepsComment = "";
-	today = today.steps;
-	// console.log(today);
-	if (today > avgStepsWeek) {
-		$scope.stepsComment = "Nice! Above 7-day average!";
-	} else {
-		$scope.stepsComment = "Get moving!"
-	}
+	// var today = $rootScope.todaysData;
+	// $scope.stepsComment = "";
+	// today = today.steps;
+	// // console.log(today);
+	// if (today > avgStepsWeek) {
+	// 	$scope.stepsComment = "Nice! Above 7-day average!";
+	// } else {
+	// 	$scope.stepsComment = "Get moving!"
+	// }
 
-	// Active Minutes
-	var todayActiveMins = $rootScope.todaysData;
-	$scope.activeComment = "";
-	todayActive = todayActiveMins.veryActiveMinutes;
-	// console.log(today);
-	if (todayActive > $scope.avgActiveWeek) {
-		$scope.activeComment = "Awesome! Above 7-day average!";
-	} else {
-		$scope.activeComment = "Pick up the pace!"
-	}
+	// // Active Minutes
+	// var todayActiveMins = $rootScope.todaysData;
+	// $scope.activeComment = "";
+	// todayActive = todayActiveMins.veryActiveMinutes;
+	// // console.log(today);
+	// if (todayActive > $scope.avgActiveWeek) {
+	// 	$scope.activeComment = "Awesome! Above 7-day average!";
+	// } else {
+	// 	$scope.activeComment = "Pick up the pace!"
+	// }
 
 // -------------------------------------------------------
 
