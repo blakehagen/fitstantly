@@ -113,6 +113,8 @@ app.service('homeService', function($q, $http) {
 
 		OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 
+		OAuth.redirect('fitbit', 'http://blakehagen.github.io/#/user');
+
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
