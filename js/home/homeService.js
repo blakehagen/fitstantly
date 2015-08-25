@@ -111,7 +111,7 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.redirect('fitbit', 'https://oauth.io/auth');
+		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/');
 			// console.log(fitbit)
 
 
