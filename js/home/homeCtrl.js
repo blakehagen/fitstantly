@@ -55,7 +55,8 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			
 			$rootScope.chartData = data[1]["activities-steps"] // ---> to get data into chart on user view
 
-			// console.log(data[1]["activities-steps"]);
+			console.log(data[1]["activities-steps"]);
+			console.log($rootScope.chartData);
 			
 			homeService.setAvgStepsWeek(data[1]["activities-steps"]); // ---> average steps/day last 7 days
 			
