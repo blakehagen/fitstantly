@@ -108,7 +108,7 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.redirect('fitbit', '');
+		OAuth.redirect('facebook', '');
 			// console.log(fitbit)
 
 
