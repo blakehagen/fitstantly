@@ -71,6 +71,8 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			
 			// homeService.setMostMinutesMonth(data[4]["activities-minutesVeryActive"]); // ---> best active minutes current month
 
+			alert("This logged!");
+
 			OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
 
 		})
