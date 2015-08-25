@@ -107,8 +107,6 @@ app.service('homeService', function($q, $http) {
 // TEST TEST TEST TEST TEST
 
 
-	// OAuth.redirect('fitbit', '');
-
 	this.authenticateTest = function() {
 		var promisesArray = [];
 		var deferred = $q.defer();
@@ -116,6 +114,7 @@ app.service('homeService', function($q, $http) {
 
 		OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 
+		OAuth.redirect('fitbit', '');
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
