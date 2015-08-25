@@ -20,6 +20,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 	var stepsDate;
 	stepsDate = $rootScope.bestStepsDate;
+	console.log("best steps date: ",stepsDate);
 	$scope.dateBest = [];
 	$scope.dateBest.push(stepsDate.slice(5).replace("-", "/"));
 	$scope.dateBest.push(stepsDate.slice(0,4));
