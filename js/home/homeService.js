@@ -114,7 +114,9 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.callback('fitbit').done(function(result) {
+		OAuth.callback('fitbit')
+
+		.done(function(result) {
 			console.log("test test test", result);
 
 			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
