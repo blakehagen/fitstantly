@@ -107,7 +107,7 @@ app.service('homeService', function($q, $http) {
 // TEST TEST TEST TEST TEST
 
 
-	OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
+	OAuth.redirect('fitbit', '');
 
 	this.authenticateTest = function() {
 		var promisesArray = [];
