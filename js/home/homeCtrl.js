@@ -96,12 +96,12 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
 
 		// In callback URL
-		OAuth.callback('fitbit', (error, success) { 
+		OAuth.callback('fitbit', (error, success) {});
 
 			// console.log(error);
 			// console.log(success);
 		  // See the result below
-		});
+		// });
 	}
 
 
