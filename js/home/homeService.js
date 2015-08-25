@@ -113,7 +113,7 @@ app.service('homeService', function($q, $http) {
 
 		debugger;
 
-		OAuth.redirect('fitbit');
+		// OAuth.redirect('fitbit');
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
