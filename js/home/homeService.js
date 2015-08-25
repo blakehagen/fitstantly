@@ -122,6 +122,14 @@ app.service('homeService', function($q, $http) {
 			  // handle an error
 			});
 
+
+			oauthResult.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json').done(function(data) {
+			  //todo with data
+			  console.log('this is the new data! ', data)
+			}).fail(function(err) {
+			  //todo with err
+			});
+
 		// .done(function(result) {
 		// 	console.log("test test test", result);
 
