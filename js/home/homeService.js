@@ -104,63 +104,6 @@ app.service('homeService', function($q, $http) {
 		return deferred.promise;
 	}
 
-// TEST TEST TEST TEST TEST
-
-
-	this.authenticateTest = function() {
-		// var promisesArray = [];
-		// var deferred = $q.defer();
-
-		// OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
-		// OAuth.callback('fitbit')
-
-			OAuth.popup('fitbit').then(function(oauthResult) {
-	 		 return oauthResult.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json');
-			}).then(function(data) {
-			  // data is the result of the request to /me
-			}).fail(function(err) {
-			  // handle an error
-			});
-
-
-			oauthResult.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json').done(function(data) {
-			  //todo with data
-			  console.log('this is the new data! ', data)
-			}).fail(function(err) {
-			  //todo with err
-			});
-
-		// .done(function(result) {
-		// 	console.log("test test test", result);
-
-		// 	result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')
-
-			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
-			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
-			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
-			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
-			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
-			// promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
-
-			// $q.all(promisesArray).then(function(res){
-			// 	deferred.resolve(res)
-			
-		// 	.done(function (response) {
-		// 		console.log(response);
-		// 	})
-
-		// 	.fail(function (err) {
-	 //  			alert("Authentication failed. Please try again.");
-		// 	});
-
-		// fail(function (err) {
-	 //  		alert("Authentication failed 2. Please try again.");
-		// });
-	}
-	
-
-
-
 
 
 
