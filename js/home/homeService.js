@@ -140,7 +140,7 @@ app.service('homeService', function($q, $http) {
 	  			alert("Authentication failed. Please try again.");
 			});
 
-		.fail(function (err) {
+		fail(function (err) {
 	  		alert("Authentication failed 2. Please try again.");
 		});
 	}
