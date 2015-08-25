@@ -43,7 +43,6 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 
 	$scope.authorizeTest = function() {
 
-		OAuth.redirect('fitbit', "http://blakehagen.github.io/fitstantly");
 		console.log("hell0! on HomeCtrl.js")
 
 		homeService.authenticateTest().then(function(data){
@@ -76,7 +75,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 
 			alert("This logged!");
 
-			// OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
+			OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly/#/user');
 
 		})
 	}
