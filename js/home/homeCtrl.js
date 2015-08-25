@@ -35,14 +35,14 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 		})
 	}
 
+		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly');
+			// console.log(fitbit)
+
 
 
 	// TEST TEST TEST TEST 
 
 	$scope.authorizeTest = function() {
-
-		OAuth.redirect('fitbit', 'http://blakehagen.github.io/fitstantly');
-			// console.log(fitbit)
 
 		homeService.authenticateTest().then(function(data){
 			$location.path('/user');
