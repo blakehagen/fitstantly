@@ -44,7 +44,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 	$scope.authorizeTest = function() {
 
 		homeService.authenticateTest().then(function(data){
-			$location.path('/user');
+			$location.path('#/user');
 				console.log(data);
 			homeService.setSteps(data[0].summary.steps); // ---> current day steps
 
@@ -71,8 +71,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			
 			// homeService.setMostMinutesMonth(data[4]["activities-minutesVeryActive"]); // ---> best active minutes current month
 
-				OAuth.redirect('fitbit');
-			// console.log(fitbit)
+		
 
 
 		})
