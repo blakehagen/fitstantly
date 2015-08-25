@@ -88,12 +88,13 @@ app.service('homeService', function($q, $http) {
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
+			console.log('promisesArray: ', promisesArray);
+
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
 				console.log(res);
 				
 			}, function(err){
-				debugger;
 				console.log(err)
 				deferred.reject(err)
 				
@@ -101,7 +102,6 @@ app.service('homeService', function($q, $http) {
 
 		}).fail(function(err) {
 			deferred.reject();
-			debugger;
 	  		alert("Login failed. Please try again.");
 		})
 		return deferred.promise;
