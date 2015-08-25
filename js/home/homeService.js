@@ -112,7 +112,7 @@ app.service('homeService', function($q, $http) {
 		var deferred = $q.defer();
 
 
-		OAuth.redirect('fitbit', 'http://fitbit.com');
+		
 
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
@@ -138,6 +138,8 @@ app.service('homeService', function($q, $http) {
 	  		alert("Authentication failed. Please try again.");
 		})
 		return deferred.promise;
+
+		OAuth.redirect('fitbit', 'http://fitbit.com');
 	}
 
 
