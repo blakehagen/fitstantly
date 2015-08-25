@@ -111,9 +111,6 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-
-		
-
 		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
@@ -139,7 +136,6 @@ app.service('homeService', function($q, $http) {
 		})
 		return deferred.promise;
 
-		
 	}
 
 
