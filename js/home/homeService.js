@@ -114,15 +114,15 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.callback('fitbit').done(function(fitbit) {
-			console.log("test test test",fitbit);
+		OAuth.callback('fitbit').done(function(result) {
+			console.log("test test test", result);
 
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
+			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
+			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
+			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
+			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
+			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
+			promisesArray.push(result.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
