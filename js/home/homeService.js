@@ -113,9 +113,9 @@ app.service('homeService', function($q, $http) {
 
 		// OAuth.redirect('fitbit', '');
 
-		window.open(
+		
 
-			OAuth.popup('fitbit')
+		OAuth.popup('fitbit')
 
 		.done(function(result) {
 			console.log("test test test", result);
@@ -142,7 +142,7 @@ app.service('homeService', function($q, $http) {
 		})
 		return deferred.promise;
 
-	)}
+	}
 
 
 
