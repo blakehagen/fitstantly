@@ -90,11 +90,11 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				alert("success!");
+				alert("success the first!");
 			}, function(err){
 				console.log(err)
 				deferred.reject(err)
-				alert("success!");
+				alert("success the second!");
 
 			})
 
@@ -129,10 +129,11 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
+				alert("success the 3rd!");
 			}, function(err){
 				console.log(err)
 				deferred.reject(err)
-				alert("success!");
+				alert("success the 4th!");
 			})
 
 		}).fail(function(err) {
