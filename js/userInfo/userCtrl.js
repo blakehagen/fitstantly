@@ -43,19 +43,19 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	// 	$scope.data[0].push(parseInt(chartData[i].value));
 	// };
 
-	var sum = 0;
-	for (var i = 0; i < chartData.length; i++) {
-		var sum = parseInt(chartData[i].value) + sum;
-	}
+	// var sum = 0;
+	// for (var i = 0; i < chartData.length; i++) {
+	// 	var sum = parseInt(chartData[i].value) + sum;
+	// }
 
-	var avg = sum / 7;
-	avg = Math.round(avg);
-	avgStepsWeek = avg;
-	// avgStepsWeek = numeral(avgStepsWeek).format('0,0');
-	// console.log('Avg steps last 7 days: ', avgStepsWeek);
-	for (var i = 0; i < 7; i++) {
-		$scope.data[1].push(parseInt(avgStepsWeek));
-	};
+	// var avg = sum / 7;
+	// avg = Math.round(avg);
+	// avgStepsWeek = avg;
+	// // avgStepsWeek = numeral(avgStepsWeek).format('0,0');
+	// // console.log('Avg steps last 7 days: ', avgStepsWeek);
+	// for (var i = 0; i < 7; i++) {
+	// 	$scope.data[1].push(parseInt(avgStepsWeek));
+	// };
 
 
 //This is the chart on the User View-------------------
