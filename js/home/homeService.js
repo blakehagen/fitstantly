@@ -108,13 +108,13 @@ app.service('homeService', function($q, $http) {
 		var promisesArray = [];
 		var deferred = $q.defer();
 
-		OAuth.redirect('fitbit', '');
+		OAuth.redirect('fitbit', 'https://www.fitbit.com/oauth/authorize');
 			// console.log(fitbit)
 
 
 		OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 
-		OAuth.callback('fitbit', 'https://www.fitbit.com/oauth/authorize').done(function(fitbit) {
+		OAuth.callback('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
