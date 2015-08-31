@@ -1,6 +1,6 @@
 var app = angular.module('fitstantly');
 
-app.controller('UserCtrl', function($scope, homeService, $rootScope) {
+app.controller('UserCtrl', function($scope, homeService, $rootScope, $anchorScroll) {
 
 	$scope.user = homeService.getUser();
 
@@ -128,7 +128,10 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 // -------------------------------------------------------
 
-
+	$scope.scrollTo = function(id) {
+      $location.hash(id);
+      $anchorScroll();
+   }
 
 
 
