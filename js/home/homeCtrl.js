@@ -1,6 +1,6 @@
 var app = angular.module('fitstantly');
 
-app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) {
+app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, $anchorScroll) {
 
 	OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 	
@@ -48,6 +48,11 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 		window.open('http://blakehagen.github.io');
 		alert("This ng-click worked!");
 	}
+
+	$scope.scrollTo = function(id) {
+      $location.hash(id);
+      $anchorScroll();
+   }
 
 
 });
