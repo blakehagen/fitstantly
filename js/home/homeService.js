@@ -108,7 +108,15 @@ app.service('homeService', function($q, $http) {
 		return deferred.promise;
 	}
 
+// CURRENT FITBIT USER
+	var user;
+	this.setUser = function(data) {
+		currentUser = data;
+	}
 
+	this.getUser = function() {
+		return currentUser;
+	}
 
 
 // STEPS ---> TODAY

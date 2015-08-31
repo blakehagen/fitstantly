@@ -7,28 +7,28 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 	$scope.authorize = function() {
 		homeService.authenticate().then(function(fitbitData){
 			$location.path('/user');
-				console.log("fitbitData: ",fitbitdata);
-			homeService.setSteps(fitbitData[0].summary.steps); // ---> current day steps
+				console.log("fitbitData: ", fitbitData);
 
-			homeService.setActive(fitbitData[0].summary.veryActiveMinutes); // ---> current day active minutes
-			$rootScope.todaysData = (fitbitData[0].summary); // ---> current day data for commentary in dashboard
+			homeService.setUser(fitbitData[0].user.fullName); //-------> current user ID	
+			homeService.setSteps(fitbitData[1].summary.steps); // ---> current day steps
 
-			homeService.setBestSteps(fitbitData[5].best.total.steps.value); // ---> best steps all-time
-			$rootScope.bestStepsDate = (fitbitData[5].best.total.steps.date); // ---> date acheive personal best (steps)
-			
-			homeService.setMostStepsWeek(fitbitData[1]["activities-steps"]); // ---> best steps last 7 days
-			
-			$rootScope.chartDataSteps = fitbitData[1]["activities-steps"] // ---> to get data into chart on user view
+			homeService.setActive(fitbitData[1].summary.veryActiveMinutes); // ---> current day active minutes
+			$rootScope.todaysData = (fitbitData[1].summary); // ---> current day data for commentary in dashboard
 
-			// console.log(data[1]["activities-steps"]);
+			homeService.setBestSteps(fitbitData[6].best.total.steps.value); // ---> best steps all-time
+			$rootScope.bestStepsDate = (fitbitData[6].best.total.steps.date); // ---> date acheive personal best (steps)
 			
-			homeService.setAvgStepsWeek(fitbitData[1]["activities-steps"]); // ---> average steps/day last 7 days
+			homeService.setMostStepsWeek(fitbitData[2]["activities-steps"]); // ---> best steps last 7 days
 			
-			homeService.setMostMinutesWeek(fitbitData[2]["activities-minutesVeryActive"]); // ---> best active minutes last 7 days
+			$rootScope.chartDataSteps = fitbitData[2]["activities-steps"] // ---> to get data into chart on user view
 			
-			homeService.setAvgActiveWeek(fitbitData[2]["activities-minutesVeryActive"]); // ---> average active mins/day last 7 days
+			homeService.setAvgStepsWeek(fitbitData[2]["activities-steps"]); // ---> average steps/day last 7 days
+			
+			homeService.setMostMinutesWeek(fitbitData[3]["activities-minutesVeryActive"]); // ---> best active minutes last 7 days
+			
+			homeService.setAvgActiveWeek(fitbitData[3]["activities-minutesVeryActive"]); // ---> average active mins/day last 7 days
 
-			$rootScope.chartDataActiveMins = fitbitData[2]["activities-minutesVeryActive"] // ---> to get Active MINUTES data into chart on user view
+			$rootScope.chartDataActiveMins = fitbitData[3]["activities-minutesVeryActive"] // ---> to get Active MINUTES data into chart on user view
 
 			// homeService.setMostStepsMonth(data[3]["activities-steps"]); // ---> best steps current month
 			
