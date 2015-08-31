@@ -797,6 +797,11 @@ h6 {
 	margin-bottom: 0px;
 }
 
+#dashboard-header {
+	font-size: 24px;
+	margin: 8px;
+}
+
 #h6-text {
 	margin-top: 0px;
 	margin-bottom: 8px;
