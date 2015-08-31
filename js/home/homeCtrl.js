@@ -28,7 +28,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			
 			homeService.setAvgActiveWeek(fitbitData[2]["activities-minutesVeryActive"]); // ---> average active mins/day last 7 days
 
-			$rootScope.chartDataActiveMins = fitbitData[1]["activities-steps"] // ---> to get Active MINUTES data into chart on user view
+			$rootScope.chartDataActiveMins = fitbitData[2]["activities-minutesVeryActive"] // ---> to get Active MINUTES data into chart on user view
 
 			// homeService.setMostStepsMonth(data[3]["activities-steps"]); // ---> best steps current month
 			

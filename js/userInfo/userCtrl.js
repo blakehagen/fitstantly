@@ -97,7 +97,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 //This is the ACTIVE MINUTES chart on the User View-------------------
 	
 	$scope.labelsActiveMins;
-	$scope.seriesActiveMins = ["Very Active Minutes", " 7-day Average"];
+	$scope.seriesActiveMins = [" Very Active Minutes", " 7-day Average"];
   	$scope.dataActiveMins;
 
 // Comments in Dashboard ------------------------------
