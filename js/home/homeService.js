@@ -81,6 +81,7 @@ app.service('homeService', function($q, $http) {
 		OAuth.popup('fitbit', {cache: true}).done(function(fitbit) {
 			// console.log(fitbit)
 
+			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/profile.json')) // - current fitbit user profile
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
