@@ -18,7 +18,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope) 
 			
 			homeService.setMostStepsWeek(fitbitData[1]["activities-steps"]); // ---> best steps last 7 days
 			
-			$rootScope.chartData = fitbitData[1]["activities-steps"] // ---> to get data into chart on user view
+			$rootScope.chartDataSteps = fitbitData[1]["activities-steps"] // ---> to get data into chart on user view
 
 			// console.log(data[1]["activities-steps"]);
 			

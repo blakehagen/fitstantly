@@ -30,21 +30,21 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 // Chart Set Up ------------------------------------------------------------------
 
-	var chartData;
-	chartData = $rootScope.chartData;
-	// console.log(chartData);
+	var chartDataSteps;
+	chartDataSteps = $rootScope.chartDataSteps;
+	// console.log(chartDataSteps);
 
 	$scope.labels = [];
 	$scope.data = [[], []];
 
-	for (var i = 0; i < chartData.length; i++) {
-		$scope.labels.push(chartData[i].dateTime.slice(6).replace("-", "/"));
-		$scope.data[0].push(parseInt(chartData[i].value));
+	for (var i = 0; i < chartDataSteps.length; i++) {
+		$scope.labels.push(chartDataSteps[i].dateTime.slice(6).replace("-", "/"));
+		$scope.data[0].push(parseInt(chartDataSteps[i].value));
 	};
 
 	var sum = 0;
-	for (var i = 0; i < chartData.length; i++) {
-		var sum = parseInt(chartData[i].value) + sum;
+	for (var i = 0; i < chartDataSteps.length; i++) {
+		var sum = parseInt(chartDataSteps[i].value) + sum;
 	}
 
 	var avg = sum / 7;
@@ -57,7 +57,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	};
 
 
-//This is the chart on the User View-------------------
+//This is the STEPS chart on the User View-------------------
 	
 	$scope.labels;
 	$scope.series = [" Steps", " 7-day Average"];
