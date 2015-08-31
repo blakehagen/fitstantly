@@ -15,7 +15,7 @@
 					<h6 id="h6-text">{{stepsComment}}</h6>
 				</div>
 				<div class="sm-widget">
-					<h3 id="h3-text">Active Minutes Today:</h3>
+					<h3 id="h3-text">Very Active Minutes Today:</h3>
 					<h2 id="user-view-main-text">{{todayActive}}</h2>
 					<h6 id="h6-text">{{activeComment}}</h6>
 				</div>
@@ -30,10 +30,10 @@
 		<div class="chart-wrapper">
 			<div class="lg-widget" id="lg-widget-header">
 				<div>
-					<h3 id="h3-text">Last 7 Days (Fitbit Data)</h3>
+					<h3 id="h3-text">Steps: Last 7 Days</h3>
 				</div>
 			</div>
-		<!-- ng-click="toggleModal()" -->
+
 			<div class="lg-widget">
 		  		<div class="spacer">
 					<canvas id="line" class="chart chart-line" data="data"
@@ -42,8 +42,6 @@
 				</div>
 			</div>
 		</div>
-
-
 
 		<div class="user-dashboard-container">
 			<div class="user-90-percent-container">
@@ -67,6 +65,36 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="chart-wrapper">
+			<div class="lg-widget" id="lg-widget-header">
+				<div>
+					<h3 id="h3-text">"Very Active Minutes": Last 7 Days</h3>
+				</div>
+			</div>
+
+			<div class="lg-widget">
+		  		<div class="spacer">
+					<canvas id="line" class="chart chart-line" data="dataActiveMins"
+					labels="labelsActiveMins" series="seriesActiveMins"> 
+					</canvas> 
+				</div>
+			</div>
+		</div>
+
+		<div class="user-dashboard-container">
+			<div class="user-90-percent-container">
+				<div class="sm-widget" id="sm-widget-smaller">
+					<h3 id="h3-text">7-day Active Minutes Record:</h3>
+					<h4 id="user-view-main-text">{{bestWeekMinutes}}</h4>
+				</div>
+				<div class="sm-widget" id="sm-widget-smaller">
+					<h3 id="h3-text">7-day Active Minutes Average:</h3>
+					<h4 id="user-view-main-text">{{avgActiveWeek}}</h4>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
 

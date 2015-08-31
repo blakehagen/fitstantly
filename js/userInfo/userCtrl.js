@@ -28,7 +28,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	$scope.dateBest.splice(1, 0, "/");
 	$scope.dateBest = $scope.dateBest.join('');
 
-// Chart Set Up ------------------------------------------------------------------
+// STEPS Chart Set Up ------------------------------------------------------------------
 
 	var chartDataSteps;
 	chartDataSteps = $rootScope.chartDataSteps;
@@ -57,6 +57,34 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 	};
 
 
+	// ACTIVE MINUTES Chart Set Up ------------------------------------------------------------------
+
+	var chartDataActiveMins;
+	chartDataActiveMins = $rootScope.chartDataActiveMins;
+	console.log("chart active minutes: ", chartDataActiveMins);
+
+	$scope.labelsActiveMins = [];
+	$scope.dataActiveMins = [[], []];
+
+	for (var i = 0; i < chartDataActiveMins.length; i++) {
+		$scope.labelsActiveMins.push(chartDataActiveMins[i].dateTime.slice(6).replace("-", "/"));
+		$scope.dataActiveMins[0].push(parseInt(chartDataActiveMins[i].value));
+	};
+
+	var sumActiveMins = 0;
+	for (var i = 0; i < chartDataActiveMins.length; i++) {
+		var sumActiveMins = parseInt(chartDataActiveMins[i].value) + sumActiveMins;
+	}
+
+	var avgActiveMins = sumActiveMins / 7;
+	avgActiveMins = Math.round(avgActiveMins);
+	avgActiveMinsWeek = avgActiveMins;
+	
+	for (var i = 0; i < 7; i++) {
+		$scope.dataActiveMins[1].push(parseInt(avgActiveMinsWeek));
+	};
+
+
 //This is the STEPS chart on the User View-------------------
 	
 	$scope.labels;
@@ -65,6 +93,12 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
   	// console.log("chart steps data: " + $scope.data);
 
+
+//This is the ACTIVE MINUTES chart on the User View-------------------
+	
+	$scope.labelsActiveMins;
+	$scope.seriesActiveMins = ["Very Active Minutes", " 7-day Average"];
+  	$scope.dataActiveMins;
 
 // Comments in Dashboard ------------------------------
 	// Steps
