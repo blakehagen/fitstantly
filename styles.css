@@ -799,7 +799,8 @@ h6 {
 
 #dashboard-header {
 	font-size: 24px;
-	margin: 8px;
+	margin-top: 4px;
+	margin-bottom: 6px;
 }
 
 #h6-text {
