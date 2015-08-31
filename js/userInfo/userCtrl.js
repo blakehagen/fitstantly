@@ -32,7 +32,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope) {
 
 	var chartDataSteps;
 	chartDataSteps = $rootScope.chartDataSteps;
-	// console.log(chartDataSteps);
+	console.log("chart steps: ", chartDataSteps);
 
 	$scope.labels = [];
 	$scope.data = [[], []];
