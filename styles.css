@@ -721,6 +721,11 @@ h2 {
 	margin-bottom: -8px;
 }
 
+#smaller-h2-bottom-button {
+	font-size: 32px;
+	margin: 10px;
+}
+
 #welcome-text {
 	margin: 7px;
 }
