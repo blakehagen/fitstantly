@@ -809,7 +809,8 @@ h6 {
 }
 
 #asterisk {
-	margin: 10px;
+    margin-top: 15px;
+    margin-bottom: -5px;
 }
 
 .bigger-h6 {
