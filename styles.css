@@ -989,6 +989,10 @@ h6 {
 	#dashboard-header {
 		font-size: 20px;
 	}
+
+	.bottom-button-container {
+		width: 95%;
+	}
 }
 
 @media (max-width: 450px) {
