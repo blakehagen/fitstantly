@@ -717,7 +717,8 @@ h2 {
 
 #smaller-h2 {
 	font-size: 32px;
-	margin: 10px;
+	margin-top: 15px;
+	margin-bottom: -8px;
 }
 
 #welcome-text {
