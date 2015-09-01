@@ -118,10 +118,6 @@ a:active {
 	margin: auto;
 }
 
-.known-issue-note{
-
-}
-
 .user-90-percent-container {
 	display: -webkit-box; 
 	display: -moz-box;
@@ -810,6 +806,10 @@ h6 {
 #h6-text {
 	margin-top: 0px;
 	margin-bottom: 8px;
+}
+
+#asterisk {
+	margin: 10px;
 }
 
 .bigger-h6 {
