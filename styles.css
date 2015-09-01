@@ -55,13 +55,8 @@ body {
 }
 
 .link {
-	text-decoration: #ddd underline !important;
+	text-decoration: underline !important;
 	/*color: #ddd !important;*/
-}
-
-.link:hover {
-	text-decoration: underline;
-	color: #000 !important; 
 }
 
 #no-footer-margin {
