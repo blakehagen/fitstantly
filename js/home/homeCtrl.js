@@ -1,6 +1,6 @@
 var app = angular.module('fitstantly');
 
-app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, $anchorScroll, $routeParams) {
+app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, $routeParams) {
 
 	OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 	
@@ -49,11 +49,17 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, 
       $anchorScroll();
    }
 
-    $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
-    	if($location.hash()) $anchorScroll();  
-  	});
 
 
+
+});
+
+app.run(function($rootScope, $location, $anchorScroll, $routeParams) {
+  //when the route is changed scroll to the proper element.
+  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+    $location.hash($routeParams.scrollTo);
+    $anchorScroll();  
+  });
 });
 
 
