@@ -1,6 +1,6 @@
 var app = angular.module('fitstantly');
 
-app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, $anchorScroll) {
+app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, $anchorScroll, $routeParams) {
 
 	OAuth.initialize('YHZC6eo2wgsgM3mAgtgrxFYe9Lw');
 	
@@ -44,18 +44,18 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, 
 		alert("You have signed out.");
 	}
 
-	$scope.test = function() {
-		window.open('http://blakehagen.github.io');
-		alert("This ng-click worked!");
-	}
-
 	$scope.scrollTo = function(id) {
       $location.hash(id);
       $anchorScroll();
    }
 
+    $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+    	if($location.hash()) $anchorScroll();  
+  	});
+
 
 });
+
 
 
 

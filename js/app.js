@@ -32,12 +32,6 @@ app.config(function($routeProvider) {
 
 });
 
-app.run(function($rootScope, $location, $anchorScroll) {
-  //when the route is changed scroll to the proper element.
-  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
-    if($location.hash()) $anchorScroll();  
-  });
-});
 
 
 
