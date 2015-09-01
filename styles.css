@@ -110,12 +110,16 @@ a:active {
 	-moz-flex-flow: wrap;
 	-ms-flex-flow:  wrap;
 	flex-flow: wrap;
-	-webkit-justify-content: space-around;
+	-webkit-justify-content: center;
 	-moz-justify-content: center;
 	-ms-justify-content: center;
-	justify-content: space-around;
+	justify-content: center;
 	width: 90%;
 	margin: auto;
+}
+
+.known-issue-note{
+
 }
 
 .user-90-percent-container {
