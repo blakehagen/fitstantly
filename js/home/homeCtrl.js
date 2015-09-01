@@ -7,7 +7,7 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, 
 	$scope.authorize = function() {
 		homeService.authenticate().then(function(fitbitData){
 			$location.path('/user');
-				console.log("fitbitData: ", fitbitData);
+				// console.log("fitbitData: ", fitbitData);
 
 			homeService.setUser(fitbitData[0].user.fullName); //-------> current user ID	
 			homeService.setSteps(fitbitData[1].summary.steps); // ---> current day steps
