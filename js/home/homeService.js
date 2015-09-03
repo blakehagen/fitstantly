@@ -44,36 +44,6 @@ app.service('homeService', function($q, $http) {
 	var currentDate = newDateArr[0] + "-" + newDateArr[1] + "-" + newDateArr[2];
 	console.log("Hello. Today is:", currentDate);
 
-	// var currentMonthRange = [];
-
-	// if (newDateArr[1] === "01") {
-	// 	currentMonthRange.push(newDateArr[0] + "-01-01/" + newDateArr[0] + "-01-31");
-	// } else if (newDateArr[1] === "02") {
-	// 	currentMonthRange.push(newDateArr[0] + "-02-01/" + newDateArr[0] + "-02-28");
-	// } else if (newDateArr[1] === "03") {
-	// 	currentMonthRange.push(newDateArr[0] + "-03-01/" + newDateArr[0] + "-03-31");
-	// } else if (newDateArr[1] === "04") {
-	// 	currentMonthRange.push(newDateArr[0] + "-04-01/" + newDateArr[0] + "-04-30");
-	// } else if (newDateArr[1] === "05") {
-	// 	currentMonthRange.push(newDateArr[0] + "-05-01/" + newDateArr[0] + "-05-31");
-	// } else if (newDateArr[1] === "06") {
-	// 	currentMonthRange.push(newDateArr[0] + "-06-01/" + newDateArr[0] + "-06-30");
-	// } else if (newDateArr[1] === "07") {
-	// 	currentMonthRange.push(newDateArr[0] + "-07-01/" + newDateArr[0] + "-07-31");
-	// } else if (newDateArr[1] === "08") {
-	// 	currentMonthRange.push(newDateArr[0] + "-08-01/" + newDateArr[0] + "-08-31");
-	// } else if (newDateArr[1] === "09") {
-	// 	currentMonthRange.push(newDateArr[0] + "-09-01/" + newDateArr[0] + "-09-30");
-	// } else if (newDateArr[1] === "10") {
-	// 	currentMonthRange.push(newDateArr[0] + "-10-01/" + newDateArr[0] + "-10-31");
-	// } else if (newDateArr[1] === "11") {
-	// 	currentMonthRange.push(newDateArr[0] + "-11-01/" + newDateArr[0] + "-11-30");
-	// } else {
-	// 	currentMonthRange.push(newDateArr[0] + "-12-01/" + newDateArr[0] + "-12-31");
-	// }
-
-	// console.log(currentMonthRange);
-
 	this.authenticate = function() {
 		var promisesArray = [];
 		var deferred = $q.defer();
@@ -117,7 +87,6 @@ app.service('homeService', function($q, $http) {
 	this.getUser = function() {
 		return currentUser;
 	}
-
 
 // STEPS ---> TODAY
 	var currentSteps;
@@ -205,24 +174,6 @@ app.service('homeService', function($q, $http) {
 		return bestMinutesWeek;
 	}
 
-// BEST STEPS ---> CURRENT MONTH
-	// var bestStepsMonth;
-	// this.setMostStepsMonth = function(data) {
-	// 	var highest = 0;
-	// 	for (var i = 0; i < data.length; i++) {
-	// 		if (parseInt(data[i].value) > highest) {
-	// 			highest = parseInt(data[i].value);
-	// 		}
-	// 	};
-
-	// 	bestStepsMonth = highest;
-	// 	bestStepsMonth = numeral(bestStepsMonth).format('0,0');
-	// }
-
-	// this.getMostStepsMonth = function() {
-	// 		return bestStepsMonth;
-	// 	}
-
 // AVERAGE ACTIVE MINS/DAY ---> LAST 7 DAYS
 	var avgActiveWeek;
 	this.setAvgActiveWeek = function(data) {
@@ -240,25 +191,6 @@ app.service('homeService', function($q, $http) {
 	this.getAvgActiveWeek = function() {
 		return avgActiveWeek;
 	}
-
-
-// BEST ACTIVE MINUTES ---> CURRENT MONTH
-	// var bestMinutesMonth;
-	// this.setMostMinutesMonth = function(data) {
-	// 	var highest = 0;
-	// 	for (var i = 0; i < data.length; i++) {
-	// 		if (parseInt(data[i].value) > highest) {
-	// 			highest = parseInt(data[i].value);
-	// 		}
-	// 	};
-	// 	bestMinutesMonth = highest;
-	// }
-
-	// this.getMostMinutesMonth = function() {
-	// 	return bestMinutesMonth;
-	// }
-
-
 
 });
 

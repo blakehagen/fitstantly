@@ -15,9 +15,6 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 	$scope.bestWeekMinutes = homeService.getMostMinutesWeek();
 	$scope.avgActiveWeek = homeService.getAvgActiveWeek();
 
-	// $scope.bestMonthSteps = homeService.getMostStepsMonth();
-	// $scope.bestMonthMinutes = homeService.getMostMinutesMonth();
-
 // Date formatting ---------------------------------------------------------------
 
 	var stepsDate;
@@ -58,7 +55,6 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 		$scope.data[1].push(parseInt(avgStepsWeek));
 	};
 
-
 	// ACTIVE MINUTES Chart Set Up ------------------------------------------------------------------
 
 	var chartDataActiveMins;
@@ -86,15 +82,11 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 		$scope.dataActiveMins[1].push(parseInt(avgActiveMinsWeek));
 	};
 
-
 //This is the STEPS chart on the User View-------------------
 	
 	$scope.labels;
 	$scope.series = [" Steps", " 7-day Average"];
   	$scope.data;
-
-  	// console.log("chart steps data: " + $scope.data);
-
 
 //This is the ACTIVE MINUTES chart on the User View-------------------
 	
@@ -128,12 +120,4 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 
 // -------------------------------------------------------
 
-
-
-
-
-
-
-
 });
-
