@@ -44,33 +44,33 @@ app.service('homeService', function($q, $http) {
 	var currentDate = newDateArr[0] + "-" + newDateArr[1] + "-" + newDateArr[2];
 	console.log("Hello. Today is:", currentDate);
 
-	var currentMonthRange = [];
+	// var currentMonthRange = [];
 
-	if (newDateArr[1] === "01") {
-		currentMonthRange.push(newDateArr[0] + "-01-01/" + newDateArr[0] + "-01-31");
-	} else if (newDateArr[1] === "02") {
-		currentMonthRange.push(newDateArr[0] + "-02-01/" + newDateArr[0] + "-02-28");
-	} else if (newDateArr[1] === "03") {
-		currentMonthRange.push(newDateArr[0] + "-03-01/" + newDateArr[0] + "-03-31");
-	} else if (newDateArr[1] === "04") {
-		currentMonthRange.push(newDateArr[0] + "-04-01/" + newDateArr[0] + "-04-30");
-	} else if (newDateArr[1] === "05") {
-		currentMonthRange.push(newDateArr[0] + "-05-01/" + newDateArr[0] + "-05-31");
-	} else if (newDateArr[1] === "06") {
-		currentMonthRange.push(newDateArr[0] + "-06-01/" + newDateArr[0] + "-06-30");
-	} else if (newDateArr[1] === "07") {
-		currentMonthRange.push(newDateArr[0] + "-07-01/" + newDateArr[0] + "-07-31");
-	} else if (newDateArr[1] === "08") {
-		currentMonthRange.push(newDateArr[0] + "-08-01/" + newDateArr[0] + "-08-31");
-	} else if (newDateArr[1] === "09") {
-		currentMonthRange.push(newDateArr[0] + "-09-01/" + newDateArr[0] + "-09-30");
-	} else if (newDateArr[1] === "10") {
-		currentMonthRange.push(newDateArr[0] + "-10-01/" + newDateArr[0] + "-10-31");
-	} else if (newDateArr[1] === "11") {
-		currentMonthRange.push(newDateArr[0] + "-11-01/" + newDateArr[0] + "-11-30");
-	} else {
-		currentMonthRange.push(newDateArr[0] + "-12-01/" + newDateArr[0] + "-12-31");
-	}
+	// if (newDateArr[1] === "01") {
+	// 	currentMonthRange.push(newDateArr[0] + "-01-01/" + newDateArr[0] + "-01-31");
+	// } else if (newDateArr[1] === "02") {
+	// 	currentMonthRange.push(newDateArr[0] + "-02-01/" + newDateArr[0] + "-02-28");
+	// } else if (newDateArr[1] === "03") {
+	// 	currentMonthRange.push(newDateArr[0] + "-03-01/" + newDateArr[0] + "-03-31");
+	// } else if (newDateArr[1] === "04") {
+	// 	currentMonthRange.push(newDateArr[0] + "-04-01/" + newDateArr[0] + "-04-30");
+	// } else if (newDateArr[1] === "05") {
+	// 	currentMonthRange.push(newDateArr[0] + "-05-01/" + newDateArr[0] + "-05-31");
+	// } else if (newDateArr[1] === "06") {
+	// 	currentMonthRange.push(newDateArr[0] + "-06-01/" + newDateArr[0] + "-06-30");
+	// } else if (newDateArr[1] === "07") {
+	// 	currentMonthRange.push(newDateArr[0] + "-07-01/" + newDateArr[0] + "-07-31");
+	// } else if (newDateArr[1] === "08") {
+	// 	currentMonthRange.push(newDateArr[0] + "-08-01/" + newDateArr[0] + "-08-31");
+	// } else if (newDateArr[1] === "09") {
+	// 	currentMonthRange.push(newDateArr[0] + "-09-01/" + newDateArr[0] + "-09-30");
+	// } else if (newDateArr[1] === "10") {
+	// 	currentMonthRange.push(newDateArr[0] + "-10-01/" + newDateArr[0] + "-10-31");
+	// } else if (newDateArr[1] === "11") {
+	// 	currentMonthRange.push(newDateArr[0] + "-11-01/" + newDateArr[0] + "-11-30");
+	// } else {
+	// 	currentMonthRange.push(newDateArr[0] + "-12-01/" + newDateArr[0] + "-12-31");
+	// }
 
 	// console.log(currentMonthRange);
 
@@ -85,8 +85,8 @@ app.service('homeService', function($q, $http) {
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentDate + '/7d.json')) // ---> steps for last 7 days
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentDate + '/7d.json')) // ---> veryActive minutes for last 7 days
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
-			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/steps/date/' + currentMonthRange + '.json')) // ---> steps for current month
+			// promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/minutesVeryActive/date/' + currentMonthRange + '.json')) // ---> veryActive minutes for current month
 			promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities.json')) // ---> best steps all-time
 
 			// console.log('promisesArray: ', promisesArray);
@@ -206,7 +206,7 @@ app.service('homeService', function($q, $http) {
 	}
 
 // BEST STEPS ---> CURRENT MONTH
-	var bestStepsMonth;
+	// var bestStepsMonth;
 	// this.setMostStepsMonth = function(data) {
 	// 	var highest = 0;
 	// 	for (var i = 0; i < data.length; i++) {
@@ -219,9 +219,9 @@ app.service('homeService', function($q, $http) {
 	// 	bestStepsMonth = numeral(bestStepsMonth).format('0,0');
 	// }
 
-	this.getMostStepsMonth = function() {
-			return bestStepsMonth;
-		}
+	// this.getMostStepsMonth = function() {
+	// 		return bestStepsMonth;
+	// 	}
 
 // AVERAGE ACTIVE MINS/DAY ---> LAST 7 DAYS
 	var avgActiveWeek;
@@ -243,7 +243,7 @@ app.service('homeService', function($q, $http) {
 
 
 // BEST ACTIVE MINUTES ---> CURRENT MONTH
-	var bestMinutesMonth;
+	// var bestMinutesMonth;
 	// this.setMostMinutesMonth = function(data) {
 	// 	var highest = 0;
 	// 	for (var i = 0; i < data.length; i++) {
@@ -254,9 +254,9 @@ app.service('homeService', function($q, $http) {
 	// 	bestMinutesMonth = highest;
 	// }
 
-	this.getMostMinutesMonth = function() {
-		return bestMinutesMonth;
-	}
+	// this.getMostMinutesMonth = function() {
+	// 	return bestMinutesMonth;
+	// }
 
 
 

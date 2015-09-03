@@ -15,8 +15,8 @@ app.controller('HomeCtrl', function($scope, homeService, $location, $rootScope, 
 			homeService.setActive(fitbitData[1].summary.veryActiveMinutes); // ---> current day active minutes
 			$rootScope.todaysData = (fitbitData[1].summary); // ---> current day data for commentary in dashboard
 
-			homeService.setBestSteps(fitbitData[6].best.total.steps.value); // ---> best steps all-time
-			$rootScope.bestStepsDate = (fitbitData[6].best.total.steps.date); // ---> date acheive personal best (steps)
+			homeService.setBestSteps(fitbitData[4].best.total.steps.value); // ---> best steps all-time
+			$rootScope.bestStepsDate = (fitbitData[4].best.total.steps.date); // ---> date acheive personal best (steps)
 			
 			homeService.setMostStepsWeek(fitbitData[2]["activities-steps"]); // ---> best steps last 7 days
 			
