@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html ng-app="fitstantly">
 
-	<head>
+<head>
 
-		<title>Fitstantly</title>
-		<script src="js/oauth.min.js"></script>
+    <title>Fitstantly</title>
+    <script src="js/oauth.min.js"></script>
 
-		<link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css' rel="stylesheet" type="text/css">
-		
-		
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link src="js/angular-chart/angular-chart.css">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
-
-		<meta charset="utf-8"> 
-
-		<meta name="viewport" content="initial-scale=1.0,width=device-width" />
-
-		
-	</head>
-
-	<body ng-controller="HomeCtrl">
-		<nav class="top-nav">
-			<a href="#/" title="Home"><i class="fa fa-home fa-lg" id="nav-items"></i></a>
-			<a href="" title="My Fitstantly"><i class="fa fa-user fa-lg" id="nav-items" ng-click="authorize()"></i></a>
-			<a href="#/info" title="Info"><i class="fa fa-info fa-lg" id="nav-items"></i></a>
-			<a href="#/help" title="Help"><i class="fa fa-question fa-lg" id="nav-items"></i></a>
-			<a href="" title="Sign Out"><i class="fa fa-sign-out fa-lg" id="nav-items" ng-click="logout()"></i></a>
-		</nav>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css' rel="stylesheet" type="text/css">
 
 
-	<ng-view>
-	</ng-view>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link src="js/angular-chart/angular-chart.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
-		<script src="js/app.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
 
-		<script src="js/home/homeCtrl.js"></script>
-		<script src="js/home/homeService.js"></script>
+    <meta charset="utf-8">
 
-		<script src="js/userInfo/userCtrl.js"></script>
-<!-- 		// <script src="js/userInfo/userService.js"></script>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+
+</head>
+
+<body ng-controller="HomeCtrl">
+    <nav class="top-nav">
+        <a href="#/" title="Home"><i class="fa fa-home fa-lg" id="nav-items"></i></a>
+        <a href="" title="My Fitstantly"><i class="fa fa-user fa-lg" id="nav-items" ng-click="authorize()"></i></a>
+        <a href="#/info" title="Info"><i class="fa fa-info fa-lg" id="nav-items"></i></a>
+        <a href="#/help" title="Help"><i class="fa fa-question fa-lg" id="nav-items"></i></a>
+        <a href="" title="Sign Out"><i class="fa fa-sign-out fa-lg" id="nav-items" ng-click="logout()"></i></a>
+    </nav>
+
+
+    <ng-view>
+    </ng-view>
+
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h5 id="h5-text">Fitstantly &copy 2015 &nbsp;|&nbsp; All Rights Reserved</h5>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
+
+    <script src="js/home/homeCtrl.js"></script>
+    <script src="js/home/homeService.js"></script>
+
+    <script src="js/userInfo/userCtrl.js"></script>
+    <!-- 		// <script src="js/userInfo/userService.js"></script>
 		// <script src="js/userInfo/directives.js"></script> -->
 
-		<script src="js/angular-chart/Chart.min.js"></script>
-		<script src="js/angular-chart/angular-chart.js"></script>
+    <script src="js/angular-chart/Chart.min.js"></script>
+    <script src="js/angular-chart/angular-chart.js"></script>
 
-	</body>
+</body>
+
 </html>
