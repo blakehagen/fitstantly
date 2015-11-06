@@ -37,7 +37,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 	$scope.data = [[], []];
 
 	for (var i = 0; i < chartDataSteps.length; i++) {
-		$scope.labels.push(chartDataSteps[i].dateTime.slice(6).replace("-", "/"));
+		$scope.labels.push(chartDataSteps[i].dateTime.slice(5).replace("-", "/"));
 		$scope.data[0].push(parseInt(chartDataSteps[i].value));
 	};
     console.log($scope.labels);
