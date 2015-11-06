@@ -19,10 +19,10 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 
 	var stepsDate;
 	stepsDate = $rootScope.bestStepsDate;
-	console.log("best steps date: ",stepsDate);
+	// console.log("best steps date: ",stepsDate);
 	$scope.dateBest = [];
 	$scope.dateBest.push(stepsDate.slice(5).replace("-", "/"));
-	console.log($scope.dateBest);
+	// console.log($scope.dateBest);
 	$scope.dateBest.push(stepsDate.slice(0,4));
 	$scope.dateBest.splice(1, 0, "/");
 	$scope.dateBest = $scope.dateBest.join('');
@@ -40,6 +40,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 		$scope.labels.push(chartDataSteps[i].dateTime.slice(6).replace("-", "/"));
 		$scope.data[0].push(parseInt(chartDataSteps[i].value));
 	};
+    console.log($scope.labels);
 
 	var sum = 0;
 	for (var i = 0; i < chartDataSteps.length; i++) {

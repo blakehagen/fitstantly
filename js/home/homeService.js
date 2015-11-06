@@ -63,7 +63,7 @@ app.service('homeService', function($q, $http) {
 
 			$q.all(promisesArray).then(function(res){
 				deferred.resolve(res)
-				console.log(res);
+				// console.log(res);
 				
 			}, function(err){
 				console.log(err)
