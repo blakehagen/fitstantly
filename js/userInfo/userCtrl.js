@@ -31,7 +31,7 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 
 	var chartDataSteps;
 	chartDataSteps = $rootScope.chartDataSteps;
-	// console.log("chart steps: ", chartDataSteps);
+	console.log("chart steps: ", chartDataSteps);
 
 	$scope.labels = [];
 	$scope.data = [[], []];
@@ -60,13 +60,13 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 
 	var chartDataActiveMins;
 	chartDataActiveMins = $rootScope.chartDataActiveMins;
-	// console.log("chart active minutes: ", chartDataActiveMins);
+	console.log("chart active minutes: ", chartDataActiveMins);
 
 	$scope.labelsActiveMins = [];
 	$scope.dataActiveMins = [[], []];
 
 	for (var i = 0; i < chartDataActiveMins.length; i++) {
-		$scope.labelsActiveMins.push(chartDataActiveMins[i].dateTime.slice(6).replace("-", "/"));
+		$scope.labelsActiveMins.push(chartDataActiveMins[i].dateTime.slice(5).replace("-", "/"));
 		$scope.dataActiveMins[0].push(parseInt(chartDataActiveMins[i].value));
 	};
 
