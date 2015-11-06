@@ -14,12 +14,12 @@ app.config(function($routeProvider) {
 		})
 
 		.when('/info', {
-			templateUrl: 'http://blakehagen.github.io/fitstantly/js/home/infoTemplate.html',
+			templateUrl: 'http://blakehagen.github.io/fitstantly/js/info/infoTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
 		.when('/help', {
-			templateUrl: 'http://blakehagen.github.io/fitstantly/js/home/helpTemplate.html',
+			templateUrl: 'http://blakehagen.github.io/fitstantly/js/help/helpTemplate.html',
 			controller: 'HomeCtrl'
 		})
 
