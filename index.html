@@ -2,7 +2,6 @@
 <html ng-app="fitstantly">
 
 <head>
-
     <title>Fitstantly</title>
     <script src="js/oauth.min.js"></script>
 
@@ -21,22 +20,23 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="initial-scale=1.0,width=device-width" />
-
-
 </head>
 
 <body ng-controller="HomeCtrl">
-    <nav class="top-nav">
-        <a href="#/" title="Home"><i class="fa fa-home fa-lg" id="nav-items"></i></a>
-        <a href="" title="My Fitstantly"><i class="fa fa-user fa-lg" id="nav-items" ng-click="authorize()"></i></a>
-        <a href="#/info" title="Info"><i class="fa fa-info fa-lg" id="nav-items"></i></a>
-        <a href="#/help" title="Help"><i class="fa fa-question fa-lg" id="nav-items"></i></a>
-        <a href="" title="Sign Out"><i class="fa fa-sign-out fa-lg" id="nav-items" ng-click="logout()"></i></a>
-    </nav>
+    <div class="page-wrap">
+
+        <nav class="top-nav">
+            <a href="#/" title="Home"><i class="fa fa-home fa-lg" id="nav-items"></i></a>
+            <a href="" title="My Fitstantly"><i class="fa fa-user fa-lg" id="nav-items" ng-click="authorize()"></i></a>
+            <a href="#/info" title="Info"><i class="fa fa-info fa-lg" id="nav-items"></i></a>
+            <a href="#/help" title="Help"><i class="fa fa-question fa-lg" id="nav-items"></i></a>
+            <a href="" title="Sign Out"><i class="fa fa-sign-out fa-lg" id="nav-items" ng-click="logout()"></i></a>
+        </nav>
 
 
-    <ng-view>
-    </ng-view>
+        <ng-view>
+        </ng-view>
+    </div>
 
 
     <footer>
