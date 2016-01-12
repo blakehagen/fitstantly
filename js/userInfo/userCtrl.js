@@ -5,10 +5,11 @@ app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) 
 
 
 	$scope.user = homeService.getUser();
+    console.log($scope.user);
     
-        if(!$scope.user){
-            	$location.path('/#/')
-        }
+    if(!$scope.user){
+        $location.path('#/');
+    };
 
 	$scope.todaySteps = homeService.getSteps();
 	$scope.todayActive = homeService.getActive();
