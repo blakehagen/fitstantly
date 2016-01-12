@@ -1,8 +1,14 @@
 var app = angular.module('fitstantly');
 
 app.controller('UserCtrl', function($scope, homeService, $rootScope, $location) {
+    
+
 
 	$scope.user = homeService.getUser();
+    
+        if(!$scope.user){
+            	$location.path('/#/')
+        }
 
 	$scope.todaySteps = homeService.getSteps();
 	$scope.todayActive = homeService.getActive();
