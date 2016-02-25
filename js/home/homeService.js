@@ -74,7 +74,7 @@ app.service('homeService', function ($q, $http, $location) {
         }).fail(function (err) {
             deferred.reject();
             console.log(err);
-            // alert("Login failed. Please try again.");
+            alert("Login failed. Please try again.");
         })
         return deferred.promise;
     }
