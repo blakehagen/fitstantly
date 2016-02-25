@@ -49,7 +49,7 @@ app.service('homeService', function ($q, $http, $location) {
         var deferred = $q.defer();
 
         OAuth.popup('fitbit', { cache: true }).done(function (fitbit) {
-            // console.log(fitbit)
+            console.log(fitbit)
 
             promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/profile.json')) // - current fitbit user profile
             promisesArray.push(fitbit.get('https://api.fitbit.com/1/user/-/activities/date/' + currentDate + '.json')) // ---> current date steps
@@ -73,6 +73,7 @@ app.service('homeService', function ($q, $http, $location) {
 
         }).fail(function (err) {
             deferred.reject();
+            console.log(err);
             alert("Login failed. Please try again.");
         })
         return deferred.promise;
