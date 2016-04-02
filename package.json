@@ -1,0 +1,32 @@
+{
+  "name": "fitstantly",
+  "version": "1.0.0",
+  "description": "My first complete front-end web app. Built with AngularJS and connects with the Fitbit API to show your activity trends for the last 7 days. Try to beat your averages for the past 7 days and get more active!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakehagen/fitstantly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakehagen/fitstantly/issues"
+  },
+  "homepage": "https://github.com/blakehagen/fitstantly#readme",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "lodash": "^4.7.0",
+    "passport": "^0.3.2",
+    "passport-fitbit-oauth2": "^1.0.1",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {}
+}
