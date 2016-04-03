@@ -1025,6 +1025,12 @@ h6 {
   #sm-widget-smaller {
     width: 95%;
   }
+
+  #h3-gen-text {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
 }
 
 @media (max-width: 475px) {
