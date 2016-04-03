@@ -18,6 +18,7 @@ module.exports = (app, passport) => {
     }
   });
 
+  // GET FITBIT DATA //
   app.get('/api/v1/data', (req, res) => {
 
     if (!req.user) {
@@ -70,4 +71,12 @@ module.exports = (app, passport) => {
         res.status(500).json(error);
       })
   });
+
+  // LOG OUT //
+  app.get('/auth/logout', function (req, res) {
+    req.logout();
+    console.log('You have logged out')
+    res.redirect('/#');
+  });
+  
 };

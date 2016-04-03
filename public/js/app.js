@@ -34,7 +34,7 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
     $location.hash($routeParams.scrollTo);
     $anchorScroll();
   });
-})
+});
 
 
 
