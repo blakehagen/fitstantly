@@ -23,7 +23,6 @@ module.exports = (app, passport) => {
     if (!req.user) {
       res.status(500);
     }
-    ;
 
     const userCredentials = {
       userId: req.user.profile.id,
@@ -65,7 +64,6 @@ module.exports = (app, passport) => {
           veryActiveMinutes: JSON.parse(results.veryActiveMinutes.body),
           activities: JSON.parse(results.activities.body)
         };
-
         res.status(200).json(fitbitData);
       })
       .catch(error => {

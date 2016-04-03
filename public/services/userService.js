@@ -32,7 +32,7 @@ app.service('userService', function ($http, $q) {
       var sumActiveMins      = 0;
       var best7DayActiveMins = 0;
 
-      for (var i = 0; i < fitbitResponse.veryActiveMinutes['activities-minutesVeryActive'].length; i++) {
+      for (i = 0; i < fitbitResponse.veryActiveMinutes['activities-minutesVeryActive'].length; i++) {
         sumActiveMins = parseInt(fitbitResponse.veryActiveMinutes['activities-minutesVeryActive'][i].value) + sumActiveMins;
         if (parseInt(fitbitResponse.veryActiveMinutes['activities-minutesVeryActive'][i].value) > best7DayActiveMins) {
           best7DayActiveMins = fitbitResponse.veryActiveMinutes['activities-minutesVeryActive'][i].value;
@@ -43,11 +43,9 @@ app.service('userService', function ($http, $q) {
       fitbitResponse.veryActiveMinutes.avgActiveMinsLast7Days = avgActiveMinsWeek;
       fitbitResponse.veryActiveMinutes.best7DayActiveMins     = numeral(best7DayActiveMins).format('0,0');
 
-
       deferred.resolve(fitbitResponse)
-    })
+    });
     return deferred.promise;
   };
-
 
 });
