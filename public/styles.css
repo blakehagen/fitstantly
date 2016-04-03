@@ -190,7 +190,7 @@ a:active {
   -ms-flex-flow: wrap;
   flex-flow: wrap;
   width: 100%;
-  background: url("Assets/new-home-background-7-min.jpg") no-repeat center center;
+  background: url("assets/new-home-background-7-min.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

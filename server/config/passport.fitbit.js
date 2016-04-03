@@ -9,8 +9,10 @@ module.exports = (passport) => {
     clientID: fitbitAuth.fitbitAuthKeys.clientID,
     clientSecret: fitbitAuth.fitbitAuthKeys.clientSecret,
     scope: ['activity', 'profile'],
-    callbackURL: 'http://localhost:8100/auth/fitbit/callback'
-  }, (accessToken, refreshToken, profile, done) => {
+    callbackURL: 'http://localhost:8100/auth/fitbit/callback',
+    passReqToCallback: true
+  }, (req, accessToken, refreshToken, profile, done) => {
+    req.session.fitbitAccessToken = accessToken;
 
     done(null, {
       accessToken: accessToken,

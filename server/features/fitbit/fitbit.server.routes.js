@@ -3,21 +3,27 @@
 const _               = require('lodash');
 const request         = require('request');
 const Promise         = require('bluebird');
-const BRequest        = Promise.promisify(request, {multiArgs: true});
+const BRequest        = Promise.promisify(request);
 const FITBIT_BASE_URL = 'https://api.fitbit.com/1/user/-';
 
 module.exports = (app, passport) => {
 
-  let fitbitAuthenticate = passport.authenticate('fitbit', {
-    successRedirect: '/auth/fitbit/success',
-    failureRedirect: '/auth/fitbit/failure'
+  app.get('/auth/fitbit', passport.authenticate('fitbit'));
+
+  app.get('/auth/fitbit/callback', passport.authenticate('fitbit'), function (req, res) {
+    if (req.user) {
+      res.redirect('/#/user/' + req.user.profile.id);
+    } else {
+      res.redirect('/');
+    }
   });
 
-  app.get('/auth/fitbit', fitbitAuthenticate);
+  app.get('/api/v1/data', (req, res) => {
 
-  app.get('/auth/fitbit/callback', fitbitAuthenticate);
-
-  app.get('/auth/fitbit/success', (req, res) => {
+    if (!req.user) {
+      res.status(500);
+    }
+    ;
 
     const userCredentials = {
       userId: req.user.profile.id,
@@ -51,19 +57,19 @@ module.exports = (app, passport) => {
         activities: BRequest(activitiesOptions)
       })
       .then(results => {
-
+        
         let fitbitData = {
-          profile: results.profile[1],
-          activitiesToday: results.activitiesToday[1],
-          steps: results.steps[1],
-          veryActiveMinutes: results.veryActiveMinutes[1],
-          activities: results.activities[1]
+          profile: JSON.parse(results.profile.body),
+          activitiesToday: JSON.parse(results.activitiesToday.body),
+          steps: JSON.parse(results.steps.body),
+          veryActiveMinutes: JSON.parse(results.veryActiveMinutes.body),
+          activities: JSON.parse(results.activities.body)
         };
 
-        res.status(200).send(fitbitData);
+        res.status(200).json(fitbitData);
       })
       .catch(error => {
-        res.status(200).json(error);
+        res.status(500).json(error);
       })
   });
 };

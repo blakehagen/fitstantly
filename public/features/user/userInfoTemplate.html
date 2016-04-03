@@ -1,0 +1,92 @@
+<div class="parent-wrapper">
+  <div class="user-main-container">
+    <div class="user-dashboard-container">
+      <div class="sm-widget" id="sm-widget-header">
+        <div>
+          <h5 id="user-welcome">Welcome, {{ username }}</h5>
+          <h4 id="dashboard-header">Fitstantly Dashboard</h4>
+        </div>
+      </div>
+
+      <div class="user-90-percent-container">
+        <div class="sm-widget">
+          <h3 id="h3-text">Step Count Today:</h3>
+          <h2 id="user-view-main-text">{{ stepsToday }}</h2>
+          <h6 id="h6-text">{{stepsMsg}}</h6>
+        </div>
+        <div class="sm-widget">
+          <h3 id="h3-text">Active Minutes Today:</h3>
+          <h2 id="user-view-main-text">{{activeMinsToday}}</h2>
+          <h6 id="h6-text">{{activeMinsMsg}}</h6>
+        </div>
+        <div class="sm-widget">
+          <h3 id="h3-text">All-Time Steps Record:<sup>*</sup>
+            <h2 id="user-view-main-text">{{stepsRecordAllTime}}</h2>
+            <h6 id="h6-text">Achieved on: {{stepsRecordDate}}</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrapper">
+      <div class="lg-widget" id="lg-widget-header">
+        <div>
+          <h3 id="h3-text">Steps: Last 7 Days</h3>
+        </div>
+      </div>
+
+      <div class="lg-widget">
+        <div class="spacer">
+          <canvas id="line" class="chart chart-line" data="data" labels="labels" series="series">
+          </canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-dashboard-container">
+      <div class="user-90-percent-container">
+        <div class="sm-widget" id="sm-widget-smaller">
+          <h3 id="h3-text">7-day Steps Record:</h3>
+          <h4 id="user-view-main-text">{{steps7DayBest}}</h4>
+        </div>
+        <div class="sm-widget" id="sm-widget-smaller">
+          <div>
+            <h3 id="h3-text">7-day Steps Average:</h3>
+            <h4 id="user-view-main-text">{{steps7DayAverage}}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrapper">
+      <div class="lg-widget" id="lg-widget-header">
+        <div>
+          <h3 id="h3-text">Very Active Minutes: Last 7 Days</h3>
+        </div>
+      </div>
+
+      <div class="lg-widget">
+        <div class="spacer">
+          <canvas id="line" class="chart chart-line" data="dataActiveMins" labels="labelsActiveMins"
+                  series="seriesActiveMins">
+          </canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-dashboard-container">
+      <div class="user-90-percent-container">
+        <div class="sm-widget" id="sm-widget-smaller">
+          <h3 id="h3-text">7-day Active Minutes Record:</h3>
+          <h4 id="user-view-main-text">{{activeMins7DayBest}}</h4>
+        </div>
+        <div class="sm-widget" id="sm-widget-smaller">
+          <h3 id="h3-text">7-day Active Minutes Average:</h3>
+          <h4 id="user-view-main-text">{{activeMins7DayAverage}}</h4>
+        </div>
+      </div>
+
+      <a href="#/help" title="Help" target="_self"><h6 id="asterisk"><sup>*</sup>This is a potential Fitbit data issue.
+        See Known Issues on help page.</h6></a>
+    </div>
+  </div>
+</div>
