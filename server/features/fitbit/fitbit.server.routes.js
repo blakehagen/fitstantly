@@ -39,15 +39,15 @@ module.exports = function (app, passport) {
     };
 
     var profileOptions           = _.cloneDeep(BASE_OPTIONS);
-    profileOptions.url           = `${FITBIT_BASE_URL}/profile.json`;
+    profileOptions.url           = FITBIT_BASE_URL + '/profile.json';
     var activitiesTodayOptions   = _.cloneDeep(BASE_OPTIONS);
-    activitiesTodayOptions.url   = `${FITBIT_BASE_URL}/activities/date/today.json`;
+    activitiesTodayOptions.url   = FITBIT_BASE_URL + '/activities/date/today.json';
     var stepsOptions             = _.cloneDeep(BASE_OPTIONS);
-    stepsOptions.url             = `${FITBIT_BASE_URL}/activities/steps/date/today/7d.json`;
+    stepsOptions.url             = FITBIT_BASE_URL + '/activities/steps/date/today/7d.json';
     var veryActiveMinutesOptions = _.cloneDeep(BASE_OPTIONS);
-    veryActiveMinutesOptions.url = `${FITBIT_BASE_URL}/activities/minutesVeryActive/date/today/7d.json`;
+    veryActiveMinutesOptions.url = FITBIT_BASE_URL + '/activities/minutesVeryActive/date/today/7d.json';
     var activitiesOptions        = _.cloneDeep(BASE_OPTIONS);
-    activitiesOptions.url        = `${FITBIT_BASE_URL}/activities.json`;
+    activitiesOptions.url        = FITBIT_BASE_URL + '/activities.json';
 
     Promise.props({
         profile: BRequest(profileOptions),
@@ -75,7 +75,7 @@ module.exports = function (app, passport) {
   // LOG OUT //
   app.get('/auth/logout', function (req, res) {
     req.logout();
-    console.log('You have logged out')
+    console.log('You have logged out');
     res.redirect('/#');
   });
 
