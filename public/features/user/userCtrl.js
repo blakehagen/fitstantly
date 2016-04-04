@@ -7,7 +7,7 @@ app.controller('UserCtrl', function ($scope, userService) {
 
       // ALL FITBIT DATA //
       $scope.fitbitData = data;
-      console.log('FITBIT DATA: ', $scope.fitbitData);
+      // console.log('FITBIT DATA: ', $scope.fitbitData);
 
       // DISPLAY USERNAME //
       $scope.username           = $scope.fitbitData.profile.user.fullName;
