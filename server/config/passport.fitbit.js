@@ -1,7 +1,7 @@
 'use strict';
 
-const FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
-const fitbitAuth     = require('./keys/fitbitAuthKeys');
+let FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
+let fitbitAuth     = require('./keys/fitbitAuthKeys');
 
 module.exports = (passport) => {
 

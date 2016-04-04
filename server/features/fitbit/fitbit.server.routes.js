@@ -1,10 +1,10 @@
 'use strict';
 
-const _               = require('lodash');
-const request         = require('request');
-const Promise         = require('bluebird');
-const BRequest        = Promise.promisify(request);
-const FITBIT_BASE_URL = 'https://api.fitbit.com/1/user/-';
+let _               = require('lodash');
+let request         = require('request');
+let Promise         = require('bluebird');
+let BRequest        = Promise.promisify(request);
+let FITBIT_BASE_URL = 'https://api.fitbit.com/1/user/-';
 
 module.exports = (app, passport) => {
 
@@ -25,29 +25,29 @@ module.exports = (app, passport) => {
       res.status(500);
     }
 
-    const userCredentials = {
+    let userCredentials = {
       userId: req.user.profile.id,
       accessToken: req.user.accessToken,
       refreshToken: req.user.refreshToken
     };
 
-    const BASE_OPTIONS = {
+    let BASE_OPTIONS = {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${userCredentials.accessToken}`
       }
     };
 
-    const profileOptions           = _.cloneDeep(BASE_OPTIONS);
-    profileOptions.url             = `${FITBIT_BASE_URL}/profile.json`;
-    const activitiesTodayOptions   = _.cloneDeep(BASE_OPTIONS);
-    activitiesTodayOptions.url     = `${FITBIT_BASE_URL}/activities/date/today.json`;
-    const stepsOptions             = _.cloneDeep(BASE_OPTIONS);
-    stepsOptions.url               = `${FITBIT_BASE_URL}/activities/steps/date/today/7d.json`;
-    const veryActiveMinutesOptions = _.cloneDeep(BASE_OPTIONS);
-    veryActiveMinutesOptions.url   = `${FITBIT_BASE_URL}/activities/minutesVeryActive/date/today/7d.json`;
-    const activitiesOptions        = _.cloneDeep(BASE_OPTIONS);
-    activitiesOptions.url          = `${FITBIT_BASE_URL}/activities.json`;
+    let profileOptions           = _.cloneDeep(BASE_OPTIONS);
+    profileOptions.url           = `${FITBIT_BASE_URL}/profile.json`;
+    let activitiesTodayOptions   = _.cloneDeep(BASE_OPTIONS);
+    activitiesTodayOptions.url   = `${FITBIT_BASE_URL}/activities/date/today.json`;
+    let stepsOptions             = _.cloneDeep(BASE_OPTIONS);
+    stepsOptions.url             = `${FITBIT_BASE_URL}/activities/steps/date/today/7d.json`;
+    let veryActiveMinutesOptions = _.cloneDeep(BASE_OPTIONS);
+    veryActiveMinutesOptions.url = `${FITBIT_BASE_URL}/activities/minutesVeryActive/date/today/7d.json`;
+    let activitiesOptions        = _.cloneDeep(BASE_OPTIONS);
+    activitiesOptions.url        = `${FITBIT_BASE_URL}/activities.json`;
 
     Promise.props({
         profile: BRequest(profileOptions),
@@ -57,7 +57,7 @@ module.exports = (app, passport) => {
         activities: BRequest(activitiesOptions)
       })
       .then(results => {
-        
+
         let fitbitData = {
           profile: JSON.parse(results.profile.body),
           activitiesToday: JSON.parse(results.activitiesToday.body),
@@ -78,5 +78,5 @@ module.exports = (app, passport) => {
     console.log('You have logged out')
     res.redirect('/#');
   });
-  
+
 };

@@ -1,9 +1,9 @@
 'use strict';
 
-const express    = require('express');
-const bodyParser = require('body-parser');
-const cors       = require('cors');
-const session    = require('express-session');
+let express    = require('express');
+let bodyParser = require('body-parser');
+let cors       = require('cors');
+let session    = require('express-session');
 
 module.exports = () => {
 

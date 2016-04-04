@@ -1,8 +1,8 @@
 'use strict';
 
 // REQUIRES //
-const express  = require('./server/config/express.js');
-const passport = require('passport');
+let express  = require('./server/config/express.js');
+let passport = require('passport');
 require('./server/config/passport.fitbit')(passport);
 
 // RUN EXPRESS //
