@@ -1,10 +1,10 @@
 'use strict';
 
-let _               = require('lodash');
-let request         = require('request');
-let Promise         = require('bluebird');
-let BRequest        = Promise.promisify(request);
-let FITBIT_BASE_URL = 'https://api.fitbit.com/1/user/-';
+var _               = require('lodash');
+var request         = require('request');
+var Promise         = require('bluebird');
+var BRequest        = Promise.promisify(request);
+var FITBIT_BASE_URL = 'https://api.fitbit.com/1/user/-';
 
 module.exports = (app, passport) => {
 
@@ -25,28 +25,28 @@ module.exports = (app, passport) => {
       res.status(500);
     }
 
-    let userCredentials = {
+    var userCredentials = {
       userId: req.user.profile.id,
       accessToken: req.user.accessToken,
       refreshToken: req.user.refreshToken
     };
 
-    let BASE_OPTIONS = {
+    var BASE_OPTIONS = {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${userCredentials.accessToken}`
       }
     };
 
-    let profileOptions           = _.cloneDeep(BASE_OPTIONS);
+    var profileOptions           = _.cloneDeep(BASE_OPTIONS);
     profileOptions.url           = `${FITBIT_BASE_URL}/profile.json`;
-    let activitiesTodayOptions   = _.cloneDeep(BASE_OPTIONS);
+    var activitiesTodayOptions   = _.cloneDeep(BASE_OPTIONS);
     activitiesTodayOptions.url   = `${FITBIT_BASE_URL}/activities/date/today.json`;
-    let stepsOptions             = _.cloneDeep(BASE_OPTIONS);
+    var stepsOptions             = _.cloneDeep(BASE_OPTIONS);
     stepsOptions.url             = `${FITBIT_BASE_URL}/activities/steps/date/today/7d.json`;
-    let veryActiveMinutesOptions = _.cloneDeep(BASE_OPTIONS);
+    var veryActiveMinutesOptions = _.cloneDeep(BASE_OPTIONS);
     veryActiveMinutesOptions.url = `${FITBIT_BASE_URL}/activities/minutesVeryActive/date/today/7d.json`;
-    let activitiesOptions        = _.cloneDeep(BASE_OPTIONS);
+    var activitiesOptions        = _.cloneDeep(BASE_OPTIONS);
     activitiesOptions.url        = `${FITBIT_BASE_URL}/activities.json`;
 
     Promise.props({
@@ -58,7 +58,7 @@ module.exports = (app, passport) => {
       })
       .then(results => {
 
-        let fitbitData = {
+        var fitbitData = {
           profile: JSON.parse(results.profile.body),
           activitiesToday: JSON.parse(results.activitiesToday.body),
           steps: JSON.parse(results.steps.body),

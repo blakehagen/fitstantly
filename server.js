@@ -1,12 +1,12 @@
 'use strict';
 
 // REQUIRES //
-let express  = require('./server/config/express.js');
-let passport = require('passport');
+var express  = require('./server/config/express.js');
+var passport = require('passport');
 require('./server/config/passport.fitbit')(passport);
 
 // RUN EXPRESS //
-let app = express();
+var app = express();
 
 // PASSPORT //
 app.use(passport.initialize());
@@ -21,7 +21,7 @@ app.get('/api/test', (req, res) => {
 require('./server/features/fitbit/fitbit.server.routes')(app, passport);
 
 // PORT //
-let port = process.env.PORT || 80;
+var port = process.env.PORT || 80;
 
 app.listen(port, () => {
   console.log('Listening on port ' + port);
