@@ -13,7 +13,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // TEST ROUTE //
-app.get('/api/test', (req, res) => {
+app.get('/api/test', function (req, res) {
   res.status(200).send('This is working -- ' + new Date());
 });
 
@@ -23,6 +23,6 @@ require('./server/features/fitbit/fitbit.server.routes')(app, passport);
 // PORT //
 var port = process.env.PORT || 80;
 
-app.listen(port, () => {
+app.listen(port, function () {
   console.log('Listening on port ' + port);
 });

@@ -3,7 +3,7 @@
 var FitbitStrategy = require('passport-fitbit-oauth2').FitbitOAuth2Strategy;
 var fitbitAuth     = require('./keys/fitbitAuthKeys');
 
-module.exports = (passport) => {
+module.exports = function (passport) {
 
   passport.use(new FitbitStrategy({
     clientID: fitbitAuth.fitbitAuthKeys.clientID,
@@ -11,7 +11,7 @@ module.exports = (passport) => {
     scope: ['activity', 'profile'],
     callbackURL: 'http://localhost:8100/auth/fitbit/callback',
     passReqToCallback: true
-  }, (req, accessToken, refreshToken, profile, done) => {
+  }, function (req, accessToken, refreshToken, profile, done) {
     req.session.fitbitAccessToken = accessToken;
 
     done(null, {
@@ -21,11 +21,11 @@ module.exports = (passport) => {
     });
   }));
 
-  passport.serializeUser((user, done) => {
+  passport.serializeUser(function (user, done) {
     done(null, user);
   });
 
-  passport.deserializeUser((obj, done) => {
+  passport.deserializeUser(function (obj, done) {
     done(null, obj);
   });
 };

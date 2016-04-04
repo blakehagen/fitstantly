@@ -6,7 +6,7 @@ var Promise         = require('bluebird');
 var BRequest        = Promise.promisify(request);
 var FITBIT_BASE_URL = 'https://api.fitbit.com/1/user/-';
 
-module.exports = (app, passport) => {
+module.exports = function (app, passport) {
 
   app.get('/auth/fitbit', passport.authenticate('fitbit'));
 
@@ -19,7 +19,7 @@ module.exports = (app, passport) => {
   });
 
   // GET FITBIT DATA //
-  app.get('/api/v1/data', (req, res) => {
+  app.get('/api/v1/data', function (req, res) {
 
     if (!req.user) {
       res.status(500);
@@ -56,7 +56,7 @@ module.exports = (app, passport) => {
         veryActiveMinutes: BRequest(veryActiveMinutesOptions),
         activities: BRequest(activitiesOptions)
       })
-      .then(results => {
+      .then(function (results) {
 
         var fitbitData = {
           profile: JSON.parse(results.profile.body),
@@ -67,7 +67,7 @@ module.exports = (app, passport) => {
         };
         res.status(200).json(fitbitData);
       })
-      .catch(error => {
+      .catch(function (error) {
         res.status(500).json(error);
       })
   });
