@@ -21,7 +21,7 @@ app.get('/api/test', (req, res) => {
 require('./server/features/fitbit/fitbit.server.routes')(app, passport);
 
 // PORT //
-let port = process.env.PORT || 8100;
+let port = process.env.PORT || 80;
 
 app.listen(port, () => {
   console.log('Listening on port ' + port);
