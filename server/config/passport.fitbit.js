@@ -9,7 +9,7 @@ module.exports = function (passport) {
     clientID: fitbitAuth.fitbitAuthKeys.clientID,
     clientSecret: fitbitAuth.fitbitAuthKeys.clientSecret,
     scope: ['activity', 'profile'],
-    callbackURL: 'http://localhost:8100/auth/fitbit/callback',
+    callbackURL: 'http://fitstantly.com/auth/fitbit/callback',
     passReqToCallback: true
   }, function (req, accessToken, refreshToken, profile, done) {
     req.session.fitbitAccessToken = accessToken;
