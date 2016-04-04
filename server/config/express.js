@@ -1,13 +1,13 @@
 'use strict';
 
-let express    = require('express');
-let bodyParser = require('body-parser');
-let cors       = require('cors');
-let session    = require('express-session');
+var express    = require('express');
+var bodyParser = require('body-parser');
+var cors       = require('cors');
+var session    = require('express-session');
 
 module.exports = () => {
 
-  let app = express();
+  var app = express();
 
   app.use(cors());
   app.use(bodyParser.urlencoded({extended: false}));
