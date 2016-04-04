@@ -34,7 +34,7 @@ module.exports = function (app, passport) {
     var BASE_OPTIONS = {
       method: 'GET',
       headers: {
-        Authorization: `Bearer ${userCredentials.accessToken}`
+        Authorization: 'Bearer ' + userCredentials.accessToken
       }
     };
 
